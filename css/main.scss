@@ -1,7 +1,7 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+@import 'bootstrap/bootstrap';
 @import "minima";
 
 body, html {
@@ -9,7 +9,7 @@ body, html {
 }
 
 #under-maintenance { 
-    background-image: url("images/under-maintenance.jpg");
+    background-image: url("../assets/images/under-maintenance.jpg");
     height: 100%; 
 
     background-position: top;
