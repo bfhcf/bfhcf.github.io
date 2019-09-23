@@ -1,0 +1,186 @@
+
+.color-bfhcf-red {
+  color: $bfhcf-red !important;
+}
+.color-bfhcf-green {
+  color: $bfhcf-green !important;
+}
+.color-bfhcf-lime {
+  color: $bfhcf-lime !important;
+}
+.color-bfhcf-purple {
+  color: $bfhcf-purple !important;
+
+}.color-bfhcf-teal {
+   color: $bfhcf-teal !important;
+ }
+.color-bfhcf-cyan {
+  color: $bfhcf-cyan !important;
+}
+.color-bfhcf-yellow {
+  color: $bfhcf-yellow !important;
+}
+.color-bfhcf-black {
+  color: $bfhcf-black !important;
+}
+.color-bfhcf-orange {
+  color: $bfhcf-orange !important;
+}
+
+.color-bfhcf-red-light {
+  color: $bfhcf-red !important;
+  text-shadow: 2px 2px 1px rgba(0,0,0,.2);
+}
+.color-bfhcf-green-light {
+  color: $bfhcf-green !important;
+  text-shadow: 2px 2px 1px rgba(0,0,0,.2);
+}
+.color-bfhcf-lime-light {
+  color: $bfhcf-lime !important;
+  text-shadow: 2px 2px 1px rgba(0,0,0,.2);
+}
+.color-bfhcf-purple-light {
+  color: $bfhcf-purple !important;
+  text-shadow: 2px 2px 1px rgba(0,0,0,.2);
+}
+.color-bfhcf-teal-light {
+  color: $bfhcf-teal !important;
+  text-shadow: 2px 2px 1px rgba(0,0,0,.2);
+}
+.color-bfhcf-cyan-light {
+  color: $bfhcf-cyan !important;
+  text-shadow: 2px 2px 1px rgba(0,0,0,.2);
+}
+.color-bfhcf-yellow-light {
+  color: $bfhcf-yellow !important;
+  text-shadow: 2px 2px 1px rgba(0,0,0,.2);
+}
+.color-bfhcf-black-light {
+  color: $bfhcf-black !important;
+  text-shadow: 2px 2px 1px rgba(0,0,0,.2);
+}
+.color-bfhcf-orange-light {
+  color: $bfhcf-orange !important;
+  text-shadow: 2px 2px 1px rgba(0,0,0,.2);
+}
+
+.bg-bfhcf-red {
+  background-color: $bfhcf-red !important;
+}
+
+.bg-bfhcf-green {
+  background-color: $bfhcf-green !important;
+}
+
+.bg-bfhcf-lime {
+  background-color: $bfhcf-lime !important;
+}
+
+.bg-bfhcf-purple {
+  background-color: $bfhcf-purple !important;
+}
+
+.bg-bfhcf-teal {
+  background-color: $bfhcf-teal !important;
+}
+
+.bg-bfhcf-cyan {
+  background-color: $bfhcf-cyan !important;
+}
+
+.bg-bfhcf-yellow {
+  background-color: $bfhcf-yellow !important;
+}
+
+.bg-bfhcf-black {
+  background-color: $bfhcf-black !important;
+}
+
+.bg-bfhcf-orange {
+  background-color: $bfhcf-orange !important;
+}
+
+
+.card-bfhcf-red {
+  &:hover {
+    background-color: $bfhcf-red !important;
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+.card-bfhcf-green {
+  &:hover {
+    background-color: $bfhcf-green !important;
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+.card-bfhcf-lime {
+  &:hover {
+    background-color: $bfhcf-lime !important;
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+.card-bfhcf-purple {
+  &:hover {
+    background-color: $bfhcf-purple !important;
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+}.card-bfhcf-teal {
+   &:hover {
+     background-color: $bfhcf-teal !important;
+     img {
+       filter: brightness(0) invert(1);
+     }
+   }
+ }
+.card-bfhcf-cyan {
+  &:hover {
+    background-color: $bfhcf-cyan !important;
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+.card-bfhcf-yellow {
+  &:hover {
+    background-color: $bfhcf-yellow !important;
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+.card-bfhcf-black {
+  &:hover {
+    background-color: $bfhcf-black !important;
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+.card-bfhcf-orange {
+  &:hover {
+    background-color: $bfhcf-orange !important;
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+
+.ms-footbar .bfhcf-orange a:hover {
+  color: $bfhcf-orange;
+}
+
+.three_cols li a i.bfhcf-cyan {
+  margin-right: 10px;
+  width: 15px;
+  text-align: center;
+  color: $bfhcf-cyan;
+}

@@ -1,0 +1,26 @@
+pastors:
+  - name: Rev. Rizal Asuncion
+    role: Senior Pastor
+  - name: Rev. Saubel Salamat
+  - name: Rev. Vic San Juan
+  - name: Rev. Dr. Norman Manlapaz
+  - name: Rev. Jeffrey Choa
+  - name: Rev. Edmon Ngo
+  - name: Rev. Dr. Cornelio Castillo
+
+elders:
+  - name: Tito Tolentino
+  - name: Mario Bunag
+  - name: Ed Callanta
+  - name: Teodoro Guerrero, Jr
+  - name: Rev. Jeffrey Choa
+
+deacons:
+  - name: Richard Tan
+  - name: Ferdie Parian
+  - name: Russky Olivares
+  - name: Elizabeth Gutierrez
+  - name: Tess Alegata
+  - name: Grace Isip
+  - name: Angel Joaquin
+  - name: Dino Poblete

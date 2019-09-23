@@ -1,0 +1,96 @@
+- name: Alternative Learning System
+  slug: als
+  color: bfhcf-green
+
+- name: Beautification
+  slug: beautification
+  color: bfhcf-purple
+
+- name: Church Assisted Students
+  slug: cas
+  color: bfhcf-cyan
+
+- name: Christian Education
+  slug: ce
+  color: bfhcf-orange
+
+- name: Church Greeters
+  slug: cgm
+  color: bfhcf-yellow
+
+- name: Cluster One
+  slug: clusterone
+  color: bfhcf-orange
+
+- name: Cluster Two
+  slug: clustertwo
+  color: bfhcf-orange
+
+- name: Cluster Three
+  slug: clusterthree
+  color: bfhcf-orange
+
+- name: Discipleship
+  slug: discipleship
+  color: bfhcf-red
+
+- name: Evangelism
+  slug: evangelism
+  color: bfhcf-cyan
+
+- name: Kaagapay
+  slug: kaagapay
+  color: bfhcf-green
+
+- name: Kitchen Patrol & Cleaning Ambassadors
+  slug: kpca
+  color: bfhcf-teal
+
+- name: Membership
+  slug: membership
+  color: bfhcf-lime
+
+- name: Men in Bread
+  slug: mib
+  color: bfhcf-teal
+
+- name: Missions
+  slug: missions
+  color: bfhcf-teal
+
+- name: Marriage Keepers in Bread
+  slug: mkb
+  color: bfhcf-red
+
+- name: Multimedia
+  slug: multimedia
+  color: bfhcf-black
+
+- name: Music
+  slug: music
+  color: bfhcf-orange
+
+- name: Salt & Light
+  slug: snl
+  color: bfhcf-yellow
+
+- name: Teens
+  slug: teens
+  color: bfhcf-cyan
+
+- name: Visitation
+  slug: visitation
+  color: bfhcf-lime
+
+- name: Women of Bread
+  slug: womb
+  color: bfhcf-purple
+
+- name: Young People's Fellowship
+  slug: ypf
+  color: bfhcf-cyan
+
+- name: Young Professionals
+  slug: ypro
+  color: bfhcf-cyan
+

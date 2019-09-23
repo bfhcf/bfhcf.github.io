@@ -1,0 +1,30 @@
+<div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
+    <div class="sb-slidebar-container">
+        <header class="ms-slidebar-header">
+            <div class="ms-slidebar-title">
+                <div class="ms-slidebar-t">
+                    <img src="/assets/img/header-logo-small.png" class="ms-logo ms-logo-sm mr-1" alt="">
+                    <img src="/assets/img/header-logo-text-white.png" alt="" class="ms-logo-text-small">
+                </div>
+            </div>
+        </header>
+        <ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
+            {% for link in site.navigation %}
+            <li>
+                <a class="link" href="{{ link.url }}"><i class="zmdi {{ link.icon }}"></i> {{ link.text }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="ms-slidebar-social ms-slidebar-block">
+            <h4 class="ms-slidebar-block-title">Social Links</h4>
+            <div class="ms-slidebar-social">
+                <a href="{{ site.facebook_url }}" target="_blank" class="btn-circle btn-circle-raised btn-facebook"><i class="zmdi zmdi-facebook"></i>
+                    <div class="ripple-container"></div>
+                </a>
+                <a href="{{ site.youtube_channel_url }}" target="_blank" class="btn-circle btn-circle-raised btn-youtube"><i class="zmdi zmdi-youtube"></i>
+                    <div class="ripple-container"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

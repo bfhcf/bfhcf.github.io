@@ -1,0 +1,76 @@
+<aside class="ms-footbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 ms-footer-col">
+                <div class="ms-footbar-block">
+                    <h3 class="ms-footbar-title">Sitemap</h3>
+                    <ul class="list-unstyled ms-footer-list ms-icon-list three_cols bfhcf-orange">
+                        {% for link in site.navigation %}
+                        <li><a href="{{ link.url }}"><i class="zmdi {{ link.icon }} bfhcf-cyan"></i> {{ link.text }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="ms-footbar-block">
+                    <h3 class="ms-footbar-title">About</h3>
+                    <p>
+                        The Bread From Heaven Christian Fellowship, Inc. is an independent,
+                        Christian and Reformed Evangelical congregation. Member of the
+                        Philippine Council of Evangelical Churches (PCEC).
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-7 ms-footer-col ms-footer-alt-color">
+                <div class="ms-footbar-block">
+                    <h3 class="ms-footbar-title text-center mb-2">Last Devotions</h3>
+                    <div class="ms-footer-media">
+                        {% for devotion in site.categories.devotions | limit:3 | sort: 'date' | reverse %}
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="{{ devotion.url }}">
+                                    <img class="media-object media-object-circle media-object-circle-md" src="/assets/img/members/rev-jeffrey-choa.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="{{ devotion.url }}">{{ devotion.title }}</a></h4>
+                                <div class="media-footer">
+                                    <span><i class="zmdi zmdi-time color-bfhcf-cyan-light"></i> {{ devotion.date | date_to_string }}</span>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-5 ms-footer-col ms-footer-text-right">
+                <div class="ms-footbar-block">
+                    <div class="ms-footbar-title">
+                        <img src="/assets/img/header-logo-small-white.png" class="ms-logo ms-logo-sm mr-1" alt="">
+                        <img src="/assets/img/header-logo-text-white.png" alt="" class="ms-logo-text-small animated fadeInRight animation-delay-6">
+                    </div>
+                    <address class="no-mb">
+                        <p><i class="color-bfhcf-red-light zmdi zmdi-pin mr-1"></i> {{ site.address }}</p>
+                        <p><i class="color-bfhcf-orange-light zmdi zmdi-map mr-1"></i> {{ site.city }} </p>
+                        <p><i class="color-bfhcf-cyan-light zmdi zmdi-email mr-1"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                        <p><i class="color-bfhcf-purple-light zmdi zmdi-phone mr-1"></i>{{ site.tel_number }}</p>
+                        <p><i class="color-bfhcf-purple-light zmdi zmdi-phone mr-1"></i>{{ site.tel_number2 }}</p>
+                    </address>
+                </div>
+                <div class="ms-footbar-block">
+                    <h3 class="ms-footbar-title">Social Media</h3>
+                    <div class="ms-footbar-social">
+                        <a href="{{ site.facebook_url }}" class="btn-circle btn-facebook"><i class="zmdi zmdi-facebook"></i></a>
+                        <a href="{{ site.youtube_channel_url }}" class="btn-circle btn-youtube"><i class="zmdi zmdi-youtube"></i></a><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<footer class="ms-footer">
+    <div class="container">
+        <p>Copyright &copy; {{site.title}} 2019</p>
+    </div>
+</footer>
+<div class="btn-back-top">
+    <a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised "><i class="zmdi zmdi-long-arrow-up"></i></a>
+</div>

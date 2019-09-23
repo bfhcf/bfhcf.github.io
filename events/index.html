@@ -1,0 +1,41 @@
+---
+layout: default
+title: Events
+---
+
+<div class="material-background"></div>
+<div class="container">
+    <div class="text-center mb-6">
+        <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Events</h1>
+        <p class="lead lead-lg color-white text-center center-block mt-2 mb-4 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7">Join and fellowship with us in our upcoming activities. We are looking forward to see you.
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="row masonry-container">
+
+                {% for event in site.categories.events %}
+                {% assign ministry = site.data.ministries | where: "slug", event.ministry | first  %}
+                <div class="col-lg-6 col-md-6 masonry-item wow fadeInUp animation-delay-2">
+                    <div class="card">
+                        <figure class="ms-thumbnail ms-thumbnail-horizontal">
+                            <img src="/assets/img/events/{{ event.image }}" alt="" class="img-fluid">
+                        </figure>
+                        <div class="card-body overflow-hidden text-center">
+                            {% if ministry.slug == 'cgm' %}
+                                {% assign ministryLogo = 'cgm-logo-transparent' %}
+                            {% else %}
+                                {% assign ministryLogo = ministry.slug | append: '-logo' %}
+                            {% endif %}
+                            <div class="btn-circle btn-circle-raised btn-card-float btn-circle-{{ ministry.color }} wow zoomInDown index-2"><img src="/assets/img/ministries/{{ ministryLogo }}.png" alt="" style="filter: brightness(0) invert(1); width: 40px;"></div>
+                            <h4 class="color-bfhcf-teal">{{ event.title }} {% if event.speaker %} by {{ event.speaker }} {% endif %} </h4>
+
+                            {{ event.content }}
+
+                        </div>
+                    </div>
+                </div> <!-- item -->
+                {% endfor %}</p>
+            </div>
+        </div>
+    </div>
+</div> <!-- container -->

@@ -1,0 +1,89 @@
+---
+---
+
+@import 'bootstrap/bootstrap';
+@import 'custom/variables';
+@import 'custom/buttons';
+@import 'custom/colors';
+
+body, html {
+    height: 100%;
+}
+
+
+
+#under-maintenance {
+    background-image: url("../assets/img/under-maintenance.jpg");
+    height: 100%;
+
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ms-header {
+    .ms-title {
+        .ms-logo {
+            border-radius: 0;
+            &.ms-logo-lg {
+                margin: 15px 20px 0 0;
+            }
+        }
+
+        .ms-logo-text {
+            width: 230px;
+        }
+    }
+}
+
+.navbar-brand, .ms-slidebar-title, .ms-footbar-title, .ms-hero-page-override, .about-container, .contact, .coming-soon {
+    .ms-logo-text-small {
+        width: 150px;
+    }
+
+    .ms-logo {
+        background-color: transparent !important;
+    }
+}
+
+.ms-hero-page-override.ms-hero-img-church {
+    padding: 150px 0;
+}
+
+.ms-logo.ms-logo-xl  {
+    width: 100px;
+    height: 100px;
+}
+
+.ms-footer-list {
+    margin-left: 0;
+}
+
+.ms-hero-img-church {
+    background-image: url(../img/church-hands.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.ms-hero-img-camp{
+    background-image: url(../img/camp.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-sm {
+    width: 50px;
+}
+
+.img-md  {
+    height: 120px;
+}
+
+.img-avatar-circle.img-avatar-circle-lg {
+    width: 150px;
+    height: 150px;
+}
+
+.media-object-circle.media-object-circle-md {
+    width: 75px;
+}

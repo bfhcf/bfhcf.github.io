@@ -1,0 +1,139 @@
+.btn-circle {
+
+  &.btn-circle-raised {
+    &.btn-circle-bfhcf-red {
+      &:before {
+        background-color: $bfhcf-darkred;
+      }
+    }
+
+    &.btn-circle-bfhcf-green {
+      &:before {
+        background-color: $bfhcf-darkgreen;
+      }
+    }
+
+    &.btn-circle-bfhcf-lime {
+      &:before {
+        background-color: $bfhcf-darklime;
+      }
+    }
+
+    &.btn-circle-bfhcf-purple {
+      &:before {
+        background-color: $bfhcf-darkpurple;
+      }
+    }
+
+    &.btn-circle-bfhcf-teal {
+      &:before {
+        background-color: $bfhcf-darkteal;
+      }
+    }
+
+    &.btn-circle-bfhcf-cyan {
+      &:before {
+        background-color: $bfhcf-darkcyan;
+      }
+    }
+
+    &.btn-circle-bfhcf-black {
+      &:before {
+        background-color: $bfhcf-darkblack;
+      }
+    }
+
+    &.btn-circle-bfhcf-yellow {
+      &:before {
+        background-color: $bfhcf-darkyellow;
+      }
+    }
+
+    &.btn-circle-bfhcf-orange {
+      &:before {
+        background-color: $bfhcf-darkorange;
+      }
+    }
+  }
+
+  &.btn-circle-bfhcf-red {
+
+    background-color: $bfhcf-red;
+    color: $bfhcf-red;
+    &:before {
+      background-color : $bfhcf-red;
+    }
+  }
+
+  &.btn-circle-bfhcf-green {
+
+    background-color: $bfhcf-green;
+    color: $bfhcf-green;
+    &:before {
+      background-color : $bfhcf-green;
+    }
+  }
+
+  &.btn-circle-bfhcf-lime {
+
+    background-color: $bfhcf-lime;
+    color: $bfhcf-lime;
+    &:before {
+      background-color : $bfhcf-lime;
+    }
+  }
+
+  &.btn-circle-bfhcf-purple {
+
+    background-color: $bfhcf-purple;
+    color: $bfhcf-purple;
+    &:before {
+      background-color : $bfhcf-purple;
+    }
+  }
+
+  &.btn-circle-bfhcf-teal {
+
+    background-color: $bfhcf-teal;
+    color: $bfhcf-teal;
+    &:before {
+      background-color : $bfhcf-teal;
+    }
+  }
+
+  &.btn-circle-bfhcf-cyan {
+
+    background-color: $bfhcf-cyan;
+    color: $bfhcf-cyan;
+    &:before {
+      background-color : $bfhcf-cyan;
+    }
+  }
+
+  &.btn-circle-bfhcf-black {
+
+    background-color: $bfhcf-black;
+    color: $bfhcf-black;
+    &:before {
+      background-color : $bfhcf-black;
+    }
+  }
+
+  &.btn-circle-bfhcf-yellow {
+
+    background-color: $bfhcf-yellow;
+    color: $bfhcf-yellow;
+    &:before {
+      background-color : $bfhcf-yellow;
+    }
+  }
+
+  &.btn-circle-bfhcf-orange {
+
+    background-color: $bfhcf-orange;
+    color: $bfhcf-orange;
+    &:before {
+      background-color : $bfhcf-orange;
+    }
+  }
+}

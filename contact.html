@@ -1,0 +1,75 @@
+---
+layout: default
+title: Contact Us
+---
+
+<div class="ms-hero-page-override ms-hero-img-team ms-hero-bg-primary">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Contact Us</h1>
+            <p class="lead lead-lg color-light text-center center-block mt-2 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7">If you have any questions, feel free to contact us</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="card card-hero animated fadeInUp animation-delay-7">
+        <div class="card-body">
+            <form class="form-horizontal" action="https://formspree.io/{{ site.email }}" method="POST">
+                <fieldset class="container">
+                    <div class="form-group row">
+                        <label for="inputEmail" autocomplete="false" class="col-lg-2 control-label">Name</label>
+                        <div class="col-lg-9">
+                            <input type="text" name="name" class="form-control" id="inputName" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail" autocomplete="false" class="col-lg-2 control-label">Email</label>
+                        <div class="col-lg-9">
+                            <input type="email" name="_replyto" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail" autocomplete="false" class="col-lg-2 control-label">Subject</label>
+                        <div class="col-lg-9">
+                            <input type="text" name="subject" class="form-control" id="inputSubject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="textArea" class="col-lg-2 control-label">Message</label>
+                        <div class="col-lg-9">
+                            <textarea class="form-control" name="message" rows="3" id="textArea" placeholder="Your message..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-end">
+                        <div class="col-lg-10">
+                            <button type="submit" class="btn btn-raised btn-primary">Send Message</button>
+                            <button type="button" class="btn btn-danger">Cancel</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="card card-primary">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-5">
+                <div class="card-body wow fadeInUp">
+                    <div class="mb-2 contact">
+                        <img src="/assets/img/header-logo-small.png" class="ms-logo ms-logo-sm mr-1" alt="">
+                        <img src="/assets/img/header-logo-text.png" alt="" class="ms-logo-text-small animated fadeInRight animation-delay-6">
+                    </div>
+                    <address class="no-mb">
+                        <p><i class="color-danger-light zmdi zmdi-pin mr-1"></i> {{ site.address }}</p>
+                        <p><i class="color-warning-light zmdi zmdi-map mr-1"></i> {{ site.city }}</p>
+                        <p><i class="color-info-light zmdi zmdi-email mr-1"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                        <p><i class="color-royal-light zmdi zmdi-phone mr-1"></i>{{ site.tel_number }} </p>
+                        <p><i class="color-royal-light zmdi zmdi-phone mr-1"></i>{{ site.tel_number2 }} </p>
+                    </address>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-8 col-md-7">
+                <iframe width="100%" height="340" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4856.798807783254!2d121.01467131839902!3d14.440950365389025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ce273678d00d%3A0xe58c568c0a584c8b!2sBread%20from%20Heaven%20Christian%20Fellowship!5e0!3m2!1sen!2sph!4v1568357045987!5m2!1sen!2sph"></iframe>"></iframe>
+            </div>
+        </div>
+    </div>
+</div>

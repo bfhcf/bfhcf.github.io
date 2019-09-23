@@ -1,0 +1,117 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card animated fadeInLeftTiny animation-delay-5">
+                <div class="card-body card-body-big">
+                    <h1 class="no-mt">{{ page.title }}</h1>
+                    <div class="mb-4">
+                        <img src="/assets/img/members/rev-jeffrey-choa.jpg" alt="..."
+                             class="rounded-circle mr-1 img-sm"> by <a href="javascript:void(0)">{{ page.author }}</a>
+                        <span class="ml-1 d-none d-sm-inline"><i class="zmdi zmdi-time mr-05 color-info"></i> <span
+                                class="color-medium-dark">{{ page.date | date_to_string }}</span></span>
+                    </div>
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card animated fadeInUp animation-delay-7">
+                <div class="ms-hero-bg-info ms-hero-img-mountain">
+                    <h3 class="color-white index-1 text-center no-m pt-4">{{ page.author }}</h3>
+                    <img src="/assets/img/members/rev-jeffrey-choa.jpg" alt="..." class="img-avatar-circle">
+                </div>
+                <div class="card-body pt-4 text-center">
+                    <h3 class="color-primary">About the author</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur alter adipisicing elit. Facilis, natuse inse voluptates
+                        officia repudiandae beatae magni es magnam autem molestias.</p>
+                </div>
+            </div>
+            <div class="card card-primary animated fadeInUp animation-delay-7">
+                <div class="card-header">
+                    <h3 class="card-title"><i class="zmdi zmdi-bookmark"></i> Other Devotionals</h3>
+                </div>
+                <div id="favorite">
+                    <div class="card-body">
+                        <div class="ms-media-list">
+
+                            {% for devotion in site.categories.devotions %}
+                                {% if devotion == page %}
+                                    {% assign stop = true %}
+                                {% else %}
+                                    {% if stop %}
+                                        {% assign previous = devotion %}
+                                        {% break %}
+                                    {% else %}
+                                        {% if nextnext and next %}
+                                            {% assign nextnext = next %}
+                                            {% assign next = devotion %}
+                                        {% else %}
+                                            {% if nextnext %}
+                                                {% assign next = devotion %}
+                                            {% else %}
+                                                {% assign nextnext = devotion %}
+                                            {% endif %}
+                                        {% endif %}
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+
+                            {% if previous %}
+                            <div class="media mb-2">
+                                <div class="media-left media-middle">
+                                    <a href="{{ previous.url }}">
+                                        <img class="d-flex mr-3 media-object media-object-circle"
+                                             src="/assets/img/members/avatar.jpg" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <a href="{{ previous.url }}" class="media-heading">{{ previous.title }}</a>
+                                    <div class="media-footer text-small">
+                                        <span class="mr-1"><i class="zmdi zmdi-time color-info mr-05"></i> {{ previous.date | date_to_string }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% if next %}
+                            <div class="media mb-2">
+                                <div class="media-left media-middle">
+                                    <a href="{{ next.url }}">
+                                        <img class="d-flex mr-3 media-object media-object-circle"
+                                             src="/assets/img/members/avatar.jpg" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <a href="{{ next.url }}" class="media-heading">{{ next.title }}</a>
+                                    <div class="media-footer text-small">
+                                        <span class="mr-1"><i class="zmdi zmdi-time color-info mr-05"></i> {{ next.date | date_to_string }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% if nextnext %}
+                            <div class="media">
+                                <div class="media-left media-middle">
+                                    <a href="{{ nextnext.url }}">
+                                        <img class="d-flex mr-3 media-object media-object-circle"
+                                             src="/assets/img/members/avatar.jpg" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <a href="{{ nextnext.url }}" class="media-heading">{{ nextnext.title }}</a>
+                                    <div class="media-footer text-small">
+                                        <span class="mr-1"><i class="zmdi zmdi-time color-info mr-05"></i> {{ nextnext.date | date_to_string }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- container -->
