@@ -51,7 +51,7 @@ navigation:
     url: /devotions/
     icon: zmdi-book
   - text: Ministries
-    url: /ministries
+    url: /ministries/
     icon: zmdi-view-compact
   - text: Who We Are
     url: /who-we-are
