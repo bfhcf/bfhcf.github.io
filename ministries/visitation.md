@@ -2,10 +2,37 @@
 layout: ministry
 ---
  
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris commodo quis imperdiet massa tincidunt. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Sodales neque sodales ut etiam sit amet. Mauris sit amet massa vitae tortor condimentum lacinia quis vel. Sed arcu non odio euismod lacinia at. Arcu risus quis varius quam quisque id diam vel quam. Vivamus arcu felis bibendum ut tristique et egestas quis ipsum. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Sodales neque sodales ut etiam sit amet nisl purus in. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Odio euismod lacinia at quis risus sed vulputate odio. Porta nibh venenatis cras sed. Augue lacus viverra vitae congue eu consequat. Sed odio morbi quis commodo. Potenti nullam ac tortor vitae. Ullamcorper morbi tincidunt ornare massa eget egestas purus. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Pulvinar elementum integer enim neque volutpat. Nibh nisl condimentum id venenatis a.
 
-Feugiat nisl pretium fusce id velit ut. Interdum posuere lorem ipsum dolor sit amet consectetur. Pretium quam vulputate dignissim suspendisse in est ante in. Odio eu feugiat pretium nibh. In eu mi bibendum neque egestas. Posuere morbi leo urna molestie at elementum eu. Venenatis a condimentum vitae sapien pellentesque. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Tortor id aliquet lectus proin nibh nisl condimentum. Integer feugiat scelerisque varius morbi enim. Sed arcu non odio euismod lacinia at. Volutpat est velit egestas dui. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Tortor at risus viverra adipiscing at. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+The main objective is to let the members and worshipers of the church know
+that BREAD CARES, and to be where you are when you need us the most.
+We have 3 classifications of people:
+1. Visitors –These include the first-time visitors, the sporadic visitors and
+the visitors that have been with us for less than 6 consecutive months.
+2. Regular Worshipers - People who regularly worship with us and have
+been with us for six consecutive months or more.
+3. Listed Members - these are people who made a commitment and have
+signed the membership covenant.
 
-Aliquet nibh praesent tristique magna sit amet. Convallis a cras semper auctor neque vitae tempus quam. Vel risus commodo viverra maecenas. Eu mi bibendum neque egestas congue quisque egestas. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Tempor orci eu lobortis elementum nibh. Quisque egestas diam in arcu cursus euismod quis viverra nibh. Amet nulla facilisi morbi tempus iaculis urna. Tortor at auctor urna nunc. Aliquet lectus proin nibh nisl condimentum id. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Aliquam id diam maecenas ultricies mi eget mauris. Eu nisl nunc mi ipsum faucibus vitae aliquet. Amet est placerat in egestas erat. Ultrices in iaculis nunc sed augue. Ac turpis egestas maecenas pharetra convallis. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla.
+But, in the church, we are all one. We are all family and we all belong.
+Because we are one family, the church lets everyone know that Bread
+cares through the Visitation Ministry. We at the ministry will give you a call
+or approach you at an opportune time to set a day and time with you and
+your family. We will go wherever you are, be it at your home or in the office.
+Expect us to see you one day.
 
-Neque ornare aenean euismod elementum. Urna id volutpat lacus laoreet non curabitur gravida arcu. Pulvinar proin gravida hendrerit lectus. Ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Orci dapibus ultrices in iaculis nunc sed. Dui vivamus arcu felis bibendum ut tristique et egestas. Adipiscing bibendum est ultricies integer quis. Imperdiet nulla malesuada pellentesque elit eget gravida. Velit egestas dui id ornare arcu. Et magnis dis parturient montes nascetur. Dolor sed viverra ipsum nunc aliquet.
+When you need our counsel, when you are sick, and when you are at the
+hospital, we would like to be there. Even when you are grieving, we will
+make our presence available for you to encourage you, to bring the Word to
+you, to pray for you and with you.
+
+We would also make ourselves available for you on any special occasion or
+special day for you and your family to pray, rejoice and praise the Lord with you.
+We can also be there for you to officiate your wedding, baptismal, house or
+office blessing or any other service for the Lord.
+Just let us know how we can be of service to you in the Lord, and we will
+make our best effort to respond and be there with you.
+
+*Hebrews 10:24-25, says, “and let us consider how to stimulate one another
+to love and good deeds, not forsaking our own assembling together, as is
+the habit of some, but encouraging one another; and all the more as you see
+the day drawing near. NASU*

@@ -5,8 +5,8 @@ layout: default
 {% assign slug = page.url | split: "/" | last | remove: ".html" %}
 {% assign ministry = site.data.ministries | where: "slug", slug | first  %}
 {% assign darkColorSlugs = "cgm,snl" | split: "," %}
-<div class="ms-hero-page-override ms-hero-bg-primary ms-hero-img-church">
-    
+<div class="ms-hero-page-override ms-hero-bg-primary ms-hero-img-church" style="padding:100px;">
+
 </div>
 <div class="container">
     <div class="card card-hero animated fadeInUp animation-delay-7">
@@ -23,7 +23,7 @@ layout: default
         <div class="row">
             <div class="col-lg-12">
                 <div class="card-body">
-                    <h3 class="color-primary">About Us</h3>
+                    <h3 class="color-primary">About the Ministry</h3>
                     {{content}}
                 </div>
             </div>

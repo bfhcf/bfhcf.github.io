@@ -2,10 +2,48 @@
 layout: ministry
 ---
  
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris commodo quis imperdiet massa tincidunt. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Sodales neque sodales ut etiam sit amet. Mauris sit amet massa vitae tortor condimentum lacinia quis vel. Sed arcu non odio euismod lacinia at. Arcu risus quis varius quam quisque id diam vel quam. Vivamus arcu felis bibendum ut tristique et egestas quis ipsum. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Sodales neque sodales ut etiam sit amet nisl purus in. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Odio euismod lacinia at quis risus sed vulputate odio. Porta nibh venenatis cras sed. Augue lacus viverra vitae congue eu consequat. Sed odio morbi quis commodo. Potenti nullam ac tortor vitae. Ullamcorper morbi tincidunt ornare massa eget egestas purus. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Pulvinar elementum integer enim neque volutpat. Nibh nisl condimentum id venenatis a.
 
-Feugiat nisl pretium fusce id velit ut. Interdum posuere lorem ipsum dolor sit amet consectetur. Pretium quam vulputate dignissim suspendisse in est ante in. Odio eu feugiat pretium nibh. In eu mi bibendum neque egestas. Posuere morbi leo urna molestie at elementum eu. Venenatis a condimentum vitae sapien pellentesque. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Tortor id aliquet lectus proin nibh nisl condimentum. Integer feugiat scelerisque varius morbi enim. Sed arcu non odio euismod lacinia at. Volutpat est velit egestas dui. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Tortor at risus viverra adipiscing at. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+*“Iron sharpens iron, so one man sharpens another.”
+Proverbs 27:17*
 
-Aliquet nibh praesent tristique magna sit amet. Convallis a cras semper auctor neque vitae tempus quam. Vel risus commodo viverra maecenas. Eu mi bibendum neque egestas congue quisque egestas. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Tempor orci eu lobortis elementum nibh. Quisque egestas diam in arcu cursus euismod quis viverra nibh. Amet nulla facilisi morbi tempus iaculis urna. Tortor at auctor urna nunc. Aliquet lectus proin nibh nisl condimentum id. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Aliquam id diam maecenas ultricies mi eget mauris. Eu nisl nunc mi ipsum faucibus vitae aliquet. Amet est placerat in egestas erat. Ultrices in iaculis nunc sed augue. Ac turpis egestas maecenas pharetra convallis. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla.
+In stating the obvious, irrespective of one’s stand on complementarianism
+or egalitarianism, the Bible is replete with instances wherein men were
+called by God to leadership roles more than women. Indeed, faithfulness
+and diligence in men’s headship role in the provision of the corporeal and
+spiritual needs of their respective families are expected of men. However,
+Christian men are likewise commanded to fulfill with the same dedication
+and intentness their roles in the church of which they are members.
 
-Neque ornare aenean euismod elementum. Urna id volutpat lacus laoreet non curabitur gravida arcu. Pulvinar proin gravida hendrerit lectus. Ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Orci dapibus ultrices in iaculis nunc sed. Dui vivamus arcu felis bibendum ut tristique et egestas. Adipiscing bibendum est ultricies integer quis. Imperdiet nulla malesuada pellentesque elit eget gravida. Velit egestas dui id ornare arcu. Et magnis dis parturient montes nascetur. Dolor sed viverra ipsum nunc aliquet.
+Speaking in love for the benefit of men in general, may I say that we at
+times get buttonholed by an event, by someone or by the Holy Spirit on our
+getting too preoccupied with our work, hobbies, sports, socializing, etc., to
+remind us of the unique role we all have in our local church.
+
+Originally named Men Of Bread, Men In Bread is the men’s ministry of
+BFHCF. I could only surmise that it was for the reason of its inappropriate
+acronym-“M-O-B” for a church ministry, thus it was renamed “MIB” after its
+brief hiatus by our late Senior Pastor Rev. Dr. Doy Castillo.
+
+Breadlehem, a housing project for our pastors, was MIB’s first cooperation
+with BFHCF after its regrouping. To date, we could count as MIB’s regular
+activities the following: the annual dental-medical missions, family fun
+day, inspirational talks, church repairs and renovations, and others. Being
+a CARE ministry, MIB also helps BFHCF members who is encountering a
+financial strait in their livelihoods with advices and interest-free loans; and
+grants scholarship to any deserving students with a promising potential of
+becoming an asset to the growth of the Church.
+
+Just recently, MIB had a graduating scholar, major in tribal evangelism, who
+is working with CCT Vision of Hope Christian School in a remote town of
+Cacawitan, Quezon in Palawan. We find that an interpersonal approach of
+evangelism applied has inarguably redounded greatly to the Church’s thrust
+of CULTIVATION among the indigents in our country’s boondocks.
+MIB also takes on the supporting role to other ministries who opt for a partnership in some activities. Acknowledging God in all our ways and means, MIB is careful not to shoehorn its own line of activities perfunctorily and unnecessarily; but always in response to the call and leading of the Holy Spirit.
+
+Much as we want all male BFHCF members to join us, please take note that
+only 18-year-old and above are Men-In-Bread eligibles. MIB is always in
+need of more of you, and many more as grist coming to the Lord’s mill in the
+exciting and busy days to come.
+
+*“Grace be unto you, and peace, from God our Father, and from the Lord
+Jesus Christ.” 1 Corinthians 1:3*

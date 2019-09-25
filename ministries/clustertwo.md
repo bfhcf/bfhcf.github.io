@@ -2,10 +2,58 @@
 layout: ministry
 ---
  
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris commodo quis imperdiet massa tincidunt. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Sodales neque sodales ut etiam sit amet. Mauris sit amet massa vitae tortor condimentum lacinia quis vel. Sed arcu non odio euismod lacinia at. Arcu risus quis varius quam quisque id diam vel quam. Vivamus arcu felis bibendum ut tristique et egestas quis ipsum. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Sodales neque sodales ut etiam sit amet nisl purus in. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Odio euismod lacinia at quis risus sed vulputate odio. Porta nibh venenatis cras sed. Augue lacus viverra vitae congue eu consequat. Sed odio morbi quis commodo. Potenti nullam ac tortor vitae. Ullamcorper morbi tincidunt ornare massa eget egestas purus. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Pulvinar elementum integer enim neque volutpat. Nibh nisl condimentum id venenatis a.
 
-Feugiat nisl pretium fusce id velit ut. Interdum posuere lorem ipsum dolor sit amet consectetur. Pretium quam vulputate dignissim suspendisse in est ante in. Odio eu feugiat pretium nibh. In eu mi bibendum neque egestas. Posuere morbi leo urna molestie at elementum eu. Venenatis a condimentum vitae sapien pellentesque. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Tortor id aliquet lectus proin nibh nisl condimentum. Integer feugiat scelerisque varius morbi enim. Sed arcu non odio euismod lacinia at. Volutpat est velit egestas dui. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Tortor at risus viverra adipiscing at. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+**Vision:**  
+To contribute in the strengthening of members' relationship with one another
+and to respond to the needs and situations that may arise from its members
+and to cater them with meaningful fellowship through various activities.
 
-Aliquet nibh praesent tristique magna sit amet. Convallis a cras semper auctor neque vitae tempus quam. Vel risus commodo viverra maecenas. Eu mi bibendum neque egestas congue quisque egestas. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Tempor orci eu lobortis elementum nibh. Quisque egestas diam in arcu cursus euismod quis viverra nibh. Amet nulla facilisi morbi tempus iaculis urna. Tortor at auctor urna nunc. Aliquet lectus proin nibh nisl condimentum id. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Aliquam id diam maecenas ultricies mi eget mauris. Eu nisl nunc mi ipsum faucibus vitae aliquet. Amet est placerat in egestas erat. Ultrices in iaculis nunc sed augue. Ac turpis egestas maecenas pharetra convallis. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla.
+**Mission:**  
+To glorify God by helping, nurturing and equipping the Cluster 2 members.
 
-Neque ornare aenean euismod elementum. Urna id volutpat lacus laoreet non curabitur gravida arcu. Pulvinar proin gravida hendrerit lectus. Ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Orci dapibus ultrices in iaculis nunc sed. Dui vivamus arcu felis bibendum ut tristique et egestas. Adipiscing bibendum est ultricies integer quis. Imperdiet nulla malesuada pellentesque elit eget gravida. Velit egestas dui id ornare arcu. Et magnis dis parturient montes nascetur. Dolor sed viverra ipsum nunc aliquet.
+**Application of Cultivate & Care in Cluster 2's Activities:**
+
+**Cultivate.** The true meaning of the word “Cultivate” is to prepare oneself for
+a specific use or learning to achieve a certain goal. It is to foster the growth of
+deepening our understanding of the “Words” of the Gospel through our doctrinal
+studies. The ministry also joins hands with various missions in our church such as
+medical and dental missions, bible studies and visitations, among others.
+
+Under this ministry, we are nurturing each member in the doctrinal studies
+of the church – ongoing of which is the Heidelberg doctrinal study which is
+being held every first and third Friday of the month and is being facilitated
+by Elder Chito Poblete.
+
+Our mission is to evangelize and spread God’s words to every member of
+this cluster and to encourage more people to join us. Our end goal is to
+create small bible study groups to share the Gospel so as to glorify God by
+preaching His holy word to others.
+
+If you are interested to join this ministry, please contact Sis. Rita Buendia at
+0995-4323610.
+
+**Care (Tulong Dunong).** The Lord said in Galatians 6:10, “let us do good to
+all people, especially to those who belong to the family of believers”. This
+led to Cluster 2’s Care Group creation of “Tulong Dunong” that aims to help
+those who are passionate in their studies but are financially lacking.
+
+To date, the group has one (1) scholar this first semester, SY 2018-2019,
+receiving her everyday "baon" once a week while a group member talks to
+her about her studies and tries to guide her in her church life. The “baon”
+given to her comes from the Cluster 2 members who made pledges during
+the Cluster’s Quarterly Fellowship last April when the “Tulong Dunong”
+was introduced. The members who made pledges remained true to their
+promises; hence, a scholar was taken and chosen from the list of members.
+
+It is the hope of the group to be able to add another scholar and to see
+and finance her/him through college. It is also our prayer to be financially
+able to defray all expenses that will be incurred by the scholars especially
+graduation fees, and see the Cluster 2’s mission/vision come to fruition.
+
+Also, the group continues to encourage its other members to touch
+someone’s life and make a difference.
+
+If you want to be a part of this noble endeavor, please get in touch with any
+member of the Care group of Cluster 2 composed of Sis. Grace Orongan,
+Sis. Alma Caminade, Bro. Mario and Sis. Girlie Dizon and Sis. Kamea Dilao.
+To God be the glory!
