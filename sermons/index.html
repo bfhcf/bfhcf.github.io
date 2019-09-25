@@ -5,22 +5,69 @@ title: Sermons
 
 <div class="material-background"></div>
 <div class="container text-center mb-6">
-    <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Sermons</h1>
-    <p class="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">The Word of God endures forever, be it in the past, present, or future. Choose a sermon below to watch content from previous church services.</p>
+    <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
+        Sermons</h1>
+    <p class="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
+        The Word of God endures forever, be it in the past, present, or future. Choose a sermon below to watch content
+        from previous church services.</p>
 </div>
 <div class="container">
-    <div class="row masonry-container">
-        {% for sermon in site.categories.sermons %}
-        <div class="col-md-6 masonry-item wow fadeInUp animation-delay-2">
-            <article class="card primary mb-4 wow materialUp animation-delay-5">
-                <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="{{ sermon.youtube_id }}"></div>
-                <div class="card-body">
-                    <h2><a href="https://www.youtube.com/watch?v={{ sermon.youtube_id }}" target="_blank">{{ sermon.title }}</a></h2>
-                    <p>{{ sermon.content }}</p>
-
-                </div>
-            </article>
-        </div>
-        {% endfor %}
+    <div class="row masonry-container" id="sermons-container">
     </div>
 </div> <!-- container -->
+
+<script type="text/javascript">
+
+    function getUrl(nextPageToken) {
+        var mykey = "AIzaSyB0jD26yH4rBKKHEN1tRQsUb9D8LpQfDRQ",
+            playListID = "PL3fxV8Qu8p5QEMebIyXiY2N1K_TovgFFp",
+            npt = nextPageToken;
+        return `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=10&playlistId=${playListID}&key=${mykey}&${npt ? 'pageToken='+npt : ''}`;
+    }
+
+    function apiCall(nextPageToken, items = []) {
+        fetch(getUrl(nextPageToken))
+            .then(response => {
+                return response.json();
+            })
+            .then(function (response) {
+                if (response.error) {
+                    console.log(response.error)
+                } else {
+                    items.push(response.items);
+                    if (response.nextPageToken) {
+                        apiCall(response.nextPageToken, items);
+                    } else {
+                        responseHandler(items.flat());
+                        Array.from(document.querySelectorAll(".js-player")).map(function (t) {
+                            return new Plyr(t)
+                        });
+                        var container = $('.masonry-container');
+                        container.masonry("reloadItems").masonry("layout");
+                    }
+                }
+            });
+    }
+
+    function responseHandler(items) {
+        for (let item of items.reverse()) {
+
+            const div = document.createElement('div');
+            div.className = "col-md-6 masonry-item wow fadeInUp animation-delay-2";
+            div.innerHTML = '<article class="card primary mb-4 wow materialUp animation-delay-5">\n' +
+                '                <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="' + item.snippet.resourceId.videoId + '"></div>\n' +
+                '                <div class="card-body">\n' +
+                '                    <h2><a href="https://www.youtube.com/watch?v=' + item.snippet.resourceId.videoId + '" target="_blank">' + item.snippet.title + '</a></h2>\n' +
+                '                    <p style="white-space: pre-line;">' + item.snippet.description + '</p>\n' +
+                '\n' +
+                '                </div>\n' +
+                '            </article>';
+
+
+            document.getElementById('sermons-container').appendChild(div);
+        }
+    }
+
+    apiCall();
+
+</script>
