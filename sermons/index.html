@@ -22,7 +22,7 @@ title: Sermons
         var mykey = "AIzaSyB0jD26yH4rBKKHEN1tRQsUb9D8LpQfDRQ",
             playListID = "PL3fxV8Qu8p5QEMebIyXiY2N1K_TovgFFp",
             npt = nextPageToken;
-        return `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=10&playlistId=${playListID}&key=${mykey}&${npt ? 'pageToken='+npt : ''}`;
+        return `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=${playListID}&key=${mykey}&${npt ? 'pageToken='+npt : ''}`;
     }
 
     function apiCall(nextPageToken, items = []) {
