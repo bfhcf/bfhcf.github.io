@@ -3,10 +3,10 @@
 
         $(".cgm-alternate-img").hover(
             function(){
-                $(this).attr("src", "/assets/img/ministries/cgm-transparent.png");
+                $(this).attr("src", "{{ site.ministry_logo_url }}/cgm-transparent.png");
             }
             ,function() {
-                $(this).attr("src", "/assets/img/ministries/cgm.png");
+                $(this).attr("src", "{{ site.ministry_logo_url }}/cgm.png");
             }
         );
     });

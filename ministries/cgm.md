@@ -1,5 +1,6 @@
 ---
 layout: ministry
+form_url: https://bit.ly/bfhcf-cgm
 ---
  
 We are CGM: Happy inside out!

@@ -17,7 +17,7 @@ layout: default
                 {% else %}
                     {% assign ministryLogo = ministry.slug %}
                 {% endif %}
-                <img src="/assets/img/ministries/{{ ministryLogo }}.png" alt="..." class="img-fluid text-center" style="filter: brightness(0) invert(1);">
+                <img src="{{ site.ministry_logo_url }}/{{ ministryLogo }}.png" alt="..." class="img-fluid text-center" style="filter: brightness(0) invert(1);">
             </div>
         </div>
         <div class="row">
@@ -25,6 +25,10 @@ layout: default
                 <div class="card-body">
                     <h3 class="color-primary">About the Ministry</h3>
                     {{content}}
+
+                    {% if page.form_url %}
+                        <a href="{{ page.form_url }}" class="btn btn-xlg btn-raised btn-primary bg-{{ ministry.color }}" target="_blank"><i class="zmdi zmdi-arrow-right"></i>  Join Us!</a>
+                    {% endif %}
                 </div>
             </div>
         </div>

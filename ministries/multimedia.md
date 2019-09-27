@@ -1,5 +1,6 @@
 ---
 layout: ministry
+form_url: https://bit.ly/bfhcf-mmm 
 ---
  
 The Multimedia Ministry is a dynamic group of individuals with a heart to

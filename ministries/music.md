@@ -1,5 +1,6 @@
 ---
 layout: ministry
+form_url: https://bit.ly/bfhcf-music 
 ---
  
 The Vision of the Praise and Worship Ministry is that worshipers would
