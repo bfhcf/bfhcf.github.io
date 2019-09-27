@@ -13,7 +13,10 @@ title: Events
         <div class="col">
             <div class="row masonry-container">
 
+                {% assign today_date = 'now' | date: '%Y%m%d' %}
                 {% for event in site.categories.events %}
+                {% assign event_date = event.event_date | date: '%Y%m%d' %}
+                {% if event_date >= today_date or event_date == nil %}
                 {% assign ministry = site.data.ministries | where: "slug", event.ministry | first  %}
                 <div class="col-lg-6 col-md-6 masonry-item wow fadeInUp animation-delay-2">
                     <div class="card">
@@ -42,6 +45,7 @@ title: Events
                         </div>
                     </div>
                 </div> <!-- item -->
+                {% endif %}
                 {% endfor %}</p>
             </div>
         </div>
