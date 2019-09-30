@@ -320,7 +320,7 @@ Of course not.
 
 But I would like to show you something else.
 
-<img src="{{ site.devotion_images_url }}/covenant_church/covenant_church_6.jpg" class="img-fluid mt-5 mb-5"/>
+<img src="https://res.cloudinary.com/bfhcf/image/upload/c_scale,w_300/v1569813819/devotions/covenant_church/covenant_church_6.png" class="img-fluid mt-5 mb-5"/>
 
 Here is a rundown building and there’s
 construction at the front—probably the
@@ -333,7 +333,7 @@ industrial part of Italy.
 
 But look at what’s inside.
 
-<img src="{{ site.devotion_images_url }}/covenant_church/covenant_church_5.jpg" class="img-fluid mt-5 mb-5"/>
+<img src="https://res.cloudinary.com/bfhcf/image/upload/c_scale,h_740,w_970/v1569813819/devotions/covenant_church/covenant_church_5.png" class="img-fluid mt-5 mb-5"/>
 
 What’s inside is a church of 25 to 30 people studying intently, verse by verse, and
 doing an exposition of scripture. When we
@@ -429,7 +429,7 @@ with Theological positions—which are false—and they try to use Scripture
 to justify their false Theological positions. In other words, there are false
 teachers. However, we still experience persecution today.
 
-<img src="{{ site.devotion_images_url }}/covenant_church/covenant_church_7.jpg" class="img-fluid mt-5 mb-5"/>
+<img src="https://res.cloudinary.com/bfhcf/image/upload/c_scale,h_500/v1569814331/devotions/covenant_church/covenant_church_7.png" class="img-fluid mt-5 mb-5"/>
 
 This is a picture taken about
 three weeks ago in the garden of South
