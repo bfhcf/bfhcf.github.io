@@ -2,6 +2,7 @@
 layout: default
 ---
 {% assign member_image = page.author | replace: ' ', '_' %}
+{% assign member = site.data.members | where: "name", page.author | first %}
 <div class="container">
     <div class="row">
         <div class="col-lg-8">
@@ -26,8 +27,7 @@ layout: default
                 </div>
                 <div class="card-body pt-4 text-center">
                     <h3 class="color-primary">About the author</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur alter adipisicing elit. Facilis, natuse inse voluptates
-                        officia repudiandae beatae magni es magnam autem molestias.</p>
+                    <p>{{ member.about }}</p>
                 </div>
             </div>
             <div class="card card-primary animated fadeInUp animation-delay-7">

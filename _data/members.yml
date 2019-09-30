@@ -1,0 +1,61 @@
+  - name: Rev. Rizal Asuncion
+    role: Senior Pastor
+    category: pastors
+    about: Pastor Rizal is the current Senior Pastor of the church.
+  - name: Rev. Saubel Salamat
+    role: Associate Pastor
+    category: pastors
+  - name: Rev. Vic San Juan
+    role: Associate Pastor
+    category: pastors
+  - name: Rev. Dr. Norman Manlapaz
+    role: Associate Pastor
+    category: pastors
+    about: Pastor Norman Manlapaz is an associate pastor of the church. He is also a surgeon.
+  - name: Rev. Jeffrey Choa
+    role: Associate Pastor
+    category: pastors
+  - name: Rev. Edmon Ngo
+    role: Youth Pastor
+    category: pastors
+    about: Pastor Edmon is the youngest ordained pastor of the church and is the youth pastor. He is a businessman.
+  - name: Elder Mario Bunag
+    role: Pulpit Pastor
+    category: pastors
+  - name: Rev. Dr. Cornelio Castillo
+    role: Former Senior Pastor
+    category: pastors
+
+
+  - name: Tito Tolentino
+    category: elders
+  - name: Mario Bunag
+    category: elders
+  - name: Ed Callanta
+    category: elders
+  - name: Teodoro Guerrero, Jr
+    category: elders
+  - name: Rev. Jeffrey Choa
+    category: elders
+
+  - name: Richard Tan
+    category: deacons
+  - name: Ferdie Parian
+    category: deacons
+  - name: Russky Olivares
+    category: deacons
+  - name: Elizabeth Gutierrez
+    category: deacons
+  - name: Tess Alegata
+    category: deacons
+  - name: Grace Isip
+    category: deacons
+  - name: Angel Joaquin
+    category: deacons
+  - name: Dino Poblete
+    category: deacons
+    about: Dino is an on-term deacon of the church. He is a worship leader and also helps out in the multimedia ministry. He is also part of the core of the Young People's Fellowship Ministry who once in a while is given an opportunity speak. Dino works as a software engineer.
+
+  - name: Paolo Rivera
+    role: Ministry Coordinator
+    about: Paolo is an off-term deacon and is the current ministry coordinator of the church.

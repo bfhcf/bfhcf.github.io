@@ -21,7 +21,7 @@
             </div>
             <div class="col-lg-5 col-md-7 ms-footer-col ms-footer-alt-color">
                 <div class="ms-footbar-block">
-                    <h3 class="ms-footbar-title text-center mb-2">Last Devotions</h3>
+                    <h3 class="ms-footbar-title text-center mb-2">Latest Devotions</h3>
                     <div class="ms-footer-media">
                         {% for devotion in site.categories.devotions | limit:3 | sort: 'date' | reverse %}
                         {% assign member_image = devotion.author | replace: " ", "_" %}
@@ -35,6 +35,7 @@
                                 <h4 class="media-heading"><a href="{{ devotion.url }}">{{ devotion.title }}</a></h4>
                                 <div class="media-footer">
                                     <span><i class="zmdi zmdi-time color-bfhcf-cyan-light"></i> {{ devotion.date | date_to_string }}</span>
+                                    <span><i class="zmdi zmdi-account color-bfhcf-cyan-light"></i> {{ devotion.author }}</span>
                                 </div>
                             </div>
                         </div>
