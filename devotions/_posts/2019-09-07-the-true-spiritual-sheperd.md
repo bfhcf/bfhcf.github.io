@@ -1,11 +1,11 @@
 ---
 layout: devotion
 title: The True Spiritual Shepherd
-author: Rev. Jeffrey Choa
+author: Rev. Rizal Asuncion
 ---
 Every Christian is a spiritual or a covenant shepherd. You and I, fellow members of Bread From Heaven Christian Fellowship, are all called to be spiritual or covenant shepherds. Not only pastors, consistory members, ministry overseers, or heads are shepherds but every and all Christians are spiritual or covenant shepherds.
 
-What is a spiritual shepherd?
+**What is a spiritual shepherd?**
 
 A spiritual shepherd is one who leads spiritual sheep to follow the great Shepherd, Jesus Christ.
 
@@ -72,11 +72,12 @@ Paul was a great spiritual shepherd. We can learn in Chapter 3 of 1
 Thessalonians some more of the qualities of a true spiritual shepherd so that,
 in learning, we model upon him.
 
-What are these qualities of a covenant and spiritual shepherd that we learn in
-1 Thessalonians 3?
+**What are these qualities of a covenant and spiritual shepherd that we learn in
+1 Thessalonians 3?**
 
-I. THE SPIRITUAL SHEPHERD LOVES HIS FLOCK WITH
-AGAPE SACRIFICIAL LOVE. (vv.1-5)
+**I. THE SPIRITUAL SHEPHERD LOVES HIS FLOCK WITH
+AGAPE SACRIFICIAL LOVE. (vv.1-5)**
+
 3:1 Therefore when we could endure it no longer, we thought it best to be
 left behind at Athens alone, 2 and we sent Timothy, our brother and God's
 fellow worker in the gospel of Christ, to strengthen and encourage you as
@@ -139,7 +140,8 @@ No means of long-distance communication were available then.
 Paul loved the church greatly and was deeply concerned about the
 persecution and what happened to the church.
 
-What was Paul most concerned with?
+**What was Paul most concerned with?**
+
 a. Paul was concerned most about their faith.
 v2: 2 and we sent Timothy, our brother and God's fellow worker in the gospel
 of Christ, to strengthen and encourage you as to your faith,
@@ -227,8 +229,9 @@ Truly, as Paul being a good spiritual shepherd loving his flock, we too
 must be good spiritual shepherds—loving our sheep assigned to us and
 for one another.
 
-II. A TRUE SPIRITUAL SHEPHERD ENSURES THE WELL
-BEING OF HIS FLOCK. (vv6-9) 
+**II. A TRUE SPIRITUAL SHEPHERD ENSURES THE WELL
+BEING OF HIS FLOCK. (vv6-9)**
+
 “6
 But now that Timothy has come to us from you, and has brought us good news
 of your faith and love, and that you always think kindly of us, longing to see us
@@ -280,8 +283,9 @@ A spiritual leader rejoices, as well, when he or she affirms that shepherds
 remain faithful to the Lord despite the many and various trials, difficulties, and
 enemies in the world. We rejoice when we see our sheep grow spiritually.
 
-III. A TRUE SPIRITUAL SHEPHERD PRAYS FOR HIS FLOCK.
-(vv.10-13)
+**III. A TRUE SPIRITUAL SHEPHERD PRAYS FOR HIS FLOCK.
+(vv.10-13)**
+
 3:10: as we night and day keep praying most earnestly that we may see your
 face, and may complete what is lacking in your faith?
 
@@ -344,7 +348,7 @@ shepherds and lead our sheep or flock to be firm and strong in their faith
 because our Lord is coming, and we must be blameless and holy in His name
 to receive Him.
 
-SUMMARY:
+**SUMMARY:**
 
 All of us Christians are spiritual or covenant shepherds.
 
@@ -357,7 +361,7 @@ Thessalonians 3.
 
 3. A spiritual shepherd prays for his flock.
 
-APPLICATION:
+**APPLICATION:**
 
 People of God, we are all sheep of our great Shepherd, our Lord Jesus Christ.
 But He calls us His spiritual shepherds, as well, to care and nourish whom He

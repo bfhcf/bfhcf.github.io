@@ -24,10 +24,11 @@
                     <h3 class="ms-footbar-title text-center mb-2">Last Devotions</h3>
                     <div class="ms-footer-media">
                         {% for devotion in site.categories.devotions | limit:3 | sort: 'date' | reverse %}
+                        {% assign member_image = devotion.author | replace: " ", "_" %}
                         <div class="media">
                             <div class="media-left media-middle">
                                 <a href="{{ devotion.url }}">
-                                    <img class="media-object media-object-circle media-object-circle-md" src="/assets/img/members/rev-jeffrey-choa.jpg" alt="...">
+                                    <img class="media-object media-object-circle media-object-circle-md" src="{{ site.member_images_url }}/{{ member_image }}.jpg" alt="...">
                                 </a>
                             </div>
                             <div class="media-body">

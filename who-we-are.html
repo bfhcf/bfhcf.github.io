@@ -101,15 +101,15 @@ title: Who We Are
     </div>
     <div class="card mt-6 wow fadeInUp">
         <div class="card-body card-body-big">
-            <h3 class="text-center fw-500 mb-4">Consistory</h3>
+            <h3 class="text-center fw-500 mb-4">Ordained Pastors</h3>
 
-            <h3 class="right-line right-line-white mt-4 fw-400 color-primary">Ordained Pastors</h3>
             <div class="row d-flex justify-content-center">
                 {% for pastor in site.data.consistory.pastors %}
-                <div class="col-lg-3 col-md-6">
+                {% assign image_name = pastor.name | replace: " ", "_" %}
+                <div class="col-lg-4 col-md-6">
                     <div class="card card-flat wow zoomInUp">
                         <div>
-                            <img src="assets/img/members/avatar.jpg" alt="..." class="img-avatar-circle img-avatar-circle-lg">
+                            <img src="{{ site.member_images_url }}/{{ image_name }}.jpg" alt="..." class="img-avatar-circle img-avatar-circle-lg">
                         </div>
                         <div class="card-body pt-6 text-center">
                             <h4 class="color-primary">
@@ -121,40 +121,6 @@ title: Who We Are
                             <h5 class="mt-0">
                                 {{ pastor.role }}
                             </h5>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-
-            <h3 class="right-line right-line-white mt-4 fw-400 color-primary">Board of Elders</h3>
-            <div class="row d-flex justify-content-center">
-                {% for elder in site.data.consistory.elders  %}
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-flat wow zoomInUp">
-                        <div>
-                            <img src="assets/img/members/avatar.jpg" alt="..." class="img-avatar-circle img-avatar-circle-lg">
-                        </div>
-                        <div class="card-body pt-6 text-center">
-                            <h4 class="color-primary">{{ elder.name }}</h4>
-
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-
-            <h3 class="right-line right-line-white mt-4 fw-400 color-primary">Board of Deacons</h3>
-            <div class="row d-flex justify-content-center">
-                {% for deacon in site.data.consistory.deacons  %}
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-flat wow zoomInUp">
-                        <div>
-                            <img src="assets/img/members/avatar.jpg" alt="..." class="img-avatar-circle img-avatar-circle-lg">
-                        </div>
-                        <div class="card-body pt-6 text-center">
-                            <h4 class="color-primary">{{ deacon.name }}</h4>
-
                         </div>
                     </div>
                 </div>

@@ -2,11 +2,19 @@ pastors:
   - name: Rev. Rizal Asuncion
     role: Senior Pastor
   - name: Rev. Saubel Salamat
+    role: Associate Pastor
   - name: Rev. Vic San Juan
+    role: Associate Pastor
   - name: Rev. Dr. Norman Manlapaz
+    role: Associate Pastor
   - name: Rev. Jeffrey Choa
+    role: Associate Pastor
   - name: Rev. Edmon Ngo
+    role: Youth Pastor
+  - name: Elder Mario Bunag
+    role: Pulpit Pastor
   - name: Rev. Dr. Cornelio Castillo
+    role: Former Senior Pastor
 
 elders:
   - name: Tito Tolentino

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+{% assign member_image = page.author | replace: ' ', '_' %}
 <div class="container">
     <div class="row">
         <div class="col-lg-8">
@@ -9,8 +9,8 @@ layout: default
                 <div class="card-body card-body-big">
                     <h1 class="no-mt">{{ page.title }}</h1>
                     <div class="mb-4">
-                        <img src="/assets/img/members/rev-jeffrey-choa.jpg" alt="..."
-                             class="rounded-circle mr-1 img-sm"> by <a href="javascript:void(0)">{{ page.author }}</a>
+                        <img src="{{ site.member_images_url }}/{{ member_image }}.jpg" alt="..."
+                             class="rounded-circle mr-1 img-sm"> by {{ page.author }}
                         <span class="ml-1 d-none d-sm-inline"><i class="zmdi zmdi-time mr-05 color-info"></i> <span
                                 class="color-medium-dark">{{ page.date | date_to_string }}</span></span>
                     </div>
@@ -22,7 +22,7 @@ layout: default
             <div class="card animated fadeInUp animation-delay-7">
                 <div class="ms-hero-bg-info ms-hero-img-mountain">
                     <h3 class="color-white index-1 text-center no-m pt-4">{{ page.author }}</h3>
-                    <img src="/assets/img/members/rev-jeffrey-choa.jpg" alt="..." class="img-avatar-circle">
+                    <img src="{{ site.member_images_url }}/{{ member_image }}.jpg" alt="..." class="img-avatar-circle">
                 </div>
                 <div class="card-body pt-4 text-center">
                     <h3 class="color-primary">About the author</h3>
@@ -61,11 +61,12 @@ layout: default
                             {% endfor %}
 
                             {% if previous %}
+                            {% assign previous_member_image = previous.author | replace: ' ', '_' %}
                             <div class="media mb-2">
                                 <div class="media-left media-middle">
                                     <a href="{{ previous.url }}">
                                         <img class="d-flex mr-3 media-object media-object-circle"
-                                             src="/assets/img/members/avatar.jpg" alt="...">
+                                             src="{{ site.member_images_url }}/{{ previous_member_image }}.jpg" alt="...">
                                     </a>
                                 </div>
                                 <div class="media-body">
@@ -77,11 +78,12 @@ layout: default
                             </div>
                             {% endif %}
                             {% if next %}
+                            {% assign next_member_image = next.author | replace: ' ', '_' %}
                             <div class="media mb-2">
                                 <div class="media-left media-middle">
                                     <a href="{{ next.url }}">
                                         <img class="d-flex mr-3 media-object media-object-circle"
-                                             src="/assets/img/members/avatar.jpg" alt="...">
+                                             src="{{ site.member_images_url }}/{{ next_member_image }}.jpg" alt="...">
                                     </a>
                                 </div>
                                 <div class="media-body">
@@ -93,11 +95,12 @@ layout: default
                             </div>
                             {% endif %}
                             {% if nextnext %}
+                            {% assign next_next_member_image = nextnext.author | replace: ' ', '_' %}
                             <div class="media">
                                 <div class="media-left media-middle">
                                     <a href="{{ nextnext.url }}">
                                         <img class="d-flex mr-3 media-object media-object-circle"
-                                             src="/assets/img/members/avatar.jpg" alt="...">
+                                             src="{{ site.member_images_url }}/{{ next_next_member_image }}.jpg" alt="...">
                                     </a>
                                 </div>
                                 <div class="media-body">

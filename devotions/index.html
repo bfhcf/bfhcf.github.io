@@ -15,6 +15,7 @@ title: Devotions
 
             {% assign devotions = site.categories.devotions | limit:10 | sort: 'date' | reverse %}
             {% for devotion in devotions %}
+            {% assign member_image = devotion.author | replace: " ", "_" %}
             <article class="card wow fadeInLeft animation-delay-5 mb-4">
                 <div class="card-body overflow-hidden overflow-hidden">
                     <div class="row">
@@ -25,7 +26,7 @@ title: Devotions
                     </div>
                     <div class="row">
                         <div class="col-lg-8">
-                            <img src="/assets/img/members/rev-jeffrey-choa.jpg" alt="..." class="rounded-circle mr-1 img-sm"> by <a href="javascript:void(0)">Rev. Jeffrey Choa</a>
+                            <img src="{{ site.member_images_url }}/{{ member_image }}.jpg" alt="..." class="rounded-circle mr-1 img-sm"> by {{ devotion.author }}
                             <span class="ml-1 d-none d-sm-inline"><i class="zmdi zmdi-time mr-05 color-info"></i> <span class="color-medium-dark">{{ devotion.date | date_to_string}}</span></span>
                         </div>
                         <div class="col-lg-4 text-right">
