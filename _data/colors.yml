@@ -1,0 +1,34 @@
+  - name: bfhcf-red
+    hex: '#ff5139'
+  - name: bfhcf-darkred
+    hex: '#d94531'
+  - name: bfhcf-green
+    hex: '#58c31e'
+  - name: bfhcf-darkgreen
+    hex: '#3c8614'
+  - name: bfhcf-teal
+    hex: '#3b8686'
+  - name: bfhcf-darkteal
+    hex: '#2c6565'
+  - name: bfhcf-purple
+    hex: '#906090'
+  - name: bfhcf-darkpurple
+    hex: '#6c486c'
+  - name: bfhcf-yellow
+    hex: '#ffdf3e'
+  - name: bfhcf-darkyellow
+    hex: '#cdb330'
+  - name: bfhcf-orange
+    hex: '#fea51b'
+  - name: bfhcf-darkorange
+    hex: '#d08716'
+  - name: bfhcf-cyan
+    hex: '#00cbcb'
+  - name: bfhcf-darkcyan
+    hex: '#009191'
+  - name: bfhcf-lime
+    hex: '#a1de45'
+  - name: bfhcf-black
+    hex: '#000000'
+  - name: bfhcf-darkblack
+    hex: '#000000'

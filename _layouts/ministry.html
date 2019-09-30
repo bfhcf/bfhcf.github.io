@@ -4,7 +4,8 @@ layout: default
 
 {% assign slug = page.url | split: "/" | last | remove: ".html" %}
 {% assign ministry = site.data.ministries | where: "slug", slug | first  %}
-{% assign darkColorSlugs = "cgm,snl" | split: "," %}
+{% assign dark_color_slugs = "cgm,snl" | split: "," %}
+{% assign color = site.data.colors | where: "name", ministry.color | first %}
 <div class="ms-hero-page-override ms-hero-bg-primary ms-hero-img-church" style="padding:100px;">
 
 </div>
@@ -40,3 +41,9 @@ layout: default
 </div> <!-- container -->
 
 {% include cgm-script.html %}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.ministry-tint').append('<style>.ministry-tint:before{background:{{color.hex}} !important; opacity: 0.2;}</style>');
+    })
+
+</script>
