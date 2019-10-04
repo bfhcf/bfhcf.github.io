@@ -37,7 +37,7 @@ title: Events
                                 {% assign ministryColor = 'primary' %}
                             {% endunless %}
 
-                            <div class="btn-circle btn-circle-raised btn-card-float btn-circle-{{ ministryColor }} wow zoomInDown index-2"><img src="https://res.cloudinary.com/bfhcf/image/upload/v1569560649/ministries/{{ ministryLogo }}.png" alt="" style="filter: brightness(0) invert(1); width: 40px;"></div>
+                            <div class="btn-circle btn-circle-raised btn-card-float btn-circle-{{ ministryColor }} wow zoomInDown index-2"><img src="{{ site.ministry_logo_url }}/{{ ministryLogo }}.png" alt="" style="filter: brightness(0) invert(1); width: 40px;"></div>
                             <h4 class="color-bfhcf-teal">{{ event.title }} {% if event.speaker %} by {{ event.speaker }} {% endif %} </h4>
 
                             {{ event.content }}
