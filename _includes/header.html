@@ -32,14 +32,31 @@
             <ul class="navbar-nav">
                 {% assign pageUrl = page.url | remove: ".html" %}
                 {% for link in site.navigation %}
-                    {% assign active = nil %}
-                    {% if (pageUrl  == link.url %}
+                {% assign active = nil %}
+                {% if (pageUrl  == link.url) %}
+                    {% assign active = 'active' %}
+                {% endif %}
+                {% if link.navtabs %}
+                    {% for navtab in link.navtabs %}
+                        {% if (pageUrl  == navtab.url) %}
                         {% assign active = 'active' %}
-                    {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
 
                 <li class="nav-item dropdown {{ active }}">
-                    <a href="{{ link.url }}" class="nav-link animated fadeIn animation-delay-7" role="button" aria-haspopup="true" aria-expanded="false" data-name="home">{{ link.text }}</a>
+                    {% if link.navtabs %}
+                    <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-8" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="{{ link.data_name }}">{{ link.text }} <i class="zmdi zmdi-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        {% for navtab in link.navtabs %}
+                        <li><a class="dropdown-item" href="{{ navtab.url }}"><i class="zmdi {{navtab.icon}}"></i> {{ navtab.text }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+                    <a href="{{ link.url }}" class="nav-link animated fadeIn animation-delay-7" role="button" aria-haspopup="true" aria-expanded="false" data-name="{{ link.data_name }}">{{ link.text }}</a>
+                    {% endif %}
                 </li>
+
                 {% endfor %}
             </ul>
         </div>
