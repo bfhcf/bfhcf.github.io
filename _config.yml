@@ -34,7 +34,7 @@ ministry_logo_url: https://res.cloudinary.com/bfhcf/image/upload/v1571708030/log
 church_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1569562247/church
 other_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1569562307/others
 member_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1569806929/members
-devotion_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1569812494/devotions
+devotion_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1569814331/devotions
 
 # Build settings
 markdown: kramdown
@@ -48,27 +48,44 @@ navigation:
   - text: Home
     url: /
     icon: zmdi-home
+    data_name: home
   - text: Events
     url: /events/
     icon: zmdi-calendar
+    data_name: events
   - text: Sermons
     url: /sermons/
     icon: zmdi-videocam
+    data_name: sermons
   - text: Devotions
     url: /devotions/
     icon: zmdi-book
+    data_name: devotions
   - text: Ministries
     url: /ministries/
     icon: zmdi-view-compact
+    data_name: ministries
   - text: Who We Are
-    url: /who-we-are
     icon: zmdi-face
+    data_name: who-we-are
+    navtabs:
+      - text: About Us
+        url: /who-we-are
+        icon: zmdi-face
+      - text: Our Beliefs
+        url: /our-beliefs
+        icon: zmdi-book
+      - text: Church History
+        url: /church-history
+        icon: zmdi-calendar
   - text: Give
     url: /give/
     icon: zmdi-money-box
+    data_name: give
   - text: Contact
     url: /contact
     icon: zmdi-phone
+    data_name: contact
 
 
 # Exclude from processing.
