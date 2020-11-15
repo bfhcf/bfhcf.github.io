@@ -39,34 +39,4 @@ title: Church History
             </li>
         </ul>
     </div>
-    <div class="card mt-6 wow fadeInUp">
-        <div class="card-body card-body-big">
-            <h3 class="text-center fw-500 mb-4">Ordained Pastors</h3>
-
-            <div class="row d-flex justify-content-center">
-                {% assign pastors = site.data.members | where: "category", "pastors" %}
-                {% for pastor in pastors  %}
-                {% assign image_name = pastor.name | replace: " ", "_" %}
-                <div class="col-lg-4 col-md-6">
-                    <div class="card card-flat wow zoomInUp">
-                        <div>
-                            <img src="{{ site.member_images_url }}/{{ image_name }}.jpg" alt="..." class="img-avatar-circle img-avatar-circle-lg">
-                        </div>
-                        <div class="card-body pt-6 text-center">
-                            <h4 class="color-primary">
-                                {{ pastor.name }}
-                                {% if pastor.name  == "Rev. Dr. Cornelio Castillo" %}
-                                <img src="assets/img/cross.png" style="width: 20px;">
-                                {% endif %}
-                            </h4>
-                            <h5 class="mt-0">
-                                {{ pastor.role }}
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
 </div>

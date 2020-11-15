@@ -32,7 +32,7 @@ tel_number2: +63 2 807-7374
 logo_url: https://res.cloudinary.com/bfhcf/image/upload/v1569561434/logos
 ministry_logo_url: https://res.cloudinary.com/bfhcf/image/upload/v1571708030/logos/ministries
 church_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1569562247/church
-other_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1569562307/others
+other_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1605454998/others
 member_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1569806929/members
 devotion_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1569814331/devotions
 
@@ -66,6 +66,7 @@ navigation:
     icon: zmdi-view-compact
     data_name: ministries
   - text: Who We Are
+    url: /who-we-are
     icon: zmdi-face
     data_name: who-we-are
     navtabs:
