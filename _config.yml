@@ -26,8 +26,8 @@ youtube_channel_url: https://www.youtube.com/bfhcf
 
 address: Concha Cruz corner Poblete St. (Phase V)
 city: BF Homes, Las Piñas, Philippines
-tel_number: +63 2 807 5689
-tel_number2: +63 2 807-7374
+tel_number: +63 2 8807 5689
+tel_number2: +63 2 8807-7374
 
 logo_url: https://res.cloudinary.com/bfhcf/image/upload/v1569561434/logos
 ministry_logo_url: https://res.cloudinary.com/bfhcf/image/upload/v1571708030/logos/ministries
@@ -57,10 +57,10 @@ navigation:
     url: /sermons/
     icon: zmdi-videocam
     data_name: sermons
-  - text: Devotions
-    url: /devotions/
-    icon: zmdi-book
-    data_name: devotions
+#  - text: Devotions
+#    url: /devotions/
+#    icon: zmdi-book
+#    data_name: devotions
   - text: Ministries
     url: /ministries/
     icon: zmdi-view-compact

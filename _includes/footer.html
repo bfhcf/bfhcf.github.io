@@ -1,7 +1,8 @@
 <aside class="ms-footbar">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 ms-footer-col">
+<!--            <div class="col-lg-4 ms-footer-col">-->
+            <div class="col-lg-9 ms-footer-col">
                 <div class="ms-footbar-block">
                     <h3 class="ms-footbar-title">Sitemap</h3>
                     <ul class="list-unstyled ms-footer-list ms-icon-list three_cols bfhcf-orange">
@@ -19,30 +20,30 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-7 ms-footer-col ms-footer-alt-color">
-                <div class="ms-footbar-block">
-                    <h3 class="ms-footbar-title text-center mb-2">Latest Devotions</h3>
-                    <div class="ms-footer-media">
-                        {% for devotion in site.categories.devotions | limit:3 | sort: 'date' | reverse %}
-                        {% assign member_image = devotion.author | replace: " ", "_" %}
-                        <div class="media">
-                            <div class="media-left media-middle">
-                                <a href="{{ devotion.url }}">
-                                    <img class="media-object media-object-circle media-object-circle-md" src="{{ site.member_images_url }}/{{ member_image }}.jpg" alt="...">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading"><a href="{{ devotion.url }}">{{ devotion.title }}</a></h4>
-                                <div class="media-footer">
-                                    <span><i class="zmdi zmdi-time color-bfhcf-cyan-light"></i> {{ devotion.date | date_to_string }}</span>
-                                    <span><i class="zmdi zmdi-account color-bfhcf-orange-light"></i> {{ devotion.author }}</span>
-                                </div>
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
+<!--            <div class="col-lg-5 col-md-7 ms-footer-col ms-footer-alt-color">-->
+<!--                <div class="ms-footbar-block">-->
+<!--                    <h3 class="ms-footbar-title text-center mb-2">Latest Devotions</h3>-->
+<!--                    <div class="ms-footer-media">-->
+<!--                        {% for devotion in site.categories.devotions | limit:3 | sort: 'date' | reverse %}-->
+<!--                        {% assign member_image = devotion.author | replace: " ", "_" %}-->
+<!--                        <div class="media">-->
+<!--                            <div class="media-left media-middle">-->
+<!--                                <a href="{{ devotion.url }}">-->
+<!--                                    <img class="media-object media-object-circle media-object-circle-md" src="{{ site.member_images_url }}/{{ member_image }}.jpg" alt="...">-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="media-body">-->
+<!--                                <h4 class="media-heading"><a href="{{ devotion.url }}">{{ devotion.title }}</a></h4>-->
+<!--                                <div class="media-footer">-->
+<!--                                    <span><i class="zmdi zmdi-time color-bfhcf-cyan-light"></i> {{ devotion.date | date_to_string }}</span>-->
+<!--                                    <span><i class="zmdi zmdi-account color-bfhcf-orange-light"></i> {{ devotion.author }}</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        {% endfor %}-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
             <div class="col-lg-3 col-md-5 ms-footer-col ms-footer-text-right">
                 <div class="ms-footbar-block">
                     <div class="ms-footbar-title">
@@ -70,7 +71,7 @@
 </aside>
 <footer class="ms-footer">
     <div class="container">
-        <p>Copyright &copy; {{site.title}} 2019</p>
+        <p>Copyright &copy; {{site.title}} 2020</p>
     </div>
 </footer>
 <div class="btn-back-top">
