@@ -4,6 +4,6 @@ title: Home
 ---
 
 {% include hero.html %}
-{% include services.html %}
+{% include online-services.html %}
 {% include home-about.html %}
 {% include home-video.html %}
