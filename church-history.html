@@ -6,37 +6,68 @@ title: Church History
 <div class="container">
     <div class="card card-body mt-6 card-body-big wow fadeInUp">
         <h2 class="text-center fw-500 mb-6">Church History</h2>
+
+        <section class="ms-component-section wow fadeInUp animation-delay-2 text-center">
+            <h3 class="text-center">
+                <div id="home-video-title"></div>
+            </h3>
+            <div class="card" id="home-video-container">
+            </div>
+        </section>
+
         <ul class="ms-timeline-left">
+            {% for entry in site.data.history %}
             <li class="ms-timeline-left-item wow fadeInUp">
-                <h4>Headline</h4>
+                <h4>{{ entry.title }}</h4>
                 <div class="ms-timeline-left-left">
-                    <h4 class="color-primary">Title</h4>
-                    <time class="ms-timeline-left-time">2015 - 2016</time>
+                    <h4 class="color-primary">{{ entry.date }}</h4>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Maecenas tempus tellus eget</li>
-                    <li>Donec pede justo ante</li>
-                </ul>
+                <p>{{ entry.description }}</p>
             </li>
-            <li class="ms-timeline-left-item wow fadeInUp">
-                <h4>Headline</h4>
-                <div class="ms-timeline-left-left">
-                    <h4 class="color-primary">Title</h4>
-                    <time class="ms-timeline-left-time">2015 - 2016</time>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-            </li>
-            <li class="ms-timeline-left-item wow fadeInUp">
-                <h4>Headline</h4>
-                <div class="ms-timeline-left-left">
-                    <h4 class="color-primary">Title</h4>
-                    <time class="ms-timeline-left-time">2015 - 2016</time>
-                </div>
-                <p>Cumque pariatur eos culpa, tempore eaque necessitatibus earum ut, aperiam, adipisci, laudantium tempora ipsa harum quae sapiente rerum doloribus voluptatum. Obcaecati iusto quibusdam nesciunt unde, suscipit! Dolorem error.</p>
-                <p>Iure quae, voluptates laudantium. Eaque fugiat labore aliquam, explicabo, iste nam modi esse. Esse ea, perspiciatis alias non natus reprehenderit id omnis.</p>
-            </li>
+            {% endfor %}
         </ul>
     </div>
 </div>
+
+<script type="text/javascript">
+
+	function getUrl() {
+		var mykey = "AIzaSyD_gCDXfRlijkynbONfPB3YrEuIuIQwDyc",
+			videoId = "fYf7AiYzZ1c";
+
+		return `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${mykey}`;
+	}
+
+	$('.home-video-title').ready(function() {
+		fetch(getUrl())
+		.then(response => {
+			return response.json();
+		})
+		.then(function (response) {
+			if (response.error) {
+				console.log(response.error)
+			} else {
+				responseHandler(response);
+				Array.from(document.querySelectorAll(".js-player")).map(function (t) {
+					return new Plyr(t)
+				});
+			}
+		});
+	});
+
+	function responseHandler(response) {
+		const items = response.items.reverse();
+		window.items = items;
+		for (let item of items) {
+
+			const titlediv = document.createElement('div');
+			titlediv.innerHTML = "<a href='http://youtube.com/watch?v="+item.id+"' target='_blank'>"+ item.snippet.title +"</a>"
+			document.getElementById('home-video-title').appendChild(titlediv);
+
+			const videodiv = document.createElement('div');
+			videodiv.innerHTML = '<div data-plyr-provider="youtube" data-plyr-embed-id="'+ item.id +'" class="js-player"></div>';
+			document.getElementById('home-video-container').appendChild(videodiv);
+
+		}
+	}
+</script>
