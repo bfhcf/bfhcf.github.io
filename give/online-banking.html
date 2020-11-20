@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Bank Deposit
+title: Online Banking
 ---
 
 <div class="material-background"></div>
 <div class="container text-center mb-6">
-    <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Bank Deposit</h1>
-    <p class="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">Give through direct bank deposit. Here are our bank details.</p>
+    <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Bank Deposit / Online Banking</h1>
+    <p class="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">You can deposit your donations either through bank deposit or by using your online banking applications. See below for the links to your respective banking apps.</p>
 </div>
 <div class="container container-full">
     <div class="wow fadeInUp">
@@ -76,6 +76,23 @@ title: Bank Deposit
                             </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-6 wow fadeInUp">
+                <div class="card-body card-body-big">
+                    <h3 class="text-center fw-500 mb-4">Online Banking Applications</h3>
+
+                    <div class="row d-flex justify-content-center">
+                        {% for bank in site.data.banks %}
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card wow zoomIn">
+                                <div class="ms-thumbnail card-body p-05 ">
+                                    <a href="{{ bank.url }}" target="_blank"><img src="{{ site.other_images_url }}/{{ bank.image_name }}.jpg" alt="" class="img-fluid"></a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
