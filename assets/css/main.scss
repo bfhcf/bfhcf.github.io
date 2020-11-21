@@ -46,6 +46,11 @@ body, html {
     }
 }
 
+.intro-full {
+    position: relative;
+    overflow: visible  !important;
+}
+
 .ms-hero-page-override.ms-hero-img-church {
     padding: 150px 0;
 }
