@@ -17,7 +17,7 @@ Read [Jekyll Architecture](https://jekyllrb.com/docs/structure/) on how a Jekyll
 Main site config is stored in `_config.yml`  
 Other data are stored in `_data` directory in `.yml` format. 
 
-###Adding New Events / Announcements
+### Adding New Events / Announcements
 1. Go to `events/_posts`
 2. Create a new markdown file with the format `yyyy-mm-dd-title.md`
     * The date in the file is the date of posting or in other words, when you want this event post displayed. If you want this display now, use today's date.
@@ -35,7 +35,7 @@ image: 2019-09-27-mkb-practical-money-management.jpg
 Content writeup about the post is written here. 
 ```
 
-####Fields
+#### Fields
  * layout - should be set to default
  * title - the title of the event
  * speaker - name of speaker (Optional and can be removed)
