@@ -35,7 +35,7 @@ image: 2019-09-27-mkb-practical-money-management.jpg
 Content writeup about the post is written here. 
 ```
 
-#####Fields
+####Fields
  * layout - should be set to default
  * title - the title of the event
  * speaker - name of speaker (Optional and can be removed)
