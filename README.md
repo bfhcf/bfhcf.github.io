@@ -1,37 +1,44 @@
-## Welcome to GitHub Pages
+## Welcome to Bread From Heaven Christian Fellowship Website
+#### Powered by Jekyll / Github Pages
 
-You can use the [editor on GitHub](https://github.com/bfhcf/bfhcf.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Setup for Developers
+====================
+1. Clone the Repository on your local machine
+2. Install jekyll bundler by running `gem install jekyll bundler`
+3. run `bundle install`
+4. run `bundle exec jekyll serve`
+5. Go to `localhost:4000` to view your site
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+Architecture
+====================
+Read [Jekyll Architecture](https://jekyllrb.com/docs/structure/) on how a Jekyll File Structure looks like.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Main site config is stored in `_config.yml`  
+Other data are stored in `_data` directory in `.yml` format. 
 
-```markdown
-Syntax highlighted code block
+###Adding New Events / Announcements
+1. Go to `events/_posts`
+2. Create a new markdown file with the format `yyyy-mm-dd-title.md`
+    * The date in the file is the date of posting or in other words, when you want this event post displayed. If you want this display now, use today's date.
+3. Example of the contents of the markdown file should be as follows (please read on [markdown syntax](https://www.markdownguide.org/basic-syntax/)):
+```
+---
+layout: default
+title: Practical Money Management 
+speaker: Francis Kong
+ministry: mkb
+event_date: 2019-09-27 (Optional, if not set, post will be displayed always)
+image: 2019-09-27-mkb-practical-money-management.jpg 
+---
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Content writeup about the post is written here. 
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bfhcf/bfhcf.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#####Fields
+ * layout - should be set to default
+ * title - the title of the event
+ * speaker - name of speaker (Optional and can be removed)
+ * ministry - See `ministries.yml` for `slug` for each ministry
+ * event_date - The date of the event in yyyy-mm-dd format (Optional, if not set, post will be displayed always)
+ * image - The file name of the image that is uploaded to Cloudinary. Need Cloudinary Access to upload photos
