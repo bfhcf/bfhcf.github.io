@@ -13,10 +13,10 @@
 <script type="text/javascript">
 
     function getUrl() {
-        var mykey = "AIzaSyD_gCDXfRlijkynbONfPB3YrEuIuIQwDyc",
-            channelId = "UCG290wtPpS7wUjRILhzeRJg";
+	    var mykey = "AIzaSyD_gCDXfRlijkynbONfPB3YrEuIuIQwDyc",
+		    playListID = "PL3fxV8Qu8p5QpnAtgQlCFSGGZbL8Niw7m"
 
-        return `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&maxResults=1&order=date&type=video&key=${mykey}`;
+        return `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=1&playlistId=${playListID}&key=${mykey}`;
     }
 
     $('.home-video-title').ready(function() {
@@ -46,7 +46,7 @@
             document.getElementById('home-video-title').appendChild(titlediv);
 
             const videodiv = document.createElement('div');
-            videodiv.innerHTML = '<div data-plyr-provider="youtube" data-plyr-embed-id="'+ item.id.videoId +'" class="js-player"></div>';
+            videodiv.innerHTML = '<div data-plyr-provider="youtube" data-plyr-embed-id="'+ item.snippet.resourceId.videoId +'" class="js-player"></div>';
             document.getElementById('home-video-container').appendChild(videodiv);
 
         }
