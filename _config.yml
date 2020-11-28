@@ -14,21 +14,82 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Bread From Heaven Christian Fellowship
-email: bfhcf@breadfromheaven.org
+email: info@breadfromheaven.org
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to Bread From Heaven Christian Fellowship
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+facebook_url: https://www.facebook.com/bfhcf
+youtube_channel_url: https://www.youtube.com/bfhcf
 
+address: Concha Cruz corner Poblete St. (Phase V)
+city: BF Homes, Las Piñas, Philippines
+tel_number: +63 2 8807 5689
+tel_number2: +63 2 8807-7374
+
+logo_url: https://res.cloudinary.com/bfhcf/image/upload/v1569561434/logos
+ministry_logo_url: https://res.cloudinary.com/bfhcf/image/upload/v1571708030/logos/ministries
+ministry_logo_thumbnail_url: https://res.cloudinary.com/bfhcf/image/upload/c_scale,w_500/v1571708030/logos/ministries
+church_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1569562247/church
+other_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1605454998/others
+member_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1605797756/members
+devotion_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1569814331/devotions
+events_images_url: https://res.cloudinary.com/bfhcf/image/upload/c_scale,w_594/v1569560870/events
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
 sass:
-  sass_dir: css
+  sass_dir: assets/css
+
+navigation:
+  - text: Home
+    url: /
+    icon: zmdi-home
+    data_name: home
+  - text: Events
+    url: /events/
+    icon: zmdi-calendar
+    data_name: events
+  - text: Sermons
+    url: /sermons/
+    icon: zmdi-videocam
+    data_name: sermons
+#  - text: Devotions
+#    url: /devotions/
+#    icon: zmdi-book
+#    data_name: devotions
+  - text: Ministries
+    url: /ministries/
+    icon: zmdi-view-compact
+    data_name: ministries
+  - text: Who We Are
+    url: /who-we-are
+    icon: zmdi-face
+    data_name: who-we-are
+    navtabs:
+      - text: About Us
+        url: /who-we-are
+        icon: zmdi-face
+      - text: Our Beliefs
+        url: /our-beliefs
+        icon: zmdi-book
+      - text: Church History
+        url: /church-history
+        icon: zmdi-calendar
+  - text: Give
+    url: /give/
+    icon: zmdi-money-box
+    data_name: give
+  - text: Contact
+    url: /contact
+    icon: zmdi-phone
+    data_name: contact
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

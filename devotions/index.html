@@ -1,0 +1,41 @@
+---
+layout: default
+title: Devotions
+---
+
+<div class="material-background"></div>
+<div class="container">
+    <div class="text-center mb-6">
+        <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Devotions</h1>
+        <p class="lead lead-lg color-white text-center center-block mt-2 mb-4 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7">Study the word of God and be encouraged.</p>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+
+            {% assign devotions = site.categories.devotions | limit:10 | sort: 'date' | reverse %}
+            {% for devotion in devotions %}
+            {% assign member_image = devotion.author | replace: " ", "_" %}
+            <article class="card wow fadeInLeft animation-delay-5 mb-4">
+                <div class="card-body overflow-hidden overflow-hidden">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <h3 class="no-mt"><a href="javascript:void(0)">{{ devotion.title }}</a></h3>
+                            <p class="mb-4">{{ devotion.excerpt }}.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <img src="{{ site.member_images_url }}/{{ member_image }}.jpg" alt="..." class="rounded-circle mr-1 img-sm"> by {{ devotion.author }}
+                            <span class="ml-1 d-none d-sm-inline"><i class="zmdi zmdi-time mr-05 color-info"></i> <span class="color-medium-dark">{{ devotion.date | date_to_string}}</span></span>
+                        </div>
+                        <div class="col-lg-4 text-right">
+                            <a href="{{ devotion.url }}" class="btn btn-primary btn-raised btn-block animate-icon">Read More <i class="ml-1 no-mr zmdi zmdi-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</div> <!-- container -->

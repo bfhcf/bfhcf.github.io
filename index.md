@@ -1,6 +1,9 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: under-maintenance
+layout: default
+title: Home
 ---
+
+{% include hero.html %}
+{% include online-services.html %}
+{% include home-about.html %}
+{% include home-video.html %}

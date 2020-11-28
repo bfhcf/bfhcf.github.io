@@ -1,0 +1,93 @@
+---
+layout: default
+title: Sermons
+---
+
+<div class="material-background"></div>
+<div class="container text-center mb-6">
+    <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
+        Sermons</h1>
+    <p class="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
+        The Word of God endures forever, be it in the past, present, or future. Choose a sermon below to watch content
+        from previous church services.</p>
+</div>
+<div class="container">
+    <div id="pagination-container-start"></div>
+    <div class="row" id="sermons-container"></div>
+    <div id="pagination-container-end"></div>
+</div> <!-- container -->
+
+<script type="text/javascript">
+
+	function getUrl(nextPageToken) {
+		var mykey = "AIzaSyD_gCDXfRlijkynbONfPB3YrEuIuIQwDyc",
+			playListID = "PL3fxV8Qu8p5QpnAtgQlCFSGGZbL8Niw7m",
+			npt = nextPageToken;
+		return `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=12&playlistId=${playListID}&key=${mykey}&${npt ? 'pageToken=' + npt : ''}`;
+	}
+
+	function apiCall(nextPageToken, items = []) {
+		var url = new URL(window.location.href);
+		nextPageToken = url.searchParams.get("pageToken");
+		console.log(nextPageToken);
+		fetch(getUrl(nextPageToken))
+		.then(response => {
+			return response.json();
+		})
+		.then(function (response) {
+			if (response.error) {
+				console.log(response.error)
+			} else {
+				items.push(response.items);
+				responseHandler(items.flat(), response.prevPageToken, response.nextPageToken);
+			}
+		});
+	}
+
+	function responseHandler(items, prevPageToken, nextPageToken) {
+		for (let item of items) {
+			if (item.snippet.resourceId.videoId !== 'bmF5O37QY64') {
+
+				const div = document.createElement('div');
+				div.className = "col-md-4 masonry-item wow fadeInUp animation-delay-2";
+				div.innerHTML = '<article class="card primary mb-4 wow materialUp animation-delay-5">\n' +
+					'                <figure class="ms-thumbnail ms-thumbnail-center ms-thumbnail-light">' +
+					'                     <a href="https://www.youtube.com/watch?v=' + item.snippet.resourceId.videoId + '" target="_blank"><img src="https://img.youtube.com/vi/' + item.snippet.resourceId.videoId + '/maxresdefault.jpg" alt="" class="img-fluid"></a>' + '                </figure>\n' +
+					'                <div class="card-body">\n' +
+					'                    <h3><a href="https://www.youtube.com/watch?v=' + item.snippet.resourceId.videoId + '" target="_blank">' + item.snippet.title + '</a></h3>\n' +
+					'                    <p style="white-space: pre-line;">' + item.snippet.description + '</p>\n' +
+					'\n' +
+					'                </div>\n' +
+					'            </article>';
+
+
+				document.getElementById('sermons-container').appendChild(div);
+			}
+		}
+		const div = document.createElement('div');
+		div.className = "col-lg-12";
+
+		var innerHtml = '<nav aria-label="...">\n' +
+			'<ul class="pager pager-flat pager-dark d-flex justify-content-between">\n'
+		if (prevPageToken) {
+			innerHtml = innerHtml + '<li class="page-item"><a class="page-link" href="?pageToken=' + prevPageToken + '"><span aria-hidden="true">«</span> Previous</a></li>\n'
+		}
+		if (nextPageToken) {
+			innerHtml = innerHtml + '<li class="page-item"><a class="page-link" href="?pageToken=' + nextPageToken + '">Next <span aria-hidden="true">»</span></a></li>\n'
+		}
+		innerHtml = innerHtml + '</ul>\n' +
+			'</nav>'
+
+		div.innerHTML = innerHtml
+		document.getElementById('pagination-container-start').appendChild(div);
+
+		var clonePagination = div.cloneNode(true);
+		document.getElementById('pagination-container-end').appendChild(clonePagination);
+
+	}
+
+	$(document).ready(function () {
+		apiCall();
+	});
+
+</script>

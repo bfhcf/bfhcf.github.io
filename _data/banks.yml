@@ -1,0 +1,27 @@
+- name: Metrobank
+  image_name: metrobank
+  url: https://onlinebanking.metrobank.com.ph
+- name: BPI
+  image_name: bpi
+  url: https://online.bpi.com.ph
+- name: BDO
+  image_name: bdo
+  url: https://online.bdo.com.ph
+- name: RCBC
+  image_name: rcbc
+  url: https://www.rcbconlinebanking.com
+- name: Unionbank
+  image_name: unionbank
+  url: https://online.unionbankph.com/online-banking
+- name: Security Bank
+  image_name: security
+  url: https://securitybankonline.securitybank.com
+- name: Chinabank
+  image_name: chinabank
+  url: https://www.chinabank.ph/LoginPersonal.html
+- name: Landbank
+  image_name: landbank
+  url: https://www.lbpiaccess.com
+- name: PNB
+  image_name: pnb
+  url: https://portal.pnb.com.ph/mib/login.do?app=PN

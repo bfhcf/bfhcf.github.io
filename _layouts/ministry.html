@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+{% assign slug = page.url | split: "/" | last | remove: ".html" %}
+{% assign ministry = site.data.ministries | where: "slug", slug | first  %}
+{% assign dark_color_slugs = "cgm,snl" | split: "," %}
+{% assign color = site.data.colors | where: "name", ministry.color | first %}
+<div class="ms-hero-page-override ms-hero-bg-primary ms-hero-img-church" style="padding:100px;">
+
+</div>
+<div class="container">
+    <div class="card card-hero animated fadeInUp animation-delay-7">
+        <div class="row no-m bg-{{ministry.color}}">
+            <div class="col-lg-6">
+                {% if ministry.slug == 'cgm' %}
+                    {% assign ministryLogo = 'cgm-transparent' %}
+                {% else %}
+                    {% assign ministryLogo = ministry.slug %}
+                {% endif %}
+                <img src="{{ site.ministry_logo_url }}/{{ ministryLogo }}.png" alt="..." class="img-fluid text-center" style="filter: brightness(0) invert(1);">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card-body">
+                    <h3 class="color-primary">About the Ministry</h3>
+                    {{content}}
+
+                    {% if page.form_url %}
+                        <a href="{{ page.form_url }}" class="btn btn-xlg btn-raised btn-primary bg-{{ ministry.color }}" target="_blank"><i class="zmdi zmdi-arrow-right"></i>  Join Us!</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="right-line mt-6">Other Ministries</h2>
+    <div class="row">
+        {% include ministries.html %}
+    </div>
+</div> <!-- container -->
+
+{% include cgm-script.html %}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.ministry-tint').append('<style>.ministry-tint:before{background:{{color.hex}} !important; opacity: 0.2;}</style>');
+    })
+
+</script>

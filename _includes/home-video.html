@@ -1,0 +1,54 @@
+<div class="wrap container">
+    <section class="ms-component-section wow fadeInUp animation-delay-2 text-center">
+        <h1 class="section-title">Featured Video</h1>
+
+        <h3 class="text-center">
+            <div id="home-video-title"></div>
+        </h3>
+        <div class="card" id="home-video-container">
+        </div>
+    </section>
+</div> <!-- container -->
+
+<script type="text/javascript">
+
+    function getUrl() {
+        var mykey = "AIzaSyD_gCDXfRlijkynbONfPB3YrEuIuIQwDyc",
+            channelId = "UCG290wtPpS7wUjRILhzeRJg";
+
+        return `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&maxResults=1&order=date&type=video&key=${mykey}`;
+    }
+
+    $('.home-video-title').ready(function() {
+        fetch(getUrl())
+        .then(response => {
+            return response.json();
+        })
+        .then(function (response) {
+            if (response.error) {
+                console.log(response.error)
+            } else {
+                responseHandler(response);
+                Array.from(document.querySelectorAll(".js-player")).map(function (t) {
+                    return new Plyr(t)
+                });
+            }
+        });
+    });
+
+    function responseHandler(response) {
+        const items = response.items.reverse();
+        window.items = items;
+        for (let item of items) {
+
+            const titlediv = document.createElement('div');
+            titlediv.innerHTML = item.snippet.title;
+            document.getElementById('home-video-title').appendChild(titlediv);
+
+            const videodiv = document.createElement('div');
+            videodiv.innerHTML = '<div data-plyr-provider="youtube" data-plyr-embed-id="'+ item.id.videoId +'" class="js-player"></div>';
+            document.getElementById('home-video-container').appendChild(videodiv);
+
+        }
+    }
+</script>

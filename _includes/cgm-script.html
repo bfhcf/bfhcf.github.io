@@ -1,0 +1,13 @@
+<script type="text/javascript">
+    $( document ).ready(function() {
+
+        $(".cgm-alternate-img").hover(
+            function(){
+                $(this).attr("src", "{{ site.ministry_logo_url }}/cgm-transparent.png");
+            }
+            ,function() {
+                $(this).attr("src", "{{ site.ministry_logo_url }}/cgm.png");
+            }
+        );
+    });
+</script>

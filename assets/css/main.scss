@@ -1,0 +1,111 @@
+---
+---
+
+@import 'bootstrap/bootstrap';
+@import 'custom/variables';
+@import 'custom/buttons';
+@import 'custom/colors';
+
+body, html {
+    height: 100%;
+}
+
+
+
+#under-maintenance {
+    background-image: url("https://res.cloudinary.com/bfhcf/image/upload/v1569562247/church/under-maintenance.jpg");
+    height: 100%;
+
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ms-header {
+    .ms-title {
+        .ms-logo {
+            border-radius: 0;
+            &.ms-logo-lg {
+                margin: 15px 20px 0 0;
+            }
+        }
+
+        .ms-logo-text {
+            width: 230px;
+        }
+    }
+}
+
+.navbar-brand, .ms-slidebar-title, .ms-footbar-title, .ms-hero-page-override, .about-container, .contact, .coming-soon {
+    .ms-logo-text-small {
+        width: 150px;
+    }
+
+    .ms-logo {
+        background-color: transparent !important;
+    }
+}
+
+.intro-full {
+    position: relative;
+    overflow: visible  !important;
+}
+
+.ms-hero-page-override.ms-hero-img-church {
+    padding: 150px 0;
+}
+
+.ms-logo.ms-logo-xl  {
+    width: 100px;
+    height: 100px;
+}
+
+.ms-footer-list {
+    margin-left: 0;
+}
+
+.ms-hero-img-church {
+    background-image: url("https://res.cloudinary.com/bfhcf/image/upload/v1569562247/church/new-building-2.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.ms-hero-img-consistory{
+    background-image: url("https://res.cloudinary.com/bfhcf/image/upload/v1569562247/church/consistory.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-sm {
+    width: 50px;
+}
+
+.img-md  {
+    height: 120px;
+}
+
+.img-avatar-circle.img-avatar-circle-lg {
+    width: 200px;
+    height: 200px;
+}
+
+.media-object-circle.media-object-circle-md {
+    width: 75px;
+}
+
+.ministry-tint {
+    position: relative;
+    display: inline-block;
+}
+
+.ministry-tint:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
