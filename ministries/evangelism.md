@@ -14,11 +14,8 @@ in the church, together with Worship, Discipleship and Care. It is such an
 important part of church life that in the Church Order of BREAD, we have
 identified the Evangelist as an Office in the church.
 
-Reverend Norman Manlapaz has been designated by the Consistory as the
-church’s Evangelist. In stature, we see Pastor Norman as our main theologian
-for the church and our go-to person on matters relating to the Word. As
-Evangelist, Pastor Norman also leads the Evangelism ministry and is an
-integral part of Worship and Discipleship ministries.
+Reverend Norman Manlapaz has been designated as Bread’s main theologian for the church and  Pastor in-charge of Evangelism ministry which is an integral part of Worship and Discipleship ministries. 
+He led the updating of the Church AOF together with the Ministers of the word as his co-authors.
 
 Offering testimonials about Jesus Christ is called witnessing and NOT
 evangelism. The ministry would like to make this fine distinction as each of
