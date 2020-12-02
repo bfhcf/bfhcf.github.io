@@ -1,5 +1,6 @@
 ---
 layout: ministry
+title: Men In Bread
 ---
  
 
