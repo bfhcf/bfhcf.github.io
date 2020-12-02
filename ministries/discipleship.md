@@ -1,4 +1,5 @@
 ---
 layout: ministry
+title: Discipleship
 ---
  
