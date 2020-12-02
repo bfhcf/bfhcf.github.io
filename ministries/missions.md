@@ -1,5 +1,6 @@
 ---
 layout: ministry
+title: Missions
 ---
  
 **TARGET GROUP:** We serve and evangelize:
