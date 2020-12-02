@@ -1,5 +1,6 @@
 ---
 layout: ministry
+title: Church Assisted Students
 ---
  
 Church Assisted students (CAS), formerly called the Church Young Scholars,

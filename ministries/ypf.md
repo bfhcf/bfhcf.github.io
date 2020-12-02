@@ -1,5 +1,6 @@
 ---
 layout: ministry
+title: Young People's Fellowship
 ---
  
 The mission and vision of the Young People’s Fellowship of Bread From Heaven

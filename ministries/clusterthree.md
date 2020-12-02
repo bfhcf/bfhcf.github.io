@@ -1,5 +1,6 @@
 ---
 layout: ministry
+title: Cluster Three
 ---
  
 **Name:**   

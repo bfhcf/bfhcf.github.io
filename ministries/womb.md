@@ -1,5 +1,6 @@
 ---
 layout: ministry
+title: Women Of Bread
 ---
  
 This Ministry supports all four Core Ministries, (Worship, Discipleship, Evangelism and Care) as well as our church theme for 2018 to 2020 which is to CALL, CULTIVATE and CARE.

@@ -1,5 +1,6 @@
 ---
 layout: ministry
+title: Church Greeters
 form_url: https://bit.ly/bfhcf-cgm
 ---
  

@@ -1,5 +1,6 @@
 ---
 layout: ministry
+title: Evangelism
 ---
  
 Evangelism is the term used to refer to the preaching of the Gospel. The word

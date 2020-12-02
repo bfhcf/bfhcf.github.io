@@ -1,5 +1,6 @@
 ---
 layout: ministry
+title: Membership
 ---
  
 The Membership Ministry supports the following: The 3 Clusters, Visitation,

@@ -1,5 +1,6 @@
 ---
 layout: ministry
+title: Teens
 ---
  
 The Teens Ministry has a monthly fellowship every 2nd Saturday

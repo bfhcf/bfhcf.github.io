@@ -1,5 +1,6 @@
 ---
 layout: ministry
+title: Alternative Learning System
 ---
  
 

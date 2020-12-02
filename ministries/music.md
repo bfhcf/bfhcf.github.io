@@ -1,5 +1,6 @@
 ---
 layout: ministry
+ministry: Worship & Music
 form_url: https://bit.ly/bfhcf-music 
 ---
  
