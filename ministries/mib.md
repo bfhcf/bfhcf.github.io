@@ -18,10 +18,12 @@ times get buttonholed by an event, by someone or by the Holy Spirit on our
 getting too preoccupied with our work, hobbies, sports, socializing, etc., to
 remind us of the unique role we all have in our local church.
 
-Originally named Men Of Bread, Men In Bread is the men’s ministry of
-BFHCF. I could only surmise that it was for the reason of its inappropriate
-acronym-“M-O-B” for a church ministry, thus it was renamed “MIB” after its
-brief hiatus by our late Senior Pastor Rev. Dr. Doy Castillo.
+From once a month Men’s Breakfast Fellowship in the late 80’s, Men In Bread or MIB evolved 
+to be the men's ministry of BFHCF in 1997. God used the ministry as His platform in 
+transforming the men in BFHCF. Like any other ministries, it also experienced  
+challenging times but by God’s faithfulness and thru the leading of the Holy Spirit 
+it endures and continuous to be the main ministry in identifying and developing 
+men of God’s character for future servant leadership  in Bread. MIB meets 2x a month .
 
 Breadlehem, a housing project for our pastors, was MIB’s first cooperation
 with BFHCF after its regrouping. To date, we could count as MIB’s regular
