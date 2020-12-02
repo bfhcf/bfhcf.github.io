@@ -1,5 +1,6 @@
 ---
 layout: ministry
+title: Christian Education
 ---
  
  Matthew 28:18-20 is considered as the Great Commission, wherein Jesus
