@@ -1,5 +1,6 @@
 ---
 layout: ministry
+title: Salt & Light
 ---
  
 **Ministry Summary Information:** 
