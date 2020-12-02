@@ -34,5 +34,12 @@
     <script src="/assets/js/respond.min.js"></script>
     <![endif]-->
 
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <title>
+        {% if page.title == 'Home' %}
+            {{ site.title }}
+        {% else %}
+            {{ page.title }} | {{ site.title }}
+        {% endif %}
+
+    </title>
 </head>
