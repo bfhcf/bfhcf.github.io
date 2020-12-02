@@ -1,5 +1,6 @@
 ---
 layout: ministry
+title: Cluster One
 ---
 **Cluster Name:**  
 CHRIST’S AMBASSADORS OF BREAD IN PARAÑAQUE
