@@ -1,4 +1,12 @@
-{% for ministry in site.data.ministries %}
+{% assign categories = site.data.ministries | group_by: 'category' %}
+
+{% for cat in categories %}
+{% assign category = site.data.ministry_category | where: 'category', cat.name | first %}
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="section-title mb-5">{{ category.name }}</h2>
+    </div>
+{% for ministry in cat.items %}
 <div class="col-lg-3 col-md-4 col-sm-6">
     <div class="card wow zoomIn">
         <div class="ms-thumbnail card-body p-05 ">
@@ -7,5 +15,7 @@
             </div>
         </div>
     </div>
+</div>
+{% endfor %}
 </div>
 {% endfor %}

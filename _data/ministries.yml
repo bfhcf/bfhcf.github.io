@@ -1,96 +1,120 @@
 - name: Alternative Learning System
   slug: als
   color: bfhcf-green
+  category: missions
 
 - name: Beautification
   slug: beautification
   color: bfhcf-purple
+  category: support
 
 - name: Church Assisted Students
   slug: cas
   color: bfhcf-cyan
+  category: support
 
 - name: Christian Education
   slug: ce
   color: bfhcf-orange
+  category: covenant-family
 
 - name: Church Greeters
   slug: cgm
   color: bfhcf-yellow
+  category: worship
 
 - name: Cluster One
   slug: clusterone
   color: bfhcf-orange
+  category: support
 
 - name: Cluster Two
   slug: clustertwo
   color: bfhcf-orange
+  category: support
 
 - name: Cluster Three
   slug: clusterthree
   color: bfhcf-orange
+  category: support
 
 - name: Discipleship
   slug: discipleship
   color: bfhcf-red
+  category: support
 
 - name: Evangelism
   slug: evangelism
   color: bfhcf-cyan
+  category: support
 
 - name: Kaagapay
   slug: kaagapay
   color: bfhcf-green
+  category: covenant-family
 
 - name: Kitchen Patrol & Cleaning Ambassadors
   slug: kpca
   color: bfhcf-teal
+  category: support
 
 - name: Membership
   slug: membership
   color: bfhcf-lime
+  category: support
 
 - name: Men in Bread
   slug: mib
   color: bfhcf-teal
+  category: covenant-family
 
 - name: Missions
   slug: missions
   color: bfhcf-teal
+  category: missions
 
 - name: Marriage Keepers in Bread
   slug: mkb
   color: bfhcf-red
+  category: covenant-family
 
 - name: Multimedia
   slug: multimedia
   color: bfhcf-black
+  category: support
 
 - name: Music
   slug: music
   color: bfhcf-orange
+  category: worship
 
 - name: Salt & Light
   slug: snl
   color: bfhcf-yellow
+  category: covenant-family
 
 - name: Teens
   slug: teens
   color: bfhcf-cyan
+  category: covenant-family
 
 - name: Visitation
   slug: visitation
   color: bfhcf-lime
+  category: support
 
 - name: Women of Bread
   slug: womb
   color: bfhcf-purple
+  category: covenant-family
 
 - name: Young People's Fellowship
   slug: ypf
   color: bfhcf-cyan
+  category: covenant-family
 
 - name: Young Professionals
   slug: ypro
   color: bfhcf-cyan
+  category: covenant-family
 
