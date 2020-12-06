@@ -20,7 +20,7 @@ title: Sermons
 <script type="text/javascript">
 
 	function getUrl(nextPageToken) {
-		var mykey = "AIzaSyADnoqPB_iM1Q2qhtbCe64x3HS4fB903z0",
+		var mykey = "{{site.youtube_api_key}}",
 			playListID = "PL3fxV8Qu8p5QpnAtgQlCFSGGZbL8Niw7m",
 			npt = nextPageToken;
 		return `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=12&playlistId=${playListID}&key=${mykey}&${npt ? 'pageToken=' + npt : ''}`;
