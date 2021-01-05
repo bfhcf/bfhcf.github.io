@@ -2,7 +2,7 @@
 layout: event
 title: Hygiene Kit Drive
 ministry: missions
-event_date: 2021-01-01
+event_date: 2021-02-01
 image: 2020-11-20-missions-hygiene-kit-drive.png
 ---
 
