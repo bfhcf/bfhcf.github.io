@@ -37,7 +37,7 @@ church_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1569562247/chu
 other_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1605454998/others
 member_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1605797756/members
 devotion_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1569814331/devotions
-events_images_url: https://res.cloudinary.com/bfhcf/image/upload/c_scale,w_594/v1569560870/events
+events_images_url: https://res.cloudinary.com/bfhcf/image/upload/c_scale,w_594/v1611283977/events
 # Build settings
 markdown: kramdown
 theme: minima
