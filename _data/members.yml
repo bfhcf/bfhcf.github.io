@@ -1,7 +1,3 @@
-  - name: Rev. Rizal Asuncion
-    role: Senior Pastor
-    category: pastors
-    about: Pastor Rizal is the current Senior Pastor of the church.
   - name: Rev. Saubel Salamat
     role: Associate Pastor
     category: pastors
@@ -22,6 +18,10 @@
   - name: Elder Mario Bunag
     role: Pulpit Pastor
     category: pastors
+  - name: Rev. Rizal Asuncion
+    role: Former Senior Pastor
+    category: pastors
+    about: Pastor Rizal is the former Senior Pastor of the church.
   - name: Rev. Dr. Cornelio Castillo
     role: Former Senior Pastor
     category: pastors
