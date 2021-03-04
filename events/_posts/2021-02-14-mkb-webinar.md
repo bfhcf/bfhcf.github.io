@@ -14,4 +14,4 @@ She will be joined by the City Health of Paranaque's Medical Team: Dr. Romher To
 
 This is a good opportunity for us to learn about the different vaccines available to battle COVID-19, and to know the details of the vaccination program prepared by the City government of Paranaque.
 
-Please scan the QR code to register for the webinar. We hope you and your family can join us for this special webinar.
+Please scan the QR code or go to <b><a href="http://bit.ly/3cCDiem" target="_blank">http://bit.ly/3cCDiem </a></b> to pre-register. We hope you and your family can join us for this special webinar.
