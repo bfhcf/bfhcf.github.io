@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Alternative Learning System
+category-name: logos/ministries
+image: als.png
+description: To provide basic and functional literacy skills, knowledge, and values to the out-of-school children, youth and adults, and to improve their quality of life, family, and community.
 ---
  
 
