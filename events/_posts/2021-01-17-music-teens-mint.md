@@ -3,6 +3,7 @@ layout: event
 title: Music Intensive Training (MINT) for Teens
 ministry: music
 event_date: 2021-02-06
+category-name: events
 image: 2021-02-06-teens-mint.png
 ---
 

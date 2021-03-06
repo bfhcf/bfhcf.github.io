@@ -3,6 +3,7 @@ layout: event
 title: Online Sunday School Celebration
 ministry: ce
 event_date: 2021-03-05
+category-name: events
 image: 2021-03-05-ce-sunday-school-celebration.png
 ---
 

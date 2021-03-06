@@ -3,6 +3,7 @@ layout: event
 title: What You Need To Know About COVID-19 Vaccines
 speaker: Dr. Anna Lisa T. Ong-Lim | DOH Technical Advisory Group
 event_date: 2021-03-12
+category-name: events
 image: 2021-03-12-mkb-webinar-covid-v2.png
 ---
 

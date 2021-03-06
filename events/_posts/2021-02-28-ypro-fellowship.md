@@ -3,6 +3,7 @@ layout: event
 title: YPro Online
 ministry: ypro
 event_date: 2021-03-06
+category-name: events
 image: 2021-03-06-ypro-fellowship.png
 ---
 
