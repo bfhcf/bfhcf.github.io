@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Women Of Bread
+category-name: logos/ministries
+image: womb.png
+description: Our goal for this ministry is for all the WOMen of Bread From Heaven to become spiritually mature wives, mothers, titas and ates, that are actively involved in various Christian services through our church.
 ---
  
 This Ministry supports all four Core Ministries, (Worship, Discipleship, Evangelism and Care) as well as our church theme for 2018 to 2020 which is to CALL, CULTIVATE and CARE.

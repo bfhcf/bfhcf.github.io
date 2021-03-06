@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Teens
+category-name: logos/ministries
+image: teens.png
+description: The teens ministry caters to kids ages 10-14. We understand the name may be misleading, so please pray with us for a name that would best represent the kids in this age group.
 ---
  
 The Teens Ministry has a monthly fellowship every 2nd Saturday

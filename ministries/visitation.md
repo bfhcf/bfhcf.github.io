@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Visitation
+category-name: logos/ministries
+image: visitation.png
+description: The main objective is to let the members and worshipers of the church know that BREAD CARES, and to be where you are when you need us the most.
 ---
  
 

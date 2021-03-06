@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Cluster One
+category-name: logos/ministries
+image: clusterone.png
+description: CHRIST’S AMBASSADORS OF BREAD IN PARAÑAQUE. Honoring and glorifying God in our personal lives and as a community of believers as we grow in faith together.
 ---
 **Cluster Name:**  
 CHRIST’S AMBASSADORS OF BREAD IN PARAÑAQUE

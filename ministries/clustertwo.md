@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Cluster Two
+category-name: logos/ministries
+image: clustertwo.png
+description: To contribute in the strengthening of members' relationship with one another and to respond to the needs and situations that may arise from its members and to cater them with meaningful fellowship through various activities.
 ---
  
 

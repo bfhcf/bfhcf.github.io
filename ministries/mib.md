@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Men In Bread
+category-name: logos/ministries
+image: mib.png
+description: Just to state the obvious, the Bible is replete with instances wherein men were called by God to leadership roles more than women. Indeed, faithfulness and diligence in men’s headship role in the provision of the corporeal and spiritual needs of their respective families are expected of men.
 ---
  
 

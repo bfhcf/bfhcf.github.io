@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Cluster Three
+category-name: logos/ministries
+image: clusterthree.png
+description: TRIBES OF THE LORD. We may not have the number of the 12 Tribes of Israel but we have love, peace and unity that are evident among the seven tribes of Cluster 3 or Tribes of the Lord aka TOL. The acronym is very apt since adding the letter U makes utol (originates from kaputol ng pusod or navel) which stands for brotherhood or sisterhood – this is always very warmly felt whenever we, the different “tribes”, come together.
 ---
  
 **Name:**   

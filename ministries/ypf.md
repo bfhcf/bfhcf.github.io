@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Young People's Fellowship
+category-name: logos/ministries
+image: ypf.png
+description: The mission and vision of the Young People’s Fellowship of Bread From Heaven is to equip transformed young people to become disciple makers under Christ through intentional discipleship, study of the Word, prayer, and ministry.
 ---
  
 The mission and vision of the Young People’s Fellowship of Bread From Heaven

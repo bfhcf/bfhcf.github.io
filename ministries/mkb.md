@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Marriage Keepers In Bread
+category-name: logos/ministries
+image: mkb.png
+description: The Marriage Keepers in Bread is the ministry devoted to reaching out to all the married couples in Bread from Heaven Christian Fellowship Church. The vision of MKB is for husbands and wives to experience a God-centered, love-filled marriage and for them to be united in their journey to glorify God.
 ---
  
 If you ask your husband or wife who is their priority, the usual response would

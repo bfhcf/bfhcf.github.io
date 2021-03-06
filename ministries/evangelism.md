@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Evangelism
+category-name: logos/ministries
+image: evangelism.png
+description: In BREAD, we have identified Evangelism as one of our CORE ministries in the church, together with Worship, Discipleship and Care. It is such an important part of church life that in the Church Order of BREAD, we have identified the Evangelist as an Office in the church.
 ---
  
 Evangelism is the term used to refer to the preaching of the Gospel. The word

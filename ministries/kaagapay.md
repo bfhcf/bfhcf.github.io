@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Kaagapay
+category-name: logos/ministries
+image: kaagapay.png
+description: Share the Good News with household helpers (kaagapay), church helpers, cleaning ambassadors, kitchen patrols and staff.
 ---
  
 **Vision:**  

@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Church Assisted Students
+category-name: logos/ministries
+image: cas.png
+description: Church Assisted students (CAS), formerly called the Church Young Scholars, are scholars of BFHCF. This program has been going on since 1990.
 ---
  
 Church Assisted students (CAS), formerly called the Church Young Scholars,

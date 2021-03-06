@@ -2,6 +2,9 @@
 layout: ministry
 title: Church Greeters
 form_url: https://bit.ly/bfhcf-cgm
+category-name: logos/ministries
+image: cgm.png
+description: "CGM, or the Church Greeters Ministry, is in the process of recruiting members. Calling all BFHCF members who are energetic, dedicated and willing to be trained: this is now the opportunity to serve our God!"
 ---
  
 We are CGM: Happy inside out!

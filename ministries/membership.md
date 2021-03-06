@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Membership
+category-name: logos/ministries
+image: membership.png
+description: The Membership Ministry supports the following. The 3 Clusters, Visitation, Multimedia and the Church Greeters Ministry.
 ---
  
 The Membership Ministry supports the following: The 3 Clusters, Visitation,

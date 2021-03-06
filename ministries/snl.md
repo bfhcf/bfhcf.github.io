@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Salt & Light
+category-name: logos/ministries
+image: snl.png
+description: "Ministry for church members and worshipers who are 60 years old and above. (2 Corinthians 4:16). Our vision is that every elderly of BFHCF is to be like Christ – obedient to the will of God according to what is written in the Bible: to be holy, righteous, loving, caring, hopeful, patient, etc. (Ephesians 5:1-2)"
 ---
  
 **Ministry Summary Information:** 

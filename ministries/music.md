@@ -1,7 +1,10 @@
 ---
 layout: ministry
 ministry: Worship & Music
-form_url: https://bit.ly/bfhcf-music 
+form_url: https://bit.ly/bfhcf-music
+category-name: logos/ministries
+image: music.png
+description: The Vision of the Praise and Worship Ministry is that worshipers would experience the manifest presence of God in every worship service and thus draw these worshipers to a deeper and more intimate relationship with God.
 ---
  
 The Vision of the Praise and Worship Ministry is that worshipers would

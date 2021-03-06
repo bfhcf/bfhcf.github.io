@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Christian Education
+category-name: logos/ministries
+image: ce.png
+description: The Christian Education ministry is committed to obey Jesus by teaching the Church to obey everything He commanded us. For the coming months, the Adult Christian Education will be focusing on making Jesus known by strengthening the families in the Church.
 ---
  
  Matthew 28:18-20 is considered as the Great Commission, wherein Jesus

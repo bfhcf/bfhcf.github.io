@@ -1,6 +1,9 @@
 ---
 layout: ministry
 title: Missions
+category-name: logos/ministries
+image: missions.png
+description: "We serve and evangelize: The homeless, abandoned and underserved across the country in partnership with CCT, The nearby communities around BFHCF, The outreach groups outside of BF Homes, The out-of-school youth and adults for educational needs"
 ---
  
 **TARGET GROUP:** We serve and evangelize:
