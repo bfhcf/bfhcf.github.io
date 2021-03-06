@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: event
 title: Role of Women In the Covenant Family
 speaker: Pastor Vic and Sis. Aileen San Juan
 ministry: womb

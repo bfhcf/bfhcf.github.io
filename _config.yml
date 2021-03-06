@@ -19,6 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Welcome to Bread From Heaven Christian Fellowship
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:categories/:title/
 twitter_username: jekyllrb
 github_username:  jekyll
 facebook_url: https://www.facebook.com/bfhcf
@@ -38,6 +39,7 @@ other_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1605454998/othe
 member_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1605797756/members
 devotion_images_url: https://res.cloudinary.com/bfhcf/image/upload/v1569814331/devotions
 events_images_url: https://res.cloudinary.com/bfhcf/image/upload/c_scale,w_594/v1611283977/events
+events_images_full_url: https://res.cloudinary.com/bfhcf/image/upload/c_scale,w_1440/v1611283977/events
 # Build settings
 markdown: kramdown
 theme: minima

@@ -1,2 +1,41 @@
 ---
+layout: default
 ---
+
+{% assign event_title = page.title %}
+{% assign ministry = site.data.ministries | where: "slug", page.ministry | first  %}
+{% assign ministryColor = ministry.color %}
+{% if ministry.slug == 'cgm' %}
+{% assign ministryLogo = 'cgm-logo-transparent' %}
+{% else %}
+{% assign ministryLogo = ministry.slug | append: '-logo' %}
+{% endif %}
+
+{% unless page.ministry  %}
+{% assign ministryLogo = 'bfhcf-logo' %}
+{% assign ministryColor = 'primary' %}
+{% endunless %}
+<div class="material-background"></div>
+
+<div class="container">
+    <div class="text-center mb-6">
+        <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Events</h1>
+        <p class="lead lead-lg color-white text-center center-block mt-2 mb-4 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7">Join and fellowship with us in our upcoming activities. We are looking forward to seeing you.
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card animated materialUp animation-delay-5">
+                <div class="card-body card-body-big">
+                    <h1 class="no-mt color-bfhcf-teal">{{ event_title }}</h1>
+                    <div class="mb-4">
+                        <img src="{{ site.ministry_logo_url }}/{{ ministryLogo }}.png" alt="" style="width: 40px;"> <span class="ml-1"> {% if page.speaker %} by {{ page.speaker }} {% endif %} </span>
+                        {% if page.event.date %} <span class="ml-2 d-none d-sm-inline"><i class="zmdi zmdi-time mr-05 color-info"></i> <span class="color-medium-dark"> {{ page.event_date  | date_to_string }}</span></span> {% endif %}
+                    </div>
+                    <img src="{{ site.events_images_full_url }}/{{ page.image }}" alt="" class="img-fluid mb-4">
+                    {{ content }}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div> <!-- container -->
