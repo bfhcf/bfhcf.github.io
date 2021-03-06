@@ -42,12 +42,13 @@
         {% endif %}
 
     </title>
-
-    {% seo %}
     {% if page.image and page.category-name %}
 
-        <meta property="og:image" content="https://res.cloudinary.com/bfhcf/image/upload/c_scale,w_200/v1611283977/{{ page.category-name }}/{{ page.image }}" />
+    <meta property="og:image" content="https://res.cloudinary.com/bfhcf/image/upload/c_scale,w_200/v1611283977/{{ page.category-name }}/{{ page.image }}" />
     {% endif %}
+    
+    {% seo %}
+
 
 
 </head>
