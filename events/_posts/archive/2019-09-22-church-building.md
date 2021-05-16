@@ -1,6 +1,7 @@
 ---
 layout: event
 title: Testimony of God's Faithfulness to Bread
+event_date: 2021-02-01
 image: 2019-09-22-church-building.jpg
 category-name: events
 ---
