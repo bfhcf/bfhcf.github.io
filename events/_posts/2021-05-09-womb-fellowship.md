@@ -5,7 +5,7 @@ speaker: Deaconess Tess Alegata
 ministry: womb
 event_date: 2021-05-28
 category-name: events
-image: 2021-05-28-womb-fellowship_b87zml.png
+image: 2021-05-28-womb-fellowship_fjrazr.png
 
 ---
 
