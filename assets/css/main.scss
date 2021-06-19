@@ -51,8 +51,10 @@ body, html {
     overflow: visible  !important;
 }
 
-.ms-hero-page-override.ms-hero-img-church {
-    padding: 150px 0;
+.ms-hero-page-override {
+    &.ms-hero-img-church, &.ms-hero-img-podcast {
+        padding: 150px 0;
+    }
 }
 
 .ms-logo.ms-logo-xl  {
@@ -72,6 +74,12 @@ body, html {
 
 .ms-hero-img-consistory{
     background-image: url("https://res.cloudinary.com/bfhcf/image/upload/v1569562247/church/consistory.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.ms-hero-img-podcast{
+    background-image: url("https://res.cloudinary.com/bfhcf/image/upload/c_fill,h_1080,w_1920/podcast/podcast-bg.jpg");
     background-size: cover;
     background-position: center center;
 }
