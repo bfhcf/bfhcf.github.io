@@ -90,7 +90,7 @@ navigation:
     icon: zmdi-money-box
     data_name: give
   - text: Contact
-    url: /contact
+    url: /contact/
     icon: zmdi-phone
     data_name: contact
 
