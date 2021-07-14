@@ -63,10 +63,14 @@ navigation:
     url: /sermons/
     icon: zmdi-videocam
     data_name: sermons
-#  - text: Devotions
-#    url: /devotions/
-#    icon: zmdi-book
-#    data_name: devotions
+  - text: Podcasts
+    url: /podcasts/poimenally-yours
+    icon: zmdi-hearing
+    data_name: podcasts
+    navtabs:
+      -   text: Poimenally Yours
+          url: /podcasts/poimenally-yours
+          icon: zmdi-hearing
   - text: Ministries
     url: /ministries/
     icon: zmdi-view-compact
