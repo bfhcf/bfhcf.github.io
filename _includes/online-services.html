@@ -1,19 +1,20 @@
-<div class="wrap bg-bfhcf-cyan">
+<div class="wrap bg-bfhcf-dark">
     <div class="container">
         <div class="text-center color-white mw-800 center-block mb-4">
             <h2 class=" mb-2 wow fadeInDown animation-delay-4">Attend our services</h2>
-            <p class="lead wow fadeInDown animation-delay-5">You are always welcome to worship with us through fellowship and study of His Word. Let's unite together as one in faith at our church services. Due to the pandemic, our church services and fellowships are done online. </p>
+            <p class="lead wow fadeInDown animation-delay-5">You are always welcome to worship with us through fellowship and study of His Word. Let's unite together as one in faith at our church services. Due to the pandemic, our church services and fellowships are both done face-to-face (limited seating) and online. </p>
             <p class="lead wow fadeInDown animation-delay-5">Please follow us on <a class="btn btn-raised btn-facebook" href="{{ site.facebook_url }}" target="_blank"><i class="zmdi zmdi-facebook"></i>Facebook</a> and <a class="btn btn-raised btn-youtube" href="{{ site.youtube_channel_url }}" target="_blank"><i class="zmdi zmdi-youtube"></i>YouTube</a> to view our online services.</p>
-
-            <h3 class="mt-6 mb-3 wow fadeInDown animation-delay-4">SUNDAY ONLINE SERVICES</h3>
         </div>
+
+        <h3 class="color-white mb-3 wow fadeInDown animation-delay-4 text-center">SUNDAY SERVICES</h3>
         <div class="row color-dark">
             <div class="col-xl-6 col-lg-6 col-sm-6">
                 <div class="card card-royal-inverse bg-bfhcf-purple wow fadeInLeft animation-delay-3">
                     <div class="text-center card-body">
                         <span class="ms-icon ms-icon-circle ms-icon-white ms-icon-xxlg"><i class="icon ion-ios-book color-bfhcf-purple"></i></span>
                         <h4 class="color-light">Tagalog Service</h4>
-                        <p class="">8:30am - 10:00am</p>
+                        <p class="">8:30am - 10:00am (Online)</p>
+                        <p class="">8:00am - 9:30am (Face-to-Face)</p>
                     </div>
                 </div>
             </div>
@@ -22,23 +23,74 @@
                     <div class="text-center card-body">
                         <span class="ms-icon ms-icon-circle ms-icon-white ms-icon-xxlg"><i class="icon ion-ios-book color-bfhcf-green"></i></span>
                         <h4 class="color-light">English Service</h4>
-                        <p class="">10:30am - 12:00pm</p>
+                        <p class="">10:30am - 12:00pm (Online)</p>
+                        <p class="">10:30am - 12:00pm (Face-to-Face)</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="text-center wow fadeInUp animation-delay-7 mt-6">
+            <p class="lead lead-lg color-white text-center center-block mt-6 mw-800 text-uppercase fw-300 mb-2">If you want to attend our face-to-face services, please watch the video below to know the guidelines.</p>
 
+            <section class="ms-component-section wow fadeInUp animation-delay-2 text-center">
+                <h3 class="text-center">
+                    <div id="guideline-video-title"></div>
+                </h3>
+                <div class="card" id="guideline-video-container">
+                </div>
+            </section>
+
+            <a href="https://bit.ly/bfhcf-f2f-register" class="btn btn-white btn-xxlg btn-raised color-bfhcf-black" target="_blank"><i class="zmdi zmdi-calendar"></i> Reserve a Seat</a>
+        </div>
         <div class="text-center wow fadeInUp animation-delay-7 mt-6">
             <h3 class="color-white mb-3 wow fadeInDown animation-delay-4">OTHER SERVICES / ONLINE BIBLE STUDY SCHEDULES</h3>
 
             <div class="row color-dark justify-content-center">
                 <div class="col-xl-12 col-lg-12 col-sm-12">
-                    <img src="{{ site.church_images_url }}/bfhcf-online-schedules-v3.png" alt="" class="img-fluid">
+                    <img src="{{ site.church_images_url }}/bfhcf-online-schedules-v4.png" alt="" class="img-fluid">
                 </div>
 
             </div>
             <p class="lead lead-lg color-white text-center center-block mt-6 mw-800 text-uppercase fw-300 mb-2">If you have questions with regards to the schedules, don't hesitate to contact us.</p>
-            <a href="/contact" class="btn btn-white btn-xlg btn-raised color-info"><i class="zmdi zmdi-email"></i> Contact Us</a>
+            <a href="/contact" class="btn btn-white btn-xlg btn-raised color-bfhcf-black"><i class="zmdi zmdi-email"></i> Contact Us</a>
         </div>
     </div> <!-- container -->
 </div>
+
+<script type="text/javascript">
+
+	function getGuidelineUrl() {
+		var mykey = "{{site.youtube_api_key}}",
+			videoId = "SegncqvU_9A";
+
+		return `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${mykey}`;
+	}
+
+	$('.guideline-video-title').ready(function() {
+		fetch(getGuidelineUrl())
+		.then(response => {
+			return response.json();
+		})
+		.then(function (response) {
+			if (response.error) {
+				console.log(response.error)
+			} else {
+				guidelineResponseHandler(response);
+				Array.from(document.querySelectorAll(".js-player")).map(function (t) {
+					return new Plyr(t)
+				});
+			}
+		});
+	});
+
+	function guidelineResponseHandler(response) {
+		const items = response.items.reverse();
+		window.items = items;
+		for (let item of items) {
+			const videodiv = document.createElement('div');
+			videodiv.innerHTML = '<div data-plyr-provider="youtube" data-plyr-embed-id="'+ item.id +'" class="js-player"></div>';
+			document.getElementById('guideline-video-container').appendChild(videodiv);
+
+		}
+	}
+</script>
