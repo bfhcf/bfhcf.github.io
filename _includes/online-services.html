@@ -60,31 +60,4 @@
 		return `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${mykey}`;
 	}
 
-	$('.guideline-video-title').ready(function() {
-		fetch(getGuidelineUrl())
-		.then(response => {
-			return response.json();
-		})
-		.then(function (response) {
-			if (response.error) {
-				console.log(response.error)
-			} else {
-				guidelineResponseHandler(response);
-				Array.from(document.querySelectorAll(".js-player")).map(function (t) {
-					return new Plyr(t)
-				});
-			}
-		});
-	});
-
-	function guidelineResponseHandler(response) {
-		const items = response.items.reverse();
-		window.items = items;
-		for (let item of items) {
-			const videodiv = document.createElement('div');
-			videodiv.innerHTML = '<div data-plyr-provider="youtube" data-plyr-embed-id="'+ item.id +'" class="js-player"></div>';
-			document.getElementById('guideline-video-container').appendChild(videodiv);
-
-		}
-	}
 </script>
