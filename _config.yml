@@ -72,6 +72,9 @@ navigation:
       -   text: Poimenally Yours
           url: /podcasts/poimenally-yours
           icon: zmdi-hearing
+      -   text: Bread Talks
+          url: /podcasts/bread-talks
+          icon: zmdi-hearing
   - text: Ministries
     url: /ministries/
     icon: zmdi-view-compact

@@ -1,0 +1,103 @@
+---
+layout: default
+title: Bread Talks Podcast
+category-name: podcast
+image: bread-talks-album-cover.png
+---
+
+<div class="ms-hero-page-override ms-hero-img-podcast ms-hero-bg-primary overflow-hidden ms-bg-fixed">
+  <div class="container">
+    <div class="text-center color-white">
+      <h1> Bread Talks Podcast </h1>
+      <p class="lead lead-lg color-white text-center center-block mt-2 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7">
+        A Bread From Heaven Christian Fellowship Podcast to provide a venue to our Music Ministers to share their experiences as a servant in the Body of Christ particularly as a Music Minister with the aim of imparting lessons to the listeners about worship through music.Be encouraged to worship God (through music) anchored on Biblical principles.
+      </p>
+    </div>
+    <div class="text-center mb-2 mt-4">
+      <a id="go-intro-fixed-next" href="#podcast" class="arrow btn-circle btn-circle-raised btn-circle-white animated zoomInUp animation-delay-12"><i class="zmdi zmdi-long-arrow-down"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="bg-light index-1 intro-fixed-next pt-6" id="podcast">
+  <div class="container mt-4">
+
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="https://res.cloudinary.com/bfhcf/image/upload/r_100/podcast/bread-talks-album-cover.png"  alt="" class="img-fluid mb-4"/>
+      </div>
+      <div class="col-lg-8">
+        <h1 class="color-primary">Bread Talks</h1>
+        <p class="lead lead-sm">Bread From Heaven Christian Fellowship</p>
+        <a target="_blank" href="https://open.spotify.com/show/1MokLypRZqrgJUCRn1B2ro?si=eb1362a69d09453e">
+          <img src="https://res.cloudinary.com/bfhcf/image/upload/c_scale,q_100,w_150/v1624113847/podcast/spotify-listen.png"  alt="" class="img-fluid mb-4"/>
+        </a>
+      </div>
+    </div>
+
+    <div id="podcast-list"></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function getUrl() {
+    var mykey = "{{site.podcast_api_key}}",
+            podcastId = "2030113"
+    return `https://www.buzzsprout.com/api/${podcastId}/episodes.json?api_token=${mykey}`;
+  }
+
+  function apiCall(items = []) {
+    fetch(getUrl())
+    .then(response => {
+      return response.json();
+    })
+    .then(function (response) {
+      if (response.error) {
+        console.log(response.error)
+      } else {
+        items.push(response);
+        responseHandler(items.flat());
+      }
+    });
+  }
+
+  function responseHandler(items) {
+    for (let item of items) {
+      const div = document.createElement('div');
+      div.className = "col-md-12 wow materialUp animation-delay-5 mb-3";
+      div.innerHTML = '<h3 class="right-line font-weight-bold">'+ item.title + '</h3>' +
+              item.description +
+              '<div class="card card-warning">' +
+              '<audio class="js-player" controls>' +
+              '<source src="'+ item.audio_url +'" type="audio/mp3">' +
+              ' </audio>' +
+              ' </div>'
+
+       document.getElementById('podcast-list').appendChild(div);
+    }
+    Array.from(document.querySelectorAll(".js-player")).map(function (t) {
+      return new Plyr(t)
+    });
+  }
+
+  $(document).ready(function () {
+    apiCall();
+  });
+
+
+</script>
+
+<script>
+  $(document).ready(function(){
+    $(".arrow").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800);
+        return false;
+      }
+    });
+  });
+</script>
