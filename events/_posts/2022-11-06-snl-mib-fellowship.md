@@ -1,6 +1,6 @@
 ---
 layout: event
-title: MIB and SNL Join Fellowship
+title: MIB and SNL Joint Fellowship
 ministry: mib
 event_date: 2022-11-19
 image: 2022-11-19-snl-fellowship_kpkneq.png
