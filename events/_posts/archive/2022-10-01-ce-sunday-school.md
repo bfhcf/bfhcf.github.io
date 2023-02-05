@@ -3,6 +3,7 @@ layout: event
 title: Sunday School Resumption
 ministry: ce
 category-name: events
+event_date: 2022-10-01
 image: 2022-10-01-ce-sunday-school_bbdko8.png
 
 ---
