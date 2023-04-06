@@ -1,7 +1,7 @@
 ---
 layout: event
 title: Hygiene Kit Drive
-image: 2022-11-01-hygiene-kit-drive_pu03f9.png
+image: 2023-04-01-hygiene-kit_dmdddx.png
 category-name: events
 ---
 

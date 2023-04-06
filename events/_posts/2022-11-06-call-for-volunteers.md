@@ -1,7 +1,7 @@
 ---
 layout: event
 title: Call for Volunteers
-image: 2022-11-01-volunteers_zbupeo.png
+image: 2023-04-01-call-for-volunteers_r1bflj.png
 category-name: events
 ---
 
