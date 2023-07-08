@@ -2,7 +2,7 @@
 layout: event
 title: Playtunes
 ministry: ce
-event_date: 2023-07-01
+event_date: 2023-08-01
 image: 2023-06-01-ce-playtunes_x8f2jx.png
 category-name: events
 ---
