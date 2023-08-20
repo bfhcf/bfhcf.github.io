@@ -1,7 +1,7 @@
 ---
 layout: ministry
 title: Multimedia
-form_url: https://bit.ly/bfhcf-mmm
+form_url: http://bit.ly/bfhcf-mmm
 category-name: logos/ministries
 image: multimedia.png
 description: The Multimedia Ministry is a dynamic group of individuals with a heart to serve and worship through different forms of media. We believe that service knows no age or background, and by the grace and leading of God, we acknowledge the call to service and continuously seek and focus on the Lord for the joy and the heart of worshipful service.
