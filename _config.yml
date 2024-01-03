@@ -42,6 +42,8 @@ member_images_url: https://res.cloudinary.com/bfhcf/image/upload/members
 devotion_images_url: https://res.cloudinary.com/bfhcf/image/upload/devotions
 events_images_url: https://res.cloudinary.com/bfhcf/image/upload/c_scale,w_594/events
 events_images_full_url: https://res.cloudinary.com/bfhcf/image/upload/c_scale,w_1440/events
+books_images_url: https://res.cloudinary.com/bfhcf/image/upload/books
+
 # Build settings
 markdown: kramdown
 theme: minima
