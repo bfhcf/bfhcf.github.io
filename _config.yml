@@ -66,17 +66,30 @@ navigation:
     url: /sermons/
     icon: zmdi-videocam
     data_name: sermons
-  - text: Podcasts
-    url: /podcasts/poimenally-yours
-    icon: zmdi-hearing
-    data_name: podcasts
+  - text: Projects
+    icon: zmdi-view-compact
+    data_name: projects
     navtabs:
-      -   text: Poimenally Yours
-          url: /podcasts/poimenally-yours
-          icon: zmdi-hearing
-      -   text: Bread Talks
-          url: /podcasts/bread-talks
-          icon: zmdi-hearing
+      - text: Books
+        url: /books/courage-in-chaos
+        icon: zmdi-book-image
+        submenus:
+          - text: 5-Minute Journey
+            url: /books/5-minute-journey
+            icon: zmdi-book-image
+          - text: Courage in Chaos
+            url: /books/courage-in-chaos
+            icon: zmdi-book-image
+      - text: Podcasts
+        url: /podcasts/poimenally-yours
+        icon: zmdi-hearing
+        submenus:
+          - text: Poimenally Yours
+            url: /podcasts/poimenally-yours
+            icon: zmdi-hearing
+          - text: Bread Talks
+            url: /podcasts/bread-talks
+            icon: zmdi-hearing
   - text: Ministries
     url: /ministries/
     icon: zmdi-view-compact
