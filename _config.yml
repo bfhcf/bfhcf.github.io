@@ -73,6 +73,7 @@ navigation:
       - text: Books
         url: /books/courage-in-chaos
         icon: zmdi-book-image
+        data_name: books
         submenus:
           - text: 5-Minute Journey
             url: /books/5-minute-journey
@@ -83,6 +84,7 @@ navigation:
       - text: Podcasts
         url: /podcasts/poimenally-yours
         icon: zmdi-hearing
+        data_name: podcasts
         submenus:
           - text: Poimenally Yours
             url: /podcasts/poimenally-yours

@@ -12,12 +12,23 @@
             {% for link in site.navigation %}
 
             {% if link.navtabs %}
-            <li class="card" role="tab" id="{{link.data_name}}}_sch">
-                <a class="collapsed" role="button" data-toggle="collapse" href="#{{link.data_name}}_sc" aria-expanded="false" aria-controls="{{link.data_name}}_sc">
+            <li class="card" role="tab" id="{{ link.data_name }}-item">
+                <a class="collapsed" role="button" data-bs-toggle="collapse" href="#{{ link.data_name }}-list" aria-expanded="false" aria-controls="{{link.data_name}}-list">
                     <i class="zmdi {{link.icon}}"></i> {{link.text}} </a>
-                <ul id="{{link.data_name}}_sc" class="card-collapse collapse" role="tabpanel" aria-labelledby="{{link.data_name}}_sch" data-parent="#slidebar-menu">
+                <ul id="{{link.data_name}}-list" class="card-collapse collapse" role="tabpanel" aria-labelledby="{{ link.data_name }}-item" data-bs-parent="#slidebar-menu">
                 {% for navtab in link.navtabs %}
+                    {% if navtab.submenus %}
+                    <li role="tab" id="{{ navtab.data_name }}-item">
+                        <a class="collapsed" role="button" data-bs-toggle="collapse" href="#{{ navtab.data_name }}-list" aria-expanded="false" aria-controls="{{navtab.data_name}}-list">
+                            <i class="zmdi {{navtab.icon}}"></i> {{navtab.text}} </a>
+                        <ul id="{{navtab.data_name}}-list" class="card-collapse collapse" role="tabpanel" aria-labelledby="{{ navtab.data_name }}-item" data-bs-parent="#{{link.data_name}}-list">
+                            {% for submenu in navtab.submenus %}
+                            <li><a href="{{ submenu.url }}"> {{ submenu.text }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
                     <li><a href="{{ navtab.url }}"> {{ navtab.text }}</a></li>
+                    {% endif %}
                 {% endfor %}
             </ul>
             {% else %}

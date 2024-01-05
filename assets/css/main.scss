@@ -14,6 +14,11 @@ body, html {
     --bs-pagination-bg: #fff;
 }
 
+.ms-slidebar .ms-slidebar-menu>li>ul>li>ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 #under-maintenance {
     background-image: url("https://res.cloudinary.com/bfhcf/image/upload/v1569562247/church/under-maintenance.jpg");
     height: 100%;
