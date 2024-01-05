@@ -67,7 +67,7 @@ navigation:
     icon: zmdi-videocam
     data_name: sermons
   - text: Projects
-    icon: zmdi-view-compact
+    icon: zmdi-favorite
     data_name: projects
     navtabs:
       - text: Books
