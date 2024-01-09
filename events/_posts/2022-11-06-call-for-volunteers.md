@@ -1,8 +1,13 @@
 ---
 layout: event
 title: Call for Volunteers
-image: 2023-06-01-volunteers_quu759.png
+image: 2024-01-01-ministry-volunteers_fhrfup
 category-name: events
 ---
 
-Bread From Heaven is inviting all our members and worshipers to serve our God through the different ministries of the church. We are looking for volunteers to help in our Music, Multimedia and Church Greeters for both online and face to face services. We are also inviting you to serve in the Christian Education ministry and in our family ministries. To know more, please contact the ministry leads or our Pastors. We pray that this year will be your opportunity to worship God through our various ministries. 
+As the different ministries of the church resume their activities, we are
+inviting everyone to serve the Lord in the different ministries that you see at
+the church. The ministries of the church are for the married, young and old,
+music and multimedia, missions, and many more. We pray that you will use
+the skills and abilities God has given you to serve Him. Get in touch with our
+ministry leads and pastors if you would like to serve in the various ministries. 
