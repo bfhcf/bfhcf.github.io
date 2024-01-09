@@ -29,7 +29,7 @@ Our ministry is structured into four primary tracks:
 5. **Recruitment Team**: Responsible for welcoming new volunteers and equipping existing ones.
 
 Each of these tracks plays a pivotal role in the success of our ministry.
-
+<div>
 <img src="https://res.cloudinary.com/bfhcf/image/upload/v1569824581/ministries/mmm-2.jpg" class="img-fluid"/>
 </div>
 
