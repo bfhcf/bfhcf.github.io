@@ -21,7 +21,7 @@ Our vision is to build up the kingdom of God and carry the Gospel of Jesus Chris
 ## Mission
 As a ministry, we exist to worship and glorify God by ministering through the different platforms of media; to nurture fellowship, collaboration and spiritual growth among the members of the BFHCF community; and by the grace of God and leading of the Holy Spirit, reach out and proclaim the Gospel to communities outside the church grounds as it’s broadcasted or distributed on our media platforms with the highest video, audio, and production quality available.
 
-Our ministry is structured into four primary tracks:
+Our ministry is structured into five primary arms:
 1. **Creative Team**: This team crafts visually appealing materials such as posters and announcements to effectively promote our church events.
 2. **Worship Team**: Supporting preachers and worship leaders with slides and presentations during services to enhance the worship experience and convey God's message effectively.
 3. **Documentation Team**: Capturing precious moments in our church life through photos and videos, preserving memories, and ensuring access through live streaming.
