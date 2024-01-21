@@ -81,6 +81,9 @@ navigation:
           - text: Courage in Chaos
             url: /books/courage-in-chaos
             icon: zmdi-book-image
+          - text: Losing Spiritual Vitality
+            url: /books/losing-spiritual-vitality
+            icon: zmdi-book-image
       - text: Podcasts
         url: /podcasts/poimenally-yours
         icon: zmdi-hearing

@@ -1,5 +1,6 @@
 ---
 layout: ministry
+title: Music
 ministry: Worship & Music
 form_url: http://bit.ly/bfhcf-music
 category-name: logos/ministries
