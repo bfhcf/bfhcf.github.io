@@ -6,7 +6,16 @@ function introFull() {
 		o = $(".intro-full"),
 		l = (o.height(), $(".intro-full-content"));
 	l.height();
-	$(window).width() < 768 ? (n.css("marginTop", "0px"), $("#intro-video").addClass("d-none"), l.addClass("intro-full-content-static")) : (o.css("height", ($("#intro-video")[0].offsetHeight || $(window).height()) + "px"), .563197 < $(window).height() / $(window).width() ? $("#intro-video").addClass("d-none") : $("#intro-video").removeClass("d-none"))
+	$(window).width() < 768 ? (
+		n.css("marginTop", "0px"), 
+		$("#intro-video").addClass("d-none"), 
+		l.addClass("intro-full-content-static")
+	  ) : (
+		o.css("height", ($("#intro-video").length ? $("#intro-video")[0].offsetHeight : $(window).height()) + "px"), 
+		.563197 < $(window).height() / $(window).width() ? 
+		  $("#intro-video").addClass("d-none") : 
+		  $("#intro-video").removeClass("d-none")
+	  );
 }
 
 function navbarScroll() {
