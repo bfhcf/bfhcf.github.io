@@ -61,8 +61,9 @@
                 <div class="ms-footbar-block">
                     <h3 class="ms-footbar-title">Social Media</h3>
                     <div class="ms-footbar-social">
-                        <a href="{{ site.facebook_url }}" class="btn-circle btn-facebook"><i class="zmdi zmdi-facebook"></i></a>
-                        <a href="{{ site.youtube_channel_url }}" class="btn-circle btn-youtube"><i class="zmdi zmdi-youtube"></i></a><br>
+                        {% for social in site.data.social %}
+                        <a href="{{ social.url }}" class="btn-circle {{ social.btn_class }}"><i class="zmdi {{ social.icon }}"></i></a>
+                        {% endfor %}
                     </div>
                 </div>
             </div>

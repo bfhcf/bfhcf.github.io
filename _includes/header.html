@@ -10,8 +10,9 @@
         <div class="header-right">
             <div class="share-menu">
                 <ul class="share-menu-list">
-                    <li class="animated fadeInRight animation-delay-2"><a href="{{site.facebook_url}}" target="_blank"  class="btn-circle btn-facebook"><i class="zmdi zmdi-facebook"></i></a></li>
-                    <li class="animated fadeInRight animation-delay-2"><a href="{{site.youtube_channel_url}}" target="_blank"  class="btn-circle btn-youtube"><i class="zmdi zmdi-youtube"></i></a></li>
+                    {% for social in site.data.social %}
+                    <li class="animated fadeInRight animation-delay-2"><a href="{{ social.url }}" target="_blank" class="btn-circle {{ social.btn_class }}"><i class="zmdi {{ social.icon }}"></i></a></li>
+                    {% endfor %}
                 </ul>
                 <a href="javascript:void(0)" class="btn-circle btn-circle-primary animated zoomInDown animation-delay-7"><i class="zmdi zmdi-share"></i></a>
             </div>
