@@ -60,6 +60,30 @@ plugins:
 sass:
   sass_dir: assets/css
 
+# Collections
+collections:
+  events:
+    output: true
+    permalink: /events/:title/
+  devotions:
+    output: true
+    permalink: /devotions/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+      category-name: "events"
+  - scope:
+      path: ""
+      type: "devotions"
+    values:
+      layout: "devotion"
+      category-name: "devotions"
+
 navigation:
   - text: Home
     url: /

@@ -9,7 +9,7 @@ title: Devotions
     <div class="row">
         <div class="col-lg-12">
 
-            {% assign devotions = site.categories.devotions | limit:10 | sort: 'date' | reverse %}
+            {% assign devotions = site.devotions | sort: 'date' | reverse | limit:10 %}
             {% for devotion in devotions %}
             {% assign member_image = devotion.author | replace: " ", "_" %}
             <article class="card wow fadeInLeft animation-delay-5 mb-4">
