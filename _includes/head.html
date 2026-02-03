@@ -1,16 +1,6 @@
 <head>
 
-    <!-- Google Analytics 4 (GA4) -->
-    {% if site.google_analytics %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', '{{ site.google_analytics }}');
-    </script>
-    {% endif %}
+    {% include analytics.liquid %}
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -20,21 +10,10 @@
     <meta name="theme-color" content="#333">
     <meta name="description" content="The Bread From Heaven Christian Fellowship, Inc. is an independent, Christian and Reformed Evangelical congregation. Member of the Philippine Council of Evangelical Churches (PCEC).">
 <!--    <link rel="shortcut icon" href="assets/img/favicon.png?v=3">-->
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/assets/css/preload.min.css">
-    <link rel="stylesheet" href="/assets/css/plugins.min.css">
-    <link rel="stylesheet" href="/assets/css/style.teal-300.min.css">
+    
+    {% include styles.liquid %}
 
-    <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
-    <!-- Include Bootstrap JS -->
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-    <!--[if lt IE 9]>
-    <script src="/assets/js/html5shiv.min.js"></script>
-    <script src="/assets/js/respond.min.js"></script>
-    <![endif]-->
+    {% include scripts.liquid %}
 
     <title>
         {% if page.title == 'Home' %}
