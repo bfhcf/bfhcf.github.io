@@ -53,3 +53,43 @@ To use the Cloudinary URL helper:
 ```
 
 Legacy URLs (e.g., `site.events_images_url`) are still supported but the new Cloudinary helper is recommended for new code.
+
+### Color System
+
+The website uses a centralized color system for consistent branding.
+
+#### Available Colors
+- **red**: #ff5139
+- **green**: #58c31e
+- **teal**: #3b8686
+- **purple**: #906090
+- **yellow**: #ffdf3e
+- **orange**: #fea51b
+- **cyan**: #00cbcb
+- **lime**: #a1de45
+- **black**: #000000
+
+#### Usage in HTML
+```html
+<h1 class="color-bfhcf-teal">Title</h1>
+<div class="bg-bfhcf-purple">Content</div>
+```
+
+#### Color Definitions
+- **Data File**: `_data/colors.yml` (for Liquid templates)
+- **SCSS Variables**: `assets/css/custom/_variables.scss`
+- **CSS Classes**: `assets/css/custom/_colors.scss`
+
+When modifying colors, update all three locations to maintain consistency.
+
+### Reusable Components
+
+The codebase includes reusable components in `_includes/`:
+- `ministry-info.liquid` - Ministry logo and color logic
+- `event-card.liquid` - Event card display
+- `page-header.liquid` - Page headers with hero images
+- `nav-active.liquid` - Navigation active state
+- `cloudinary-url.liquid` - Cloudinary URL generation
+- `utils/format-date.liquid` - Date formatting helper
+- `utils/btn-circle.liquid` - Circular button component
+- `utils/member-image.liquid` - Member image URL generator
