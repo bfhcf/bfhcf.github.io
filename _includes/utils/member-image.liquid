@@ -1,0 +1,20 @@
+{% comment %}
+  Generate a member/author image URL with proper formatting
+  
+  Parameters:
+  - author: The author name (required)
+  - base_url: Base URL for images (optional, defaults to site.member_images_url)
+  
+  Output: member_image_url variable
+  
+  Usage:
+  {% include utils/member-image.liquid author='John Doe' %}
+  <img src="{{ member_image_url }}" alt="{{ include.author }}">
+{% endcomment %}
+
+{% assign member_image_filename = include.author | replace: ' ', '_' %}
+{% if include.base_url %}
+  {% assign member_image_url = include.base_url | append: '/' | append: member_image_filename | append: '.jpg' %}
+{% else %}
+  {% assign member_image_url = site.member_images_url | append: '/' | append: member_image_filename | append: '.jpg' %}
+{% endif %}

@@ -1,0 +1,17 @@
+{% comment %}
+  Generate a circular button with icon
+  
+  Parameters:
+  - icon: zmdi icon class (e.g., 'zmdi-facebook')
+  - url: Button link URL
+  - class: Additional CSS classes (optional, e.g., 'btn-facebook')
+  - size: Button size class (optional, e.g., 'btn-circle-sm', 'btn-circle-lg')
+  - style: Additional inline styles (optional)
+  
+  Usage:
+  {% include utils/btn-circle.liquid icon='zmdi-facebook' url='https://facebook.com' class='btn-facebook' %}
+{% endcomment %}
+
+<a href="{{ include.url }}" class="btn-circle {% if include.class %}{{ include.class }}{% endif %} {% if include.size %}{{ include.size }}{% endif %}"{% if include.style %} style="{{ include.style }}"{% endif %}{% if include.url contains 'http' %} target="_blank"{% endif %}>
+  <i class="zmdi {{ include.icon }}"></i>
+</a>
