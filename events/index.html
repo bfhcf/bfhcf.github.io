@@ -17,23 +17,7 @@ title: Events
                 {% for event in site.categories.events %}
                 {% assign event_date = event.event_date | date: '%Y%m%d' %}
                 {% if event_date >= today_date or event_date == nil %}
-                {% include ministry-info.liquid ministry_slug=event.ministry %}
-                <div class="col-lg-4 col-md-6 masonry-item wow fadeInUp animation-delay-2">
-                    <div class="card">
-                        <figure class="ms-thumbnail ms-thumbnail-horizontal">
-                            <a href="{{ event.url }}"><img src="{{ site.events_images_url }}/{{ event.image }}" alt="" class="img-fluid"></a>
-                        </figure>
-                        <div class="card-body overflow-hidden text-center">
-
-                            <div class="btn-circle btn-circle-raised btn-card-float btn-circle-{{ ministryColor }} wow zoomInDown index-2"><img src="{{ site.ministry_logo_url }}/{{ ministryLogo }}.png" alt="" style="filter: brightness(0) invert(1); width: 40px;"></div>
-
-                            <a href="{{ event.url }}"><h4 class="color-bfhcf-teal">{{ event.title }} {% if event.speaker %} by {{ event.speaker }} {% endif %} </h4></a>
-
-                            {{ event.content }}
-
-                        </div>
-                    </div>
-                </div> <!-- item -->
+                {% include event-card.liquid event=event %}
                 {% endif %}
                 {% endfor %}</p>
             </div>

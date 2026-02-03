@@ -1,0 +1,33 @@
+{% comment %}
+  Event card component for displaying event information in a card layout
+  
+  Parameters:
+  - event: The event object containing all event data
+  
+  Required event properties:
+  - event.url: Link to the event detail page
+  - event.image: Event image filename
+  - event.title: Event title
+  - event.content: Event description/content
+  - event.ministry: Ministry slug (optional)
+  - event.speaker: Speaker name (optional)
+{% endcomment %}
+
+{% include ministry-info.liquid ministry_slug=include.event.ministry %}
+
+<div class="col-lg-4 col-md-6 masonry-item wow fadeInUp animation-delay-2">
+    <div class="card">
+        <figure class="ms-thumbnail ms-thumbnail-horizontal">
+            <a href="{{ include.event.url }}"><img src="{{ site.events_images_url }}/{{ include.event.image }}" alt="" class="img-fluid"></a>
+        </figure>
+        <div class="card-body overflow-hidden text-center">
+
+            <div class="btn-circle btn-circle-raised btn-card-float btn-circle-{{ ministryColor }} wow zoomInDown index-2"><img src="{{ site.ministry_logo_url }}/{{ ministryLogo }}.png" alt="" style="filter: brightness(0) invert(1); width: 40px;"></div>
+
+            <a href="{{ include.event.url }}"><h4 class="color-bfhcf-teal">{{ include.event.title }} {% if include.event.speaker %} by {{ include.event.speaker }} {% endif %} </h4></a>
+
+            {{ include.event.content }}
+
+        </div>
+    </div>
+</div> <!-- item -->
