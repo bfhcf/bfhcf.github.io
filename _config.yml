@@ -33,6 +33,12 @@ city: BF Homes, Las Piñas, Philippines
 tel_number: +63 2 8807 5689
 tel_number2: +63 917 628 4715
 
+# Cloudinary configuration
+cloudinary:
+  cloud_name: bfhcf
+  base_url: https://res.cloudinary.com/bfhcf/image/upload
+
+# Legacy Cloudinary URLs (deprecated - kept for backward compatibility)
 logo_url: https://res.cloudinary.com/bfhcf/image/upload/logos
 ministry_logo_url: https://res.cloudinary.com/bfhcf/image/upload/logos/ministries
 ministry_logo_thumbnail_url: https://res.cloudinary.com/bfhcf/image/upload/c_scale,w_500/logos/ministries

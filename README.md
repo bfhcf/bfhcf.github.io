@@ -42,3 +42,14 @@ Content writeup about the post is written here.
  * ministry - See `ministries.yml` for `slug` for each ministry
  * event_date - The date of the event in yyyy-mm-dd format (Optional, if not set, post will be displayed always)
  * image - The file name of the image that is uploaded to Cloudinary. Need Cloudinary Access to upload photos
+
+### Cloudinary Image Management
+Images are stored on Cloudinary. The configuration is in `_config.yml` under the `cloudinary` section.
+
+To use the Cloudinary URL helper:
+```liquid
+{% include cloudinary-url.liquid path='events/event-image.jpg' transforms='c_scale,w_594' %}
+{{ cloudinary_url }}
+```
+
+Legacy URLs (e.g., `site.events_images_url`) are still supported but the new Cloudinary helper is recommended for new code.

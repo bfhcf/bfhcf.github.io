@@ -1,0 +1,19 @@
+{% comment %}
+  Generate Cloudinary image URL
+  
+  Parameters:
+  - path: The path to the image (e.g., 'logos/header-logo-small.png')
+  - transforms: Optional transformations (e.g., 'c_scale,w_500')
+  
+  Usage:
+  {% include cloudinary-url.liquid path='logos/header-logo-small.png' %}
+  {% include cloudinary-url.liquid path='events/event-image.jpg' transforms='c_scale,w_594' %}
+  
+  Output: Assigns the URL to a variable called 'cloudinary_url'
+{% endcomment %}
+
+{% if include.transforms %}
+  {% assign cloudinary_url = site.cloudinary.base_url | append: '/' | append: include.transforms | append: '/' | append: include.path %}
+{% else %}
+  {% assign cloudinary_url = site.cloudinary.base_url | append: '/' | append: include.path %}
+{% endif %}
