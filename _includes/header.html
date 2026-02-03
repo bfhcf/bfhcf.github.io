@@ -32,19 +32,9 @@
             <ul class="navbar-nav">
                 {% assign pageUrl = page.url | remove: ".html" %}
                 {% for link in site.navigation %}
-                {% assign active = nil %}
-                {% if (pageUrl  == link.url) %}
-                    {% assign active = 'active' %}
-                {% endif %}
-                {% if link.navtabs %}
-                    {% for navtab in link.navtabs %}
-                        {% if (pageUrl  == navtab.url) %}
-                        {% assign active = 'active' %}
-                        {% endif %}
-                    {% endfor %}
-                {% endif %}
+                {% include nav-active.liquid link=link page_url=pageUrl %}
 
-                <li class="nav-item dropdown {{ active }}">
+                <li class="nav-item dropdown {{ nav_active }}">
                     {% if link.navtabs %}
                     <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-8" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="{{ link.data_name }}">{{ link.text }} <i class="zmdi zmdi-chevron-down"></i></a>
                     <ul class="dropdown-menu">

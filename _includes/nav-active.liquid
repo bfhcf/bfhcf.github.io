@@ -1,0 +1,25 @@
+{% comment %}
+  Check if a navigation link is active based on current page URL
+  
+  Parameters:
+  - link: The navigation link object
+  - page_url: The current page URL (without .html)
+  
+  Output: Assigns 'nav_active' variable to 'active' or empty string
+{% endcomment %}
+
+{% assign nav_active = nil %}
+
+{% comment %} Check if the main link URL matches {% endcomment %}
+{% if include.page_url == include.link.url %}
+  {% assign nav_active = 'active' %}
+{% endif %}
+
+{% comment %} Check if any navtab URLs match {% endcomment %}
+{% if include.link.navtabs %}
+  {% for navtab in include.link.navtabs %}
+    {% if include.page_url == navtab.url %}
+      {% assign nav_active = 'active' %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
