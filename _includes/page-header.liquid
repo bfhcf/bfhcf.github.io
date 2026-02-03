@@ -1,0 +1,35 @@
+{% comment %}
+  Page header component for displaying page titles and descriptions
+  
+  Parameters:
+  - title: The page title (required)
+  - description: The page description/lead text (optional)
+  - hero_class: Additional hero CSS classes for background images (optional, e.g., 'ms-hero-img-team ms-hero-bg-primary')
+  - container_class: Container class to use (default: 'container')
+  
+  Usage examples:
+  {% include page-header.liquid title="Events" description="Join and fellowship with us..." %}
+  {% include page-header.liquid title="Contact Us" description="If you have any questions..." hero_class="ms-hero-img-team ms-hero-bg-primary" %}
+{% endcomment %}
+
+{% if include.hero_class %}
+<div class="ms-hero-page-override {{ include.hero_class }}">
+    <div class="{% if include.container_class %}{{ include.container_class }}{% else %}container{% endif %}">
+        <div class="text-center">
+            <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">{{ include.title }}</h1>
+            {% if include.description %}
+            <p class="lead lead-lg color-light text-center center-block mt-2 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7">{{ include.description }}</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="material-background"></div>
+<div class="{% if include.container_class %}{{ include.container_class }}{% else %}container{% endif %}">
+    <div class="text-center mb-6">
+        <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">{{ include.title }}</h1>
+        {% if include.description %}
+        <p class="lead lead-lg color-white text-center center-block mt-2 mb-4 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7">{{ include.description }}</p>
+        {% endif %}
+    </div>
+{% endif %}
