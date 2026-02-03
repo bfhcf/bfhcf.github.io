@@ -3,18 +3,7 @@ layout: default
 ---
 
 {% assign event_title = page.title %}
-{% assign ministry = site.data.ministries | where: "slug", page.ministry | first  %}
-{% assign ministryColor = ministry.color %}
-{% if ministry.slug == 'cgm' %}
-{% assign ministryLogo = 'cgm-logo-transparent' %}
-{% else %}
-{% assign ministryLogo = ministry.slug | append: '-logo' %}
-{% endif %}
-
-{% unless page.ministry  %}
-{% assign ministryLogo = 'bfhcf-logo' %}
-{% assign ministryColor = 'primary' %}
-{% endunless %}
+{% include ministry-info.liquid ministry_slug=page.ministry default_logo='bfhcf-logo' %}
 <div class="material-background"></div>
 
 <div class="container">

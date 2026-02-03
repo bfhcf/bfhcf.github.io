@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% assign slug = page.url | split: "/" | last | remove: ".html" %}
-{% assign ministry = site.data.ministries | where: "slug", slug | first  %}
+{% include ministry-info.liquid ministry_slug=slug logo_suffix='' %}
 {% assign dark_color_slugs = "cgm,snl" | split: "," %}
 {% assign color = site.data.colors | where: "name", ministry.color | first %}
 <div class="ms-hero-page-override ms-hero-bg-primary ms-hero-img-church ministry-hero">
@@ -13,11 +13,6 @@ layout: default
     <div class="card card-hero animated fadeInUp animation-delay-7">
         <div class="row no-m bg-{{ministry.color}}">
             <div class="col-lg-6">
-                {% if ministry.slug == 'cgm' %}
-                    {% assign ministryLogo = 'cgm-transparent' %}
-                {% else %}
-                    {% assign ministryLogo = ministry.slug %}
-                {% endif %}
                 <img src="{{ site.ministry_logo_url }}/{{ ministryLogo }}.png" alt="..." class="img-fluid text-center ministry-logo-inverted">
             </div>
         </div>

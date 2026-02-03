@@ -1,0 +1,34 @@
+{% comment %}
+  Include to extract ministry logo and color information
+  
+  Parameters:
+  - ministry_slug: The slug of the ministry to look up
+  - default_logo: The default logo to use if no ministry is specified (default: 'bfhcf-logo-transparent')
+  - logo_suffix: Suffix to append to the ministry slug (default: '-logo')
+  
+  Outputs:
+  - ministry: The ministry object from the data file
+  - ministryColor: The color class for the ministry
+  - ministryLogo: The logo filename (without extension) for the ministry
+{% endcomment %}
+
+{% assign ministry = site.data.ministries | where: "slug", include.ministry_slug | first %}
+{% assign ministryColor = ministry.color %}
+{% if ministry.slug == 'cgm' %}
+  {% if include.logo_suffix == '' %}
+    {% assign ministryLogo = 'cgm-transparent' %}
+  {% else %}
+    {% assign ministryLogo = 'cgm-logo-transparent' %}
+  {% endif %}
+{% else %}
+  {% if include.logo_suffix == '' %}
+    {% assign ministryLogo = ministry.slug %}
+  {% else %}
+    {% assign ministryLogo = ministry.slug | append: '-logo' %}
+  {% endif %}
+{% endif %}
+
+{% unless include.ministry_slug %}
+  {% assign ministryLogo = include.default_logo | default: 'bfhcf-logo-transparent' %}
+  {% assign ministryColor = 'primary' %}
+{% endunless %}
