@@ -64,6 +64,14 @@ body, html {
     }
 }
 
+.ministry-hero {
+    padding: 100px;
+}
+
+.ministry-logo-inverted {
+    filter: brightness(0) invert(1);
+}
+
 .ms-logo.ms-logo-xl  {
     width: 100px;
     height: 100px;
@@ -107,24 +115,6 @@ body, html {
 .media-object-circle.media-object-circle-md {
     width: 75px;
 }
-
-.ministry-tint {
-    position: relative;
-    display: inline-block;
-}
-
-.ministry-tint:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 255, 255, 0.5);
-    transition: all 0.3s linear;
-}
-
 
 .ms-footbar {
     margin-top: 0 !important;

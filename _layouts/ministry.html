@@ -6,7 +6,7 @@ layout: default
 {% assign ministry = site.data.ministries | where: "slug", slug | first  %}
 {% assign dark_color_slugs = "cgm,snl" | split: "," %}
 {% assign color = site.data.colors | where: "name", ministry.color | first %}
-<div class="ms-hero-page-override ms-hero-bg-primary ms-hero-img-church" style="padding:100px;">
+<div class="ms-hero-page-override ms-hero-bg-primary ms-hero-img-church ministry-hero">
 
 </div>
 <div class="container">
@@ -18,7 +18,7 @@ layout: default
                 {% else %}
                     {% assign ministryLogo = ministry.slug %}
                 {% endif %}
-                <img src="{{ site.ministry_logo_url }}/{{ ministryLogo }}.png" alt="..." class="img-fluid text-center" style="filter: brightness(0) invert(1);">
+                <img src="{{ site.ministry_logo_url }}/{{ ministryLogo }}.png" alt="..." class="img-fluid text-center ministry-logo-inverted">
             </div>
         </div>
         <div class="row">
@@ -41,9 +41,3 @@ layout: default
 </div> <!-- container -->
 
 {% include cgm-script.html %}
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.ministry-tint').append('<style>.ministry-tint:before{background:{{color.hex}} !important; opacity: 0.2;}</style>');
-    })
-
-</script>
