@@ -2,6 +2,7 @@
 layout: event
 title: WOMB Stronger Together
 event_date: 2026-07-04
+ministry: womb
 image: 2026-07-04-womb-stronger-together
 ---
 
