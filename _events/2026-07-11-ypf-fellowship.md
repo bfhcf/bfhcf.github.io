@@ -3,6 +3,7 @@ layout: event
 title: YPF Fellowship
 event_date: 2026-07-11
 ministry: ypf
+image: 2026-07-11-ypf-fellowship
 ---
 
 We are reminding our young people ages 15 and up that the YPF fellowship is
