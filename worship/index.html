@@ -3,7 +3,7 @@ layout: default
 title: Bread From Heaven Worship
 category-name: logos
 image: https://res.cloudinary.com/bfhcf/image/upload/c_fill,g_auto,h_1200,w_1200/v1784545203/album-covers/hosanna_to_the_king_album_cover.png
-description: Original worship albums, lyrics, song metadata, and audio releases from Bread From Heaven Worship.
+description: Bread From Heaven Worship is the worship band of Bread From Heaven Christian Fellowship, serving the church through Christ-centered, doctrinally sound songs for congregational worship.
 og_image: https://res.cloudinary.com/bfhcf/image/upload/c_fill,g_auto,h_1200,w_1200/v1784545203/album-covers/hosanna_to_the_king_album_cover.png
 ---
 
@@ -15,7 +15,7 @@ og_image: https://res.cloudinary.com/bfhcf/image/upload/c_fill,g_auto,h_1200,w_1
         <div class="col-lg-8">
           <p class="worship-kicker">Original Worship Songs</p>
           <h1>Bread From Heaven Worship</h1>
-          <p class="lead lead-lg color-white">Albums, lyrics, song metadata, demos, and audio releases from Bread From Heaven Christian Fellowship.</p>
+          <p class="lead lead-lg color-white">The worship band of Bread From Heaven Christian Fellowship, serving the church through Christ-centered, doctrinally sound songs for congregational worship.</p>
         </div>
         <div class="col-lg-4 text-lg-right mt-4 mt-lg-0">
           <a href="#albums" class="btn btn-raised btn-warning"><i class="zmdi zmdi-album"></i> View Albums</a>
@@ -24,7 +24,17 @@ og_image: https://res.cloudinary.com/bfhcf/image/upload/c_fill,g_auto,h_1200,w_1
     </div>
   </section>
 
-  <section id="albums" class="container pt-6 pb-4">
+  <section class="container worship-intro">
+    <div class="row">
+      <div class="col-lg-9">
+        <h2 class="color-primary">Songs from the life of the local church</h2>
+        <p>Bread From Heaven Worship is the worship band of Bread From Heaven Christian Fellowship. These songs are written and arranged to help the church behold Christ, proclaim His gospel, and respond together in joyful, Scripture-rooted worship.</p>
+        <p>Our songs seek to uphold the Reformed doctrines we confess as a church, with lyrics shaped by Scripture and tested for doctrinal faithfulness. We aim to be content first and music next, letting melody and arrangement serve the truth being sung.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="albums" class="container pt-4 pb-4">
     <div class="row">
       {% assign published_albums = site.data.worship_albums | where: "published", true %}
       {% for album in published_albums %}
