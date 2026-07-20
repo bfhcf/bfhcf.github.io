@@ -1,0 +1,50 @@
+---
+layout: default
+title: Bread From Heaven Worship
+category-name: logos
+image: https://res.cloudinary.com/bfhcf/image/upload/c_fill,g_auto,h_1200,w_1200/v1784545203/album-covers/hosanna_to_the_king_album_cover.png
+description: Original worship albums, lyrics, song metadata, and audio releases from Bread From Heaven Worship.
+og_image: https://res.cloudinary.com/bfhcf/image/upload/c_fill,g_auto,h_1200,w_1200/v1784545203/album-covers/hosanna_to_the_king_album_cover.png
+---
+
+<div class="worship-page">
+  <section class="worship-hero ms-hero-bg-primary">
+    <img class="worship-hero-bg-img" src="https://res.cloudinary.com/bfhcf/image/upload/c_fill,g_north,h_1080,w_1920/e_contrast:20,e_brightness:-8/v1784545203/album-covers/hosanna_to_the_king_album_cover.png" alt="" aria-hidden="true">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <p class="worship-kicker">Original Worship Songs</p>
+          <h1>Bread From Heaven Worship</h1>
+          <p class="lead lead-lg color-white">Albums, lyrics, song metadata, demos, and audio releases from Bread From Heaven Christian Fellowship.</p>
+        </div>
+        <div class="col-lg-4 text-lg-right mt-4 mt-lg-0">
+          <a href="#albums" class="btn btn-raised btn-warning"><i class="zmdi zmdi-album"></i> View Albums</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="albums" class="container pt-6 pb-4">
+    <div class="row">
+      {% assign published_albums = site.data.worship_albums | where: "published", true %}
+      {% for album in published_albums %}
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a class="worship-album-link" href="/worship/{{ album.slug }}/">
+          <span class="worship-cover">
+            {% if album.cover_image %}
+              {% include cloudinary-url.liquid path=album.cover_image transforms='c_fill,g_auto,h_900,w_900' %}
+              <img src="{{ cloudinary_url }}" alt="{{ album.title }} album cover">
+            {% else %}
+              <span class="worship-cover-placeholder">
+                <span>{{ album.title }}</span>
+              </span>
+            {% endif %}
+          </span>
+          <span class="worship-album-title">{{ album.title }}</span>
+          <span class="worship-album-meta">{{ album.album_type }}{% if album.release_year %} · {{ album.release_year }}{% endif %}</span>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>

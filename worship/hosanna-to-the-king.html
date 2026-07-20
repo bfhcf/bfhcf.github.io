@@ -1,0 +1,14 @@
+---
+layout: default
+title: Hosanna to the King
+category-name: logos
+image: https://res.cloudinary.com/bfhcf/image/upload/c_fill,g_auto,h_1200,w_1200/v1784545203/album-covers/hosanna_to_the_king_album_cover.png
+description: Listen to Hosanna to the King, the debut worship EP from Bread From Heaven Worship.
+og_image: https://res.cloudinary.com/bfhcf/image/upload/c_fill,g_auto,h_1200,w_1200/v1784545203/album-covers/hosanna_to_the_king_album_cover.png
+permalink: /worship/hosanna-to-the-king/
+---
+
+<div class="worship-page">
+  {% assign album = site.data.worship_albums | where: "slug", "hosanna-to-the-king" | first %}
+  {% include worship-album-detail.html album=album %}
+</div>

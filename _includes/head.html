@@ -23,7 +23,9 @@
         {% endif %}
 
     </title>
-    {% if page.image and page.category-name %}
+    {% if page.og_image %}
+    <meta property="og:image" content="{{ page.og_image }}" />
+    {% elsif page.image and page.category-name %}
     <meta property="og:image" content="https://res.cloudinary.com/bfhcf/image/upload/c_scale,w_627/{{ page.category-name }}/{{ page.image }}" />
     {% else %}
     <meta property="og:image" content="https://res.cloudinary.com/bfhcf/image/upload/c_scale,w_630/logos/bfhcf-og-image-logo_xj7m3i.png" />

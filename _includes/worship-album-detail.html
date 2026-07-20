@@ -1,0 +1,144 @@
+{% assign album = include.album %}
+
+<section class="worship-album-section worship-album-section-single">
+  <div class="container">
+    <p class="mb-4">
+      <a href="/worship/" class="btn btn-raised btn-primary"><i class="zmdi zmdi-arrow-left"></i> All Worship Albums</a>
+    </p>
+
+    <div class="row align-items-start">
+      <div class="col-lg-4 mb-4">
+        <span class="worship-cover worship-cover-large">
+          {% if album.cover_image %}
+            {% include cloudinary-url.liquid path=album.cover_image transforms='c_fill,g_auto,h_1200,w_1200' %}
+            <img src="{{ cloudinary_url }}" alt="{{ album.title }} album cover">
+          {% else %}
+            <span class="worship-cover-placeholder">
+              <span>{{ album.title }}</span>
+            </span>
+          {% endif %}
+        </span>
+        {% if album.cover_status %}
+        <p class="small text-muted mt-2 mb-0">{{ album.cover_status }}</p>
+        {% endif %}
+      </div>
+      <div class="col-lg-8">
+        <p class="worship-kicker color-primary">{{ album.album_type }}</p>
+        <h1 class="color-primary">{{ album.title }}</h1>
+        <p class="lead lead-sm">{{ album.artist }}</p>
+        <p>{{ album.description }}</p>
+
+        <div class="worship-album-facts">
+          <span><strong>Release:</strong> {{ album.release_date }}</span>
+          <span><strong>Genre:</strong> {{ album.genre }}{% if album.subgenre %}, {{ album.subgenre }}{% endif %}</span>
+          <span><strong>Language:</strong> {{ album.language }}</span>
+          <span><strong>Copyright:</strong> {{ album.copyright }}</span>
+          <span><strong>Master:</strong> {{ album.master }}</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="worship-listen-panel">
+      <div class="worship-listen-heading">
+        <div>
+          <p class="worship-kicker color-primary">Listen</p>
+          <h2>Play the EP</h2>
+        </div>
+        <p class="mb-0 text-muted">Choose a song to jump to its player, lyrics, and credits.</p>
+      </div>
+      <div class="worship-track-grid">
+        {% assign listen_track_number = 0 %}
+        {% for song in site.data.worship_songs %}
+          {% assign song_album = song["Album / EP"] %}
+          {% if song_album == album.title %}
+            {% assign listen_track_number = listen_track_number | plus: 1 %}
+            {% assign listen_slug = song["Title"] | slugify %}
+            <a href="#{{ listen_slug }}" class="worship-track-link">
+              <span>{{ listen_track_number }}</span>
+              <strong>{{ song["Title"] }}</strong>
+              {% if song["Audio URL"] %}
+              <i class="zmdi zmdi-play-circle"></i>
+              {% else %}
+              <i class="zmdi zmdi-time"></i>
+              {% endif %}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    <div class="worship-song-list mt-4">
+      {% assign track_number = 0 %}
+      {% for song in site.data.worship_songs %}
+        {% assign song_album = song["Album / EP"] %}
+        {% if song_album == album.title %}
+          {% assign track_number = track_number | plus: 1 %}
+          {% assign song_slug = song["Title"] | slugify %}
+          <article class="worship-song" id="{{ song_slug }}">
+            <div class="worship-song-header">
+              <div>
+                <p class="worship-track">Track {{ track_number }}</p>
+                <h2>{{ song["Title"] }}</h2>
+                {% if song["Song Note"] %}
+                <p class="worship-song-note">{{ song["Song Note"] }}</p>
+                {% endif %}
+              </div>
+              <a href="#{{ song_slug }}" class="btn-circle btn-circle-primary" aria-label="Link to {{ song["Title"] }}"><i class="zmdi zmdi-link"></i></a>
+            </div>
+
+            <div class="worship-song-meta">
+              <span><strong>Composer / Artist:</strong> {{ song["Composer / Artist"] }}</span>
+              <span><strong>Themes:</strong> {{ song["Theme/s"] }}</span>
+              {% if song["Scripture Reference(s)"] %}
+              <span><strong>Scripture:</strong> {{ song["Scripture Reference(s)"] }}</span>
+              {% endif %}
+              {% if song["Arranger(s)"] %}
+              <span><strong>Arrangers:</strong> {{ song["Arranger(s)"] }}</span>
+              {% endif %}
+              <span><strong>Key:</strong> {{ song["Key"] }}</span>
+              <span><strong>Tempo:</strong> {{ song["Tempo"] }} BPM</span>
+            </div>
+
+            {% if song["Audio URL"] %}
+            <div class="worship-audio">
+              <audio class="js-player" controls preload="metadata">
+                <source src="{{ song["Audio URL"] }}" type="audio/mpeg">
+              </audio>
+            </div>
+            {% else %}
+            <p class="worship-audio-empty">Playable audio will appear here after the track is uploaded to Cloudinary.</p>
+            {% endif %}
+
+            <details class="worship-lyrics">
+              <summary>Lyrics</summary>
+              <div class="worship-lyrics-sheet">
+                {% assign lyric_lines = song["Lyrics"] | newline_to_br | split: "<br />" %}
+                {% for lyric_line in lyric_lines %}
+                  {% assign clean_line = lyric_line | strip %}
+                  {% assign last_character = clean_line | slice: -1, 1 %}
+                  {% if clean_line == "" %}
+                    <div class="worship-lyric-space"></div>
+                  {% elsif last_character == ":" %}
+                    <h3>{{ clean_line }}</h3>
+                  {% else %}
+                    <p>{{ clean_line }}</p>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </details>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <p class="worship-copyright-note">{{ album.copyright }}. {{ album.master }}. All rights reserved. Lyrics and audio are provided for worship, review, and ministry use by Bread From Heaven Christian Fellowship.</p>
+  </div>
+</section>
+
+<script>
+  $(document).ready(function () {
+    Array.from(document.querySelectorAll(".js-player")).map(function (player) {
+      return new Plyr(player);
+    });
+  });
+</script>
