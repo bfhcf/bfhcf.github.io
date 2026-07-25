@@ -8,7 +8,7 @@ themes:
   - Sovereignty
   - Christ-Centered Creation
   - Sustaining Power
-key: Eb
+key: E
 tempo: 75
 planning_center_link: https://services.planningcenteronline.com/songs/29239471/arrangements/34159674
 demo_track: https://drive.google.com/file/d/1yie-tHNf6GmUQ7m4W_BK_LlXqZMMlhqg/view?usp=drive_link
