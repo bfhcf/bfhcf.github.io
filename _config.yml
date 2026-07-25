@@ -24,8 +24,10 @@ twitter_username: jekyllrb
 github_username:  jekyll
 facebook_url: https://www.facebook.com/bfhcf
 youtube_channel_url: https://www.youtube.com/bfhcf
-youtube_api_key: AIzaSyADnoqPB_iM1Q2qhtbCe64x3HS4fB903z0
-podcast_api_key: f3f01cb7cc23bb7b308833bab0f18db9
+# API keys should be set as environment variables for security
+# Set YOUTUBE_API_KEY and PODCAST_API_KEY in your deployment environment
+youtube_api_key: <%= ENV['YOUTUBE_API_KEY'] %>
+podcast_api_key: <%= ENV['PODCAST_API_KEY'] %>
 google_analytics: G-H0HGBG8D6D
 
 address: Concha Cruz corner Poblete St. (Phase V)

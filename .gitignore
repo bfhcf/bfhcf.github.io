@@ -7,3 +7,7 @@ _site/
 vendor/*
 .bundle/
 vendor/bundle/
+
+# Environment variables (contains API keys)
+.env
+.env.local
