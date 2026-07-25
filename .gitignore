@@ -11,3 +11,7 @@ vendor/bundle/
 # Environment variables (contains API keys)
 .env
 .env.local
+
+# Local config with API keys (for development)
+_config.local.yml
+_config_secrets.yml

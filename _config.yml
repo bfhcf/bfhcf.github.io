@@ -24,10 +24,11 @@ twitter_username: jekyllrb
 github_username:  jekyll
 facebook_url: https://www.facebook.com/bfhcf
 youtube_channel_url: https://www.youtube.com/bfhcf
-# API keys should be set as environment variables for security
-# Set YOUTUBE_API_KEY and PODCAST_API_KEY in your deployment environment
-youtube_api_key: <%= ENV['YOUTUBE_API_KEY'] %>
-podcast_api_key: <%= ENV['PODCAST_API_KEY'] %>
+# API keys are injected at build time via GitHub Actions secrets
+# See .github/workflows/jekyll.yml and _config_secrets.yml
+# For local development, create _config.local.yml with your keys
+youtube_api_key: ""
+podcast_api_key: ""
 google_analytics: G-H0HGBG8D6D
 
 address: Concha Cruz corner Poblete St. (Phase V)

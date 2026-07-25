@@ -1,0 +1,9 @@
+# Local development configuration
+# Copy this file to _config.local.yml and add your API keys
+# _config.local.yml is ignored by git for security
+
+# Your YouTube API key (get from Google Cloud Console)
+youtube_api_key: "your_youtube_api_key_here"
+
+# Your Podcast API key (ListenNotes or similar)
+podcast_api_key: "your_podcast_api_key_here"
