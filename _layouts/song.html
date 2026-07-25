@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<div class="worship-page">
+  <section class="container pt-4 pb-4">
+    <p class="mb-4">
+      <a href="/worship/{{ page.album | slugify }}/" class="btn btn-raised btn-primary"><i class="zmdi zmdi-arrow-left"></i> Back to {{ page.album }}</a>
+    </p>
+
+    <article class="worship-song-single">
+      <div class="worship-song-header">
+        <div>
+          <p class="worship-kicker color-primary">Track {{ page.track_number }}</p>
+          <h1>{{ page.title }}</h1>
+          {% if page.song_note %}
+          <p class="lead">{{ page.song_note }}</p>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="worship-song-meta mb-4">
+        <span><strong>Album:</strong> {{ page.album }}</span>
+        <span><strong>Composer:</strong> {{ page.composer }}</span>
+        <span><strong>Themes:</strong> {{ page.themes | join: ", " }}</span>
+        {% if page.scripture_references %}
+        <span><strong>Scripture:</strong> {{ page.scripture_references | join: "; " }}</span>
+        {% endif %}
+        {% if page.arrangers %}
+        <span><strong>Arrangers:</strong> {{ page.arrangers | join: ", " }}</span>
+        {% endif %}
+        <span><strong>Key:</strong> {{ page.key }}</span>
+        <span><strong>Tempo:</strong> {{ page.tempo }} BPM</span>
+      </div>
+
+      {% if page.audio_url %}
+      <div class="worship-audio mb-4">
+        <audio class="js-player" controls preload="metadata">
+          <source src="{{ page.audio_url }}" type="audio/mpeg">
+        </audio>
+      </div>
+      {% endif %}
+
+      <div class="worship-lyrics-sheet">
+        {{ content }}
+      </div>
+
+      {% if page.planning_center_link %}
+      <p class="mt-4">
+        <a href="{{ page.planning_center_link }}" class="btn btn-raised btn-info" target="_blank" rel="noopener">
+          <i class="zmdi zmdi-open-in-new"></i> View in Planning Center
+        </a>
+      </p>
+      {% endif %}
+    </article>
+  </section>
+</div>
+
+<script>
+  $(document).ready(function () {
+    Array.from(document.querySelectorAll(".js-player")).map(function (player) {
+      return new Plyr(player);
+    });
+  });
+</script>

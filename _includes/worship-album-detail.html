@@ -47,87 +47,68 @@
         <p class="mb-0 text-muted">Choose a song to jump to its player, lyrics, and credits.</p>
       </div>
       <div class="worship-track-grid">
-        {% assign listen_track_number = 0 %}
-        {% for song in site.data.worship_songs %}
-          {% assign song_album = song["Album / EP"] %}
-          {% if song_album == album.title %}
-            {% assign listen_track_number = listen_track_number | plus: 1 %}
-            {% assign listen_slug = song["Title"] | slugify %}
-            <a href="#{{ listen_slug }}" class="worship-track-link">
-              <span>{{ listen_track_number }}</span>
-              <strong>{{ song["Title"] }}</strong>
-              {% if song["Audio URL"] %}
-              <i class="zmdi zmdi-play-circle"></i>
-              {% else %}
-              <i class="zmdi zmdi-time"></i>
-              {% endif %}
-            </a>
-          {% endif %}
+        {% assign album_songs = site.songs | where: "album", album.title | sort: "track_number" %}
+        {% for song in album_songs %}
+          {% assign listen_slug = song.title | slugify %}
+          <a href="#{{ listen_slug }}" class="worship-track-link">
+            <span>{{ song.track_number }}</span>
+            <strong>{{ song.title }}</strong>
+            {% if song.audio_url %}
+            <i class="zmdi zmdi-play-circle"></i>
+            {% else %}
+            <i class="zmdi zmdi-time"></i>
+            {% endif %}
+          </a>
         {% endfor %}
       </div>
     </section>
 
     <div class="worship-song-list mt-4">
-      {% assign track_number = 0 %}
-      {% for song in site.data.worship_songs %}
-        {% assign song_album = song["Album / EP"] %}
-        {% if song_album == album.title %}
-          {% assign track_number = track_number | plus: 1 %}
-          {% assign song_slug = song["Title"] | slugify %}
-          <article class="worship-song" id="{{ song_slug }}">
-            <div class="worship-song-header">
-              <div>
-                <p class="worship-track">Track {{ track_number }}</p>
-                <h2>{{ song["Title"] }}</h2>
-                {% if song["Song Note"] %}
-                <p class="worship-song-note">{{ song["Song Note"] }}</p>
-                {% endif %}
-              </div>
-              <a href="#{{ song_slug }}" class="btn-circle btn-circle-primary" aria-label="Link to {{ song["Title"] }}"><i class="zmdi zmdi-link"></i></a>
-            </div>
-
-            <div class="worship-song-meta">
-              <span><strong>Composer / Artist:</strong> {{ song["Composer / Artist"] }}</span>
-              <span><strong>Themes:</strong> {{ song["Theme/s"] }}</span>
-              {% if song["Scripture Reference(s)"] %}
-              <span><strong>Scripture:</strong> {{ song["Scripture Reference(s)"] }}</span>
+      {% assign album_songs = site.songs | where: "album", album.title | sort: "track_number" %}
+      {% for song in album_songs %}
+        {% assign song_slug = song.title | slugify %}
+        <article class="worship-song" id="{{ song_slug }}">
+          <div class="worship-song-header">
+            <div>
+              <p class="worship-track">Track {{ song.track_number }}</p>
+              <h2>{{ song.title }}</h2>
+              {% if song.song_note %}
+              <p class="worship-song-note">{{ song.song_note }}</p>
               {% endif %}
-              {% if song["Arranger(s)"] %}
-              <span><strong>Arrangers:</strong> {{ song["Arranger(s)"] }}</span>
-              {% endif %}
-              <span><strong>Key:</strong> {{ song["Key"] }}</span>
-              <span><strong>Tempo:</strong> {{ song["Tempo"] }} BPM</span>
             </div>
+            <a href="#{{ song_slug }}" class="btn-circle btn-circle-primary" aria-label="Link to {{ song.title }}"><i class="zmdi zmdi-link"></i></a>
+          </div>
 
-            {% if song["Audio URL"] %}
-            <div class="worship-audio">
-              <audio class="js-player" controls preload="metadata">
-                <source src="{{ song["Audio URL"] }}" type="audio/mpeg">
-              </audio>
-            </div>
-            {% else %}
-            <p class="worship-audio-empty">Playable audio will appear here after the track is uploaded to Cloudinary.</p>
+          <div class="worship-song-meta">
+            <span><strong>Composer / Artist:</strong> {{ song.composer }}</span>
+            <span><strong>Themes:</strong> {{ song.themes | join: ", " }}</span>
+            {% if song.scripture_references %}
+            <span><strong>Scripture:</strong> {{ song.scripture_references | join: "; " }}</span>
             {% endif %}
+            {% if song.arrangers %}
+            <span><strong>Arrangers:</strong> {{ song.arrangers | join: ", " }}</span>
+            {% endif %}
+            <span><strong>Key:</strong> {{ song.key }}</span>
+            <span><strong>Tempo:</strong> {{ song.tempo }} BPM</span>
+          </div>
 
-            <details class="worship-lyrics">
-              <summary>Lyrics</summary>
-              <div class="worship-lyrics-sheet">
-                {% assign lyric_lines = song["Lyrics"] | newline_to_br | split: "<br />" %}
-                {% for lyric_line in lyric_lines %}
-                  {% assign clean_line = lyric_line | strip %}
-                  {% assign last_character = clean_line | slice: -1, 1 %}
-                  {% if clean_line == "" %}
-                    <div class="worship-lyric-space"></div>
-                  {% elsif last_character == ":" %}
-                    <h3>{{ clean_line }}</h3>
-                  {% else %}
-                    <p>{{ clean_line }}</p>
-                  {% endif %}
-                {% endfor %}
-              </div>
-            </details>
-          </article>
-        {% endif %}
+          {% if song.audio_url %}
+          <div class="worship-audio">
+            <audio class="js-player" controls preload="metadata">
+              <source src="{{ song.audio_url }}" type="audio/mpeg">
+            </audio>
+          </div>
+          {% else %}
+          <p class="worship-audio-empty">Playable audio will appear here after the track is uploaded to Cloudinary.</p>
+          {% endif %}
+
+          <details class="worship-lyrics">
+            <summary>Lyrics</summary>
+            <div class="worship-lyrics-sheet">
+              {{ song.content }}
+            </div>
+          </details>
+        </article>
       {% endfor %}
     </div>
 

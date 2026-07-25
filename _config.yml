@@ -68,6 +68,9 @@ collections:
   devotions:
     output: true
     permalink: /devotions/:title/
+  songs:
+    output: true
+    permalink: /worship/songs/:title/
 
 # Default front matter
 defaults:
@@ -83,6 +86,12 @@ defaults:
     values:
       layout: "devotion"
       category-name: "devotions"
+  - scope:
+      path: ""
+      type: "songs"
+    values:
+      layout: "song"
+      category-name: "worship"
 
 navigation:
   - text: Home
