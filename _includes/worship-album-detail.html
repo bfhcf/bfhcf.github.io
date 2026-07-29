@@ -118,8 +118,18 @@
 
 <script>
   $(document).ready(function () {
-    Array.from(document.querySelectorAll(".js-player")).map(function (player) {
+    var players = Array.from(document.querySelectorAll(".js-player")).map(function (player) {
       return new Plyr(player);
+    });
+
+    players.forEach(function (currentPlayer) {
+      currentPlayer.on("play", function () {
+        players.forEach(function (otherPlayer) {
+          if (otherPlayer !== currentPlayer) {
+            otherPlayer.pause();
+          }
+        });
+      });
     });
   });
 </script>
