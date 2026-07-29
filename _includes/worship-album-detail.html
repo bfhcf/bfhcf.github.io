@@ -112,7 +112,7 @@
       {% endfor %}
     </div>
 
-    <p class="worship-copyright-note">{{ album.copyright }}. {{ album.master }}. All rights reserved. Lyrics and audio are provided for worship, review, and ministry use by Bread From Heaven Christian Fellowship.</p>
+    <p class="worship-copyright-note">© ℗ {% if album.release_year != 'TBD' %}{{ album.release_year }} {% endif %}Bread From Heaven Christian Fellowship. All rights reserved. Lyrics and audio are provided for worship, review, and ministry use.</p>
   </div>
 </section>
 
