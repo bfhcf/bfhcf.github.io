@@ -423,6 +423,103 @@ body, html {
     width: 50px;
 }
 
+.livestream-schedule {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 920px;
+}
+
+.livestream-next {
+    align-items: center;
+    background: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(255, 255, 255, .16);
+    border-left: 4px solid $bfhcf-orange;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    padding: 16px 20px;
+    text-align: left;
+}
+
+.livestream-next-icon {
+    color: $bfhcf-orange;
+    font-size: 30px;
+    line-height: 1;
+    margin-right: 14px;
+}
+
+.livestream-label {
+    color: rgba(255, 255, 255, .72);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    margin: 0 0 2px;
+    text-transform: uppercase;
+}
+
+.livestream-next-details {
+    color: $bfhcf-orange;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.35;
+    margin: 0;
+}
+
+.livestream-rotation-title {
+    color: rgba(255, 255, 255, .72);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    margin: 18px 0 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.livestream-rotation-item {
+    border-left: 1px solid rgba(255, 255, 255, .16);
+    padding: 2px 12px;
+    text-align: center;
+
+    strong,
+    span {
+        display: block;
+    }
+
+    strong {
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+
+    span {
+        color: rgba(255, 255, 255, .72);
+        font-size: 14px;
+    }
+}
+
+.livestream-rotation > div:first-child .livestream-rotation-item {
+    border-left: 0;
+}
+
+@media (max-width: 767.98px) {
+    .livestream-next {
+        justify-content: flex-start;
+    }
+
+    .livestream-next-details {
+        font-size: 18px;
+    }
+
+    .livestream-rotation-item {
+        border-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, .12);
+        padding: 9px 0;
+    }
+
+    .livestream-rotation > div:first-child .livestream-rotation-item {
+        border-top: 0;
+    }
+}
+
 .img-md  {
     height: 120px;
 }

@@ -16,6 +16,36 @@
         </div>
 
         <h3 class="color-white mb-3 wow fadeInDown animation-delay-4 text-center">SUNDAY SERVICES</h3>
+        <div class="livestream-schedule color-white mb-4 wow fadeInDown animation-delay-5">
+            <div class="livestream-next">
+                <span class="livestream-next-icon" aria-hidden="true"><i class="zmdi zmdi-videocam"></i></span>
+                <div>
+                    <p class="livestream-label">Upcoming livestream</p>
+                    <p id="next-sunday-livestream" class="livestream-next-details" aria-live="polite"></p>
+                </div>
+            </div>
+            <p class="livestream-rotation-title">Regular livestream rotation</p>
+            <div class="row livestream-rotation">
+                <div class="col-md-4">
+                    <div class="livestream-rotation-item">
+                        <strong>1st &amp; 3rd Sundays</strong>
+                        <span>English · 10:30am</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="livestream-rotation-item">
+                        <strong>2nd &amp; 4th Sundays</strong>
+                        <span>Tagalog · 8:00am</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="livestream-rotation-item">
+                        <strong>5th Sundays</strong>
+                        <span>Tagalog-English · 5:00pm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row color-dark">
             <div class="col-xl-4 col-lg-4 col-sm-4">
                 <div class="card card-royal-inverse bg-bfhcf-purple wow fadeInLeft animation-delay-3">
@@ -23,6 +53,7 @@
                         <span class="ms-icon ms-icon-circle ms-icon-white ms-icon-xxlg"><i class="icon ion-ios-book color-bfhcf-purple"></i></span>
                         <h4 class="color-light">Tagalog Service</h4>
                         <h5 class="color-light">(With Sunday School)</h5>
+                        <p id="tagalog-livestream" class="color-warning" hidden><i class="zmdi zmdi-videocam"></i> Livestream this Sunday</p>
                         <p class="">8:00am - 9:30am</p>
                     </div>
                 </div>
@@ -32,7 +63,8 @@
                     <div class="text-center card-body">
                         <span class="ms-icon ms-icon-circle ms-icon-white ms-icon-xxlg"><i class="icon ion-ios-book color-bfhcf-green"></i></span>
                         <h4 class="color-light">English Service</h4>
-                        <h5 class="color-light">(With Live Streaming & Sunday School)</h5>
+                        <h5 class="color-light">(With Sunday School)</h5>
+                        <p id="english-livestream" class="color-warning" hidden><i class="zmdi zmdi-videocam"></i> Livestream this Sunday</p>
                         <p class="">10:30am - 12:00pm</p>
                     </div>
                 </div>
@@ -42,7 +74,8 @@
                     <div class="text-center card-body">
                         <span class="ms-icon ms-icon-circle ms-icon-white ms-icon-xxlg "><i class="icon ion-ios-book color-bfhcf-red"></i></span>
                         <h4 class="color-light">Tagalog-English Service</h4>
-                        <h5 class="color-light">(No Live Streaming & Sunday School)</h5>
+                        <h5 class="color-light">(No Sunday School)</h5>
+                        <p id="tagalog-english-livestream" class="color-warning" hidden><i class="zmdi zmdi-videocam"></i> Livestream this Sunday</p>
                         <p class="">5:00pm - 6:30pm</p>
                     </div>
                 </div>
@@ -64,6 +97,58 @@
 </div>
 
 <script type="text/javascript">
+
+    (function showNextSundayLivestream() {
+        var livestreamNotice = document.getElementById("next-sunday-livestream");
+        if (!livestreamNotice || !window.Intl || !Intl.DateTimeFormat.prototype.formatToParts) {
+            return;
+        }
+
+        var manilaDateParts = {};
+        var parts = new Intl.DateTimeFormat("en-US", {
+            timeZone: "Asia/Manila",
+            year: "numeric",
+            month: "numeric",
+            day: "numeric"
+        }).formatToParts(new Date());
+
+        parts.forEach(function (part) {
+            if (part.type !== "literal") {
+                manilaDateParts[part.type] = parseInt(part.value, 10);
+            }
+        });
+
+        var manilaToday = new Date(Date.UTC(
+            manilaDateParts.year,
+            manilaDateParts.month - 1,
+            manilaDateParts.day
+        ));
+        var daysUntilSunday = (7 - manilaToday.getUTCDay()) % 7;
+        var nextSunday = new Date(manilaToday.getTime() + (daysUntilSunday * 86400000));
+        var sundayOfMonth = Math.floor((nextSunday.getUTCDate() - 1) / 7) + 1;
+        var livestream;
+
+        if (sundayOfMonth === 1 || sundayOfMonth === 3) {
+            livestream = { service: "English Service", time: "10:30am", elementId: "english-livestream" };
+        } else if (sundayOfMonth === 2 || sundayOfMonth === 4) {
+            livestream = { service: "Tagalog Service", time: "8:00am", elementId: "tagalog-livestream" };
+        } else {
+            livestream = { service: "Tagalog-English Service", time: "5:00pm", elementId: "tagalog-english-livestream" };
+        }
+
+        var sundayLabel = new Intl.DateTimeFormat("en-US", {
+            timeZone: "UTC",
+            weekday: "long",
+            month: "long",
+            day: "numeric"
+        }).format(nextSunday);
+        livestreamNotice.textContent = sundayLabel + " · " + livestream.service + " · " + livestream.time;
+
+        var livestreamMarker = document.getElementById(livestream.elementId);
+        if (livestreamMarker) {
+            livestreamMarker.hidden = false;
+        }
+    }());
 
 	function getGuidelineUrl() {
 		var mykey = "{{site.youtube_api_key}}",
