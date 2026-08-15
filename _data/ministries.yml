@@ -8,6 +8,11 @@
   color: bfhcf-purple
   category: support
 
+- name: Bread Business Stewards Fellowship
+  slug: bbsf
+  color: bfhcf-teal
+  category: covenant-family
+
 - name: Church Assisted Students
   slug: cas
   color: bfhcf-cyan
@@ -117,4 +122,3 @@
   slug: ypro
   color: bfhcf-cyan
   category: covenant-family
-
