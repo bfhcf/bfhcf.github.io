@@ -2,6 +2,7 @@
 layout: event
 title: Church Anniversary
 event_date: 2026-10-25
+image: 2026-10-25-church-anniversary
 ---
 
 October is not just Reformation Month, but it is also the month we celebrate God's faithfulness to Bread From Heaven! That is why we will be celebrating the church anniversary with special services on October 25.
