@@ -242,6 +242,55 @@ body, html {
     padding-top: 50px;
 }
 
+.worship-streaming {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.worship-streaming--hero {
+    justify-content: flex-end;
+    margin-bottom: 4px;
+}
+
+.worship-stream-badge {
+    display: inline-flex;
+    line-height: 0;
+    text-decoration: none !important;
+
+    img {
+        display: block;
+        height: 40px;
+        width: auto;
+    }
+}
+
+.worship-stream-badge-yt {
+    align-items: center;
+    background: #ff0033;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-flex;
+    font-size: 13px;
+    font-weight: 700;
+    gap: 8px;
+    height: 40px;
+    letter-spacing: 0.01em;
+    padding: 0 14px 0 12px;
+    white-space: nowrap;
+
+    i {
+        font-size: 18px;
+    }
+}
+
+.worship-stream-badge--youtube:hover .worship-stream-badge-yt {
+    background: #e6002e;
+    color: #fff;
+}
+
 .worship-album-facts,
 .worship-song-meta {
     display: flex;

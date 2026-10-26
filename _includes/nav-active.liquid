@@ -10,8 +10,18 @@
 
 {% assign nav_active = nil %}
 
-{% comment %} Check if the main link URL matches {% endcomment %}
-{% if include.page_url == include.link.url %}
+{% comment %} Exact match, or section prefix for paths like /worship/hosanna-to-the-king/ {% endcomment %}
+{% if include.link.url and include.link.url != '/' %}
+  {% if include.page_url == include.link.url %}
+    {% assign nav_active = 'active' %}
+  {% else %}
+    {% assign link_url_len = include.link.url | size %}
+    {% assign page_prefix = include.page_url | slice: 0, link_url_len %}
+    {% if page_prefix == include.link.url %}
+      {% assign nav_active = 'active' %}
+    {% endif %}
+  {% endif %}
+{% elsif include.page_url == include.link.url %}
   {% assign nav_active = 'active' %}
 {% endif %}
 

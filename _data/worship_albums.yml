@@ -7,11 +7,14 @@
   language: English
   genre: Christian
   subgenre: Contemporary Worship
-  description: Hosanna to the King is the debut worship EP from Bread From Heaven Worship. These original songs were written to help the church behold Christ, proclaim His gospel, and respond in joyful, congregational worship.
+  description: Hosanna to the King is the debut worship EP from Bread From Heaven Worship. These original songs were written to help the church behold Christ, proclaim His gospel, and respond in joyful, congregational worship. Now available on Spotify, Apple Music, and YouTube Music.
   cover_image: v1784545203/album-covers/hosanna_to_the_king_album_cover.png
   cover_status:
   copyright: © 2026 Bread From Heaven Christian Fellowship
   master: ℗ 2026 Bread From Heaven Christian Fellowship
+  spotify_url: https://open.spotify.com/album/2o1m4cz90J4JYCKJTMcbGi
+  apple_music_url: https://music.apple.com/us/album/hosanna-to-the-king-ep/6805685074
+  youtube_music_url: https://music.youtube.com/playlist?list=OLAK5uy_mzqIohAYLtveXg54zm0QSy4tKFvh2n1j0
   published: true
 - title: Bread From Heaven
   slug: bread-from-heaven

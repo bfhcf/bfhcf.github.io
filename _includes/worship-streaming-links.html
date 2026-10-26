@@ -1,0 +1,30 @@
+{% comment %}
+  Optional: include.spotify_url, include.apple_music_url, include.youtube_music_url
+  Falls back to artist URLs in site.data.worship when album URLs are omitted.
+{% endcomment %}
+{% assign spotify_href = include.spotify_url | default: site.data.worship.spotify_artist_url %}
+{% assign apple_href = include.apple_music_url | default: site.data.worship.apple_music_artist_url %}
+{% assign youtube_href = include.youtube_music_url | default: site.data.worship.youtube_music_artist_url %}
+
+{% if spotify_href or apple_href or youtube_href %}
+<div class="worship-streaming{% if include.class %} {{ include.class }}{% endif %}">
+  {% if apple_href %}
+  <a class="worship-stream-badge worship-stream-badge--apple" href="{{ apple_href }}" target="_blank" rel="noopener noreferrer">
+    <img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-music/badge/en-us?size=250x83&amp;releaseDate=1761177600" alt="Listen on Apple Music" height="40" width="120">
+  </a>
+  {% endif %}
+  {% if spotify_href %}
+  <a class="worship-stream-badge worship-stream-badge--spotify" href="{{ spotify_href }}" target="_blank" rel="noopener noreferrer">
+    <img src="https://res.cloudinary.com/bfhcf/image/upload/c_scale,q_100,h_40/v1624113847/podcast/spotify-listen.png" alt="Listen on Spotify" height="40">
+  </a>
+  {% endif %}
+  {% if youtube_href %}
+  <a class="worship-stream-badge worship-stream-badge--youtube" href="{{ youtube_href }}" target="_blank" rel="noopener noreferrer">
+    <span class="worship-stream-badge-yt">
+      <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      <span>YouTube Music</span>
+    </span>
+  </a>
+  {% endif %}
+</div>
+{% endif %}

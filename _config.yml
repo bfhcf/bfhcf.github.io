@@ -109,6 +109,10 @@ navigation:
     url: /sermons/
     icon: zmdi-videocam
     data_name: sermons
+  - text: Worship
+    url: /worship/
+    icon: zmdi-audio
+    data_name: worship
   - text: Projects
     icon: zmdi-favorite
     data_name: projects

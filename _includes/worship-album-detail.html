@@ -35,6 +35,8 @@
           <span><strong>Copyright:</strong> {{ album.copyright }}</span>
           <span><strong>Master:</strong> {{ album.master }}</span>
         </div>
+
+        {% include worship-streaming-links.html spotify_url=album.spotify_url apple_music_url=album.apple_music_url youtube_music_url=album.youtube_music_url class="mt-4" %}
       </div>
     </div>
 
@@ -44,7 +46,7 @@
           <p class="worship-kicker color-primary">Listen</p>
           <h2>Play the EP</h2>
         </div>
-        <p class="mb-0 text-muted">Choose a song to jump to its player, lyrics, and credits.</p>
+        <p class="mb-0 text-muted">{% if album.spotify_url or album.apple_music_url or album.youtube_music_url %}Stream on your favorite platform above, or choose a song below for the player, lyrics, and credits.{% else %}Choose a song to jump to its player, lyrics, and credits.{% endif %}</p>
       </div>
       <div class="worship-track-grid">
         {% assign album_songs = site.songs | where: "album", album.title | sort: "track_number" %}
