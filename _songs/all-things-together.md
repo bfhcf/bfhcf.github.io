@@ -13,7 +13,8 @@ tempo: 75
 planning_center_link: https://services.planningcenteronline.com/songs/29239471/arrangements/34159674
 demo_track: https://drive.google.com/file/d/1yie-tHNf6GmUQ7m4W_BK_LlXqZMMlhqg/view?usp=drive_link
 mix_track_folder: https://drive.google.com/drive/u/1/folders/1aEvHKR695p-ojjK1BsHLKwrH64fGsMzy
-audio_url: https://res.cloudinary.com/bfhcf/video/upload/v1785332267/music/03_-_All_Things_Together.mp3
+audio_url: https://res.cloudinary.com/bfhcf/video/upload/v1792169943/music/hosanna-to-the-king/03_-_All_Things_Together.mp3
+chord_sheet_url: https://res.cloudinary.com/bfhcf/image/upload/music/chord-sheets/All_Things_Together_-_E.pdf
 scripture_references:
   - Colossians 1:15-17
 arrangers:

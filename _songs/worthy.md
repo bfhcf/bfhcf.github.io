@@ -13,7 +13,8 @@ tempo: 87
 planning_center_link: https://services.planningcenteronline.com/songs/29883174/arrangements/34959522
 demo_track: https://drive.google.com/file/d/1nc3zY0IRdtMT-l9mgCb13HG4IRYtEDUc/view?usp=drive_link
 mix_track_folder: https://drive.google.com/drive/u/1/folders/19sNHirktUMBdQ3BFWFdI77Djj13K7953
-audio_url: https://res.cloudinary.com/bfhcf/video/upload/v1784548954/music/04_-_Worthy.mp3
+audio_url: https://res.cloudinary.com/bfhcf/video/upload/v1792169943/music/hosanna-to-the-king/04_-_Worthy.mp3
+chord_sheet_url: https://res.cloudinary.com/bfhcf/image/upload/music/chord-sheets/Worthy_-_F.pdf
 scripture_references:
   - Revelation 4-5
 arrangers:

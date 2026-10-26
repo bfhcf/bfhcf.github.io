@@ -13,7 +13,8 @@ tempo: 139
 planning_center_link: https://services.planningcenteronline.com/songs/28834688/arrangements/33665269
 demo_track: https://drive.google.com/file/d/1qe30KqzXUHK-2EK46V7yAeor3LOObKVO/view?usp=drive_link
 mix_track_folder: https://drive.google.com/drive/u/1/folders/14wTMV4G_DuscbEAgl4rOHx34JQTodrl9
-audio_url: https://res.cloudinary.com/bfhcf/video/upload/v1784546400/music/01_-_Hosanna_to_the_King.mp3
+audio_url: https://res.cloudinary.com/bfhcf/video/upload/v1792169943/music/hosanna-to-the-king/01_-_Hosanna_to_the_King.mp3
+chord_sheet_url: https://res.cloudinary.com/bfhcf/image/upload/music/chord-sheets/Hosanna_To_The_King_-_D.pdf
 scripture_references:
   - Psalm 118
   - Revelation 5

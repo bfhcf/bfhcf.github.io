@@ -41,6 +41,12 @@ layout: default
       </div>
       {% endif %}
 
+      {% if page.chord_sheet_url %}
+      <p class="worship-chord-sheet">
+        <a class="btn btn-raised btn-primary btn-sm" href="{{ page.chord_sheet_url }}" target="_blank" rel="noopener noreferrer"><i class="zmdi zmdi-file-text"></i> Download chord sheet (PDF)</a>
+      </p>
+      {% endif %}
+
       <div class="worship-lyrics-sheet">
         {{ content }}
       </div>

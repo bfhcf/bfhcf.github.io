@@ -104,6 +104,12 @@
           <p class="worship-audio-empty">Playable audio will appear here after the track is uploaded to Cloudinary.</p>
           {% endif %}
 
+          {% if song.chord_sheet_url %}
+          <p class="worship-chord-sheet">
+            <a class="btn btn-raised btn-primary btn-sm" href="{{ song.chord_sheet_url }}" target="_blank" rel="noopener noreferrer"><i class="zmdi zmdi-file-text"></i> Download chord sheet (PDF)</a>
+          </p>
+          {% endif %}
+
           <details class="worship-lyrics">
             <summary>Lyrics</summary>
             <div class="worship-lyrics-sheet">
