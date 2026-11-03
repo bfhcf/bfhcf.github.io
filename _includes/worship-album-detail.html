@@ -44,9 +44,9 @@
       <div class="worship-listen-heading">
         <div>
           <p class="worship-kicker color-primary">Listen</p>
-          <h2>Play the EP</h2>
+          <h2>Songs</h2>
         </div>
-        <p class="mb-0 text-muted">{% if album.spotify_url or album.apple_music_url or album.youtube_music_url %}Stream on your favorite platform above, or choose a song below for the player, lyrics, and credits.{% else %}Choose a song to jump to its player, lyrics, and credits.{% endif %}</p>
+        <p class="mb-0 text-muted">Stream above, or jump to a song for its lyric video, chord sheet, lyrics, and credits.</p>
       </div>
       <div class="worship-track-grid">
         {% assign album_songs = site.songs | where: "album", album.title | sort: "track_number" %}
@@ -55,8 +55,8 @@
           <a href="#{{ listen_slug }}" class="worship-track-link">
             <span>{{ song.track_number }}</span>
             <strong>{{ song.title }}</strong>
-            {% if song.audio_url %}
-            <i class="zmdi zmdi-play-circle"></i>
+            {% if song.youtube_url %}
+            <i class="zmdi zmdi-youtube-play"></i>
             {% else %}
             <i class="zmdi zmdi-time"></i>
             {% endif %}
@@ -94,20 +94,15 @@
             <span><strong>Tempo:</strong> {{ song.tempo }} BPM</span>
           </div>
 
-          {% if song.audio_url %}
-          <div class="worship-audio">
-            <audio class="js-player" controls preload="metadata">
-              <source src="{{ song.audio_url }}" type="audio/mpeg">
-            </audio>
-          </div>
-          {% else %}
-          <p class="worship-audio-empty">Playable audio will appear here after the track is uploaded to Cloudinary.</p>
-          {% endif %}
-
-          {% if song.chord_sheet_url %}
-          <p class="worship-chord-sheet">
+          {% if song.youtube_url or song.chord_sheet_url %}
+          <div class="worship-song-actions">
+            {% if song.youtube_url %}
+            <a class="btn btn-raised btn-youtube btn-sm" href="{{ song.youtube_url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play"></i> Watch lyric video</a>
+            {% endif %}
+            {% if song.chord_sheet_url %}
             <a class="btn btn-raised btn-primary btn-sm" href="{{ song.chord_sheet_url }}" target="_blank" rel="noopener noreferrer"><i class="zmdi zmdi-file-text"></i> Download chord sheet (PDF)</a>
-          </p>
+            {% endif %}
+          </div>
           {% endif %}
 
           <details class="worship-lyrics">
@@ -120,24 +115,6 @@
       {% endfor %}
     </div>
 
-    <p class="worship-copyright-note">© ℗ {% if album.release_year != 'TBD' %}{{ album.release_year }} {% endif %}Bread From Heaven Christian Fellowship. All rights reserved. Lyrics and audio are provided for worship, review, and ministry use.</p>
+    <p class="worship-copyright-note">© ℗ {% if album.release_year != 'TBD' %}{{ album.release_year }} {% endif %}Bread From Heaven Christian Fellowship. All rights reserved. Lyrics and resources are provided for worship, review, and ministry use.</p>
   </div>
 </section>
-
-<script>
-  $(document).ready(function () {
-    var players = Array.from(document.querySelectorAll(".js-player")).map(function (player) {
-      return new Plyr(player);
-    });
-
-    players.forEach(function (currentPlayer) {
-      currentPlayer.on("play", function () {
-        players.forEach(function (otherPlayer) {
-          if (otherPlayer !== currentPlayer) {
-            otherPlayer.pause();
-          }
-        });
-      });
-    });
-  });
-</script>
