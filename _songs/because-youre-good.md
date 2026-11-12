@@ -42,9 +42,9 @@ We lift You higher
 
 ### Pre-Chorus
 
-You are worthy of all honor
+You're worthy of all honor
   
-You are worthy of all praise
+You're worthy of all praise
   
 Forever victorious
   
@@ -64,11 +64,11 @@ You have removed my guilt, my shame
   
 I will never be the same
   
-Because You are good
+Because You're good
 
 ### Verse 2
 
-You gave Your life, I am free
+You gave Your life, I'm free
   
 I belong to You
   
@@ -82,9 +82,9 @@ My hope is in You
 
 ### Pre-Chorus
 
-You are worthy of all honor
+You're worthy of all honor
   
-You are worthy of all praise
+You're worthy of all praise
   
 Forever victorious
   
@@ -104,22 +104,56 @@ You have removed my guilt, my shame
   
 I will never be the same
   
-Because You are good
+Because You're good
 
 ### Final Pre-Chorus
 
-You are worthy of all honor
+You're worthy of all honor
   
-You are worthy of all praise
+You're worthy of all praise
   
 Forever victorious
   
 Jesus, we sing, sing, sing
   
-You are worthy of all honor
+You're worthy of all honor
   
-You are worthy of all praise
+You're worthy of all praise
   
 Forever victorious
   
 Jesus, we sing
+
+### Final Chorus
+
+You are good, Your love endures
+  
+I will lift Your name up high
+  
+To You alone, the God Most High
+  
+I will shout, You are good
+  
+You have removed my guilt, my shame
+  
+I will never be the same
+  
+Because You're good, Your love endures
+  
+We will lift Your name up high
+  
+To You alone, the God Most High
+  
+We will shout, You are good
+  
+You have removed our guilt, our shame
+  
+We will never be the same
+  
+Because You're good
+  
+Because You're good
+  
+Because You're good
+  
+Because You are good
