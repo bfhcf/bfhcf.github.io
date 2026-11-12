@@ -45,25 +45,25 @@ Both the earth and skies resound with Hallelujah
 
 ### Chorus
 
-You are worthy, worthy
+You are worthy
   
 Worthy and mighty
   
-You are worthy, worthy
+You are worthy
   
-You are worthy to be praised
+You're worthy to be praised
   
-You are holy, holy
+You are holy
   
 Holy and mighty
   
-You are holy, holy
+You are holy
   
 And worthy to be praised
 
 ### Verse 2
 
-You restored our hearts and made us whole
+You restored our hearts and You made us whole
   
 Your sacrifice has healed our broken soul
   
@@ -71,7 +71,25 @@ So we proclaim the love of Christ our Lord
   
 As we sing to You with hearts in one accord
 
-### Pre-Chorus
+### Chorus
+
+You are worthy
+  
+Worthy and mighty
+  
+You are worthy
+  
+You're worthy to be praised
+  
+You are holy
+  
+Holy and mighty
+  
+You are holy
+  
+And worthy to be praised
+
+### Pre-Chorus / Bridge
 
 From the rising of the sun
   
@@ -79,26 +97,22 @@ To the final trumpet sound
   
 Both the earth and skies resound with Hallelujah
 
-### Chorus
+### Final Chorus
 
-You are worthy, worthy
+You are worthy (worthy)
   
-Worthy and mighty
+Worthy and mighty (mighty)
   
-You are worthy, worthy
+You are worthy
   
-You are worthy to be praised
+You're worthy to be praised
   
-You are holy, holy
+You are holy (holy)
   
-Holy and mighty
+Holy and mighty (mighty)
   
-You are holy, holy
+You are holy
   
-And worthy to be praised
-
-### Tag
-
 And worthy to be praised
   
 And worthy to be praised
