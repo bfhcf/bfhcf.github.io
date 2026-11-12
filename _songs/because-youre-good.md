@@ -13,7 +13,7 @@ tempo: 146
 planning_center_link: https://services.planningcenteronline.com/songs/29232699/arrangements/34151197
 demo_track: https://drive.google.com/file/d/1FZk_q-z8p9iB8T1hMUjqSMYFJyBlI8r-/view?usp=drive_link
 mix_track_folder: https://drive.google.com/drive/u/1/folders/1VgSIT78ZWbf-7FKa1FHELJZP7iz6XoQY
-youtube_url: https://www.youtube.com/watch?v=RikcPAdUrFs
+youtube_url: https://www.youtube.com/watch?v=ajLK-np9v6A
 chord_sheet_url: https://res.cloudinary.com/bfhcf/image/upload/music/chord-sheets/Because_You_re_Good_-_G.pdf
 scripture_references:
   - Psalm 100
