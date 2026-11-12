@@ -13,7 +13,7 @@ tempo: 74
 planning_center_link: https://services.planningcenteronline.com/songs/29883178/arrangements/34959529
 demo_track: https://drive.google.com/file/d/1Ing1B0YS3IOdAlxTZZO0vkHdRIhRi2tp/view?usp=drive_link
 mix_track_folder: https://drive.google.com/drive/u/1/folders/1LMWxDyNng-AinxhAxcm6wlF0j5C-G8UI
-youtube_url: https://www.youtube.com/watch?v=RtFsZzc9xaw
+youtube_url: https://www.youtube.com/watch?v=ie4ZnTLVcW8
 chord_sheet_url: https://res.cloudinary.com/bfhcf/image/upload/music/chord-sheets/The_Resurrected_Christ_-_E.pdf
 scripture_references:
   - Matthew 28
