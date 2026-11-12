@@ -110,3 +110,11 @@ All glory, praise, and power
 From You, through You, for You
   
 From You, through You, for You
+
+### Tag
+
+All praise belongs to You
+  
+All praise belongs to You
+  
+All praise belongs to You
