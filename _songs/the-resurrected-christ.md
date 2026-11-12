@@ -32,19 +32,19 @@ At the break of dawn that Sunday morning
   
 Faithful women went there to anoint Him
   
-The ground, it shook
+The ground it shook
   
 An angel of the Lord appeared
 
 ### Verse 2
 
-Do not be afraid, the angel told them
+Do not be afraid the angel told them
   
 Come and see the place where He was lying
   
-He is not here
+He's not here
   
-Why look for Him among the dead?
+Why look for Him among the dead
 
 ### Refrain
 
@@ -62,9 +62,9 @@ Jesus conquered the grave
   
 His Word is true
   
-He is risen still
+He's risen still
   
-This is proof of His victory
+This is proof of His vict'ry
   
 His promise fulfilled
   
@@ -78,9 +78,9 @@ All hail the Resurrected Christ!
 
 Satan thought he won that day on Calvary
   
-Death, where is your sting?
+Death where is your sting
   
-O grave, your victory?
+O grave your vict'ry
   
 Christ has won!
   
@@ -92,7 +92,7 @@ Praise and honor to our risen Savior
   
 Glorious, You reign on high forever
   
-Thank You, Lord!
+Thank You Lord!
   
 Your love no none can sever
 
@@ -112,9 +112,9 @@ Jesus conquered the grave
   
 His Word is true
   
-He is risen still
+He's risen still
   
-This is proof of His victory
+This is proof of His vict'ry
   
 His promise fulfilled
   
@@ -134,7 +134,7 @@ New mercies every morn
   
 Because He lives
   
-Do not have to fight alone
+Don't have to fight alone
   
 Because He lives
   
@@ -162,7 +162,7 @@ Salvation of my life
 
 ### Bridge 3
 
-He is seated on the throne
+He's seated on the throne
   
 Because He lives
   
@@ -170,7 +170,7 @@ I shall overcome
   
 Because He lives
   
-And soon He will bring me home
+And soon He'll bring me home
   
 Because He lives
   
@@ -180,7 +180,25 @@ Salvation of my life
 
 ### Refrain
 
-Rejoice! Hallelujah!
+Hallelujah!
+
+### Chorus
+
+Just as He said
+  
+He rose from the dead
+  
+Stone rolled away
+  
+Jesus conquered the grave
+  
+His Word is true
+  
+He's risen still
+  
+This is proof of His vict'ry
+  
+His promise fulfilled
 
 ### Final Chorus
 
@@ -194,9 +212,9 @@ Jesus conquered the grave
   
 His Word is true
   
-He is risen still
+He's risen still
   
-This is proof of His victory
+This is proof of His vict'ry
   
 His promise fulfilled
   
@@ -206,4 +224,4 @@ He is alive!
   
 He is alive!
   
-All hail the Resurrected Christ!
+All hail the Resurrected Christ
