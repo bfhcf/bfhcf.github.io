@@ -52,7 +52,7 @@ For You have rescued me
   
 The cross has set me free
   
-You have won the victory
+You've won the victory!
 
 ### Chorus
 
@@ -66,7 +66,7 @@ Forever we adore
   
 You are my strength, my song
   
-You are the Savior of my soul
+You're the Savior of my soul
   
 Hosanna to the King
   
@@ -78,7 +78,7 @@ You reign
 
 We give thanks to the Lord
   
-For He is good, He is good
+For He is good, He is good!
   
 We give thanks to the Lord
   
@@ -100,7 +100,7 @@ Forever we adore
   
 You are my strength, my song
   
-You are the Savior of my soul
+You're the Savior of my soul
   
 Hosanna to the King
   
