@@ -309,15 +309,21 @@ body, html {
     color: #fff;
 }
 
+.worship-album-links {
+    margin-top: 28px;
+}
+
 .worship-social {
-    margin-top: 8px;
+    margin-top: 0;
 }
 
 .worship-social-label {
     color: #666;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
+    letter-spacing: 0.04em;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .worship-social-icons {
