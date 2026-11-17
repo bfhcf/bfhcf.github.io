@@ -14,7 +14,12 @@ og_image: https://res.cloudinary.com/bfhcf/image/upload/c_fill,g_auto,h_1200,w_1
       <div class="row">
         <div class="col-lg-10">
           <p class="worship-kicker">Original Worship Songs</p>
-          <h1>Bread From Heaven Worship</h1>
+          <div class="worship-brand worship-brand--hero">
+            {% if site.data.worship.logo_url %}
+            <img class="worship-logo" src="{{ site.data.worship.logo_url }}" alt="" width="72" height="72">
+            {% endif %}
+            <h1>Bread From Heaven Worship</h1>
+          </div>
           <p class="lead lead-lg color-white">The worship band of Bread From Heaven Christian Fellowship, serving the church through Christ-centered, doctrinally sound songs for congregational worship.</p>
           <p class="lead lead-sm color-white">Debut EP <a class="color-white" href="/worship/hosanna-to-the-king/"><em>Hosanna to the King</em></a> is out now — stream it, and watch the official music videos on YouTube.</p>
 

@@ -25,7 +25,12 @@
       <div class="col-lg-8">
         <p class="worship-kicker color-primary">{{ album.album_type }}</p>
         <h1 class="color-primary">{{ album.title }}</h1>
-        <p class="lead lead-sm">{{ album.artist }}</p>
+        <div class="worship-brand worship-brand--artist">
+          {% if site.data.worship.logo_url %}
+          <img class="worship-logo" src="{{ site.data.worship.logo_url }}" alt="" width="40" height="40">
+          {% endif %}
+          <p class="lead lead-sm mb-0">{{ album.artist }}</p>
+        </div>
         <p>{{ album.description }}</p>
 
         <div class="worship-album-facts">
