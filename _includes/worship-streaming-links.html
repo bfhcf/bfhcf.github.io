@@ -7,6 +7,9 @@
 {% assign apple_href = include.apple_music_url | default: site.data.worship.apple_music_artist_url %}
 {% assign youtube_music_href = include.youtube_music_url | default: site.data.worship.youtube_music_artist_url %}
 {% assign youtube_channel_href = site.data.worship.youtube_channel_url %}
+{% if include.hide_youtube_channel %}
+  {% assign youtube_channel_href = nil %}
+{% endif %}
 
 {% if spotify_href or apple_href or youtube_music_href or youtube_channel_href %}
 <div class="worship-streaming{% if include.class %} {{ include.class }}{% endif %}">

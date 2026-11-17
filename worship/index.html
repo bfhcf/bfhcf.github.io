@@ -11,16 +11,17 @@ og_image: https://res.cloudinary.com/bfhcf/image/upload/c_fill,g_auto,h_1200,w_1
   <section class="worship-hero">
     <img class="worship-hero-bg-img" src="https://res.cloudinary.com/bfhcf/image/upload/c_fill,g_center,h_1080,w_1920/v1793722458/album-covers/BFHW_Wide_Shot.png" alt="" aria-hidden="true">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-8">
+      <div class="row">
+        <div class="col-lg-10">
           <p class="worship-kicker">Original Worship Songs</p>
           <h1>Bread From Heaven Worship</h1>
           <p class="lead lead-lg color-white">The worship band of Bread From Heaven Christian Fellowship, serving the church through Christ-centered, doctrinally sound songs for congregational worship.</p>
-          <p class="lead lead-sm color-white mb-0 mt-3">Debut EP <a class="color-white" href="/worship/hosanna-to-the-king/"><em>Hosanna to the King</em></a> is out now on Spotify, Apple Music, and YouTube Music. Subscribe on <a class="color-white" href="{{ site.data.worship.youtube_channel_url }}" target="_blank" rel="noopener noreferrer">YouTube</a>.</p>
-        </div>
-        <div class="col-lg-4 text-lg-right mt-4 mt-lg-0">
-          {% include worship-streaming-links.html class="worship-streaming--hero" %}
-          <a href="#albums" class="btn btn-raised btn-white mt-2"><i class="zmdi zmdi-album"></i> View Albums</a>
+          <p class="lead lead-sm color-white">Debut EP <a class="color-white" href="/worship/hosanna-to-the-king/"><em>Hosanna to the King</em></a> is out now — stream it, and watch the official music videos on YouTube.</p>
+
+          <div class="worship-hero-actions">
+            <a href="https://www.youtube.com/playlist?list=PLcoTmCtKa6Ho" class="btn btn-raised btn-youtube" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play"></i> Watch music videos</a>
+            <a href="#albums" class="btn btn-raised btn-white"><i class="zmdi zmdi-album"></i> View Albums</a>
+          </div>
         </div>
       </div>
     </div>
@@ -32,6 +33,15 @@ og_image: https://res.cloudinary.com/bfhcf/image/upload/c_fill,g_auto,h_1200,w_1
         <h2 class="color-primary">Songs from the life of the local church</h2>
         <p>Bread From Heaven Worship is the worship band of Bread From Heaven Christian Fellowship. These songs are written and arranged to help the church behold Christ, proclaim His gospel, and respond together in joyful, Scripture-rooted worship.</p>
         <p>Our songs seek to uphold the Reformed doctrines we confess as a church, with lyrics shaped by Scripture and tested for doctrinal faithfulness. We aim to be content first and music next, letting melody and arrangement serve the truth being sung.</p>
+
+        <div class="worship-panel-links mt-4">
+          <p class="worship-panel-label">Stream</p>
+          {% include worship-streaming-links.html hide_youtube_channel=true %}
+        </div>
+
+        <div class="worship-panel-links mt-4">
+          {% include worship-social-links.html label="Follow" style="labeled" %}
+        </div>
       </div>
     </div>
   </section>

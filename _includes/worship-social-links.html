@@ -1,0 +1,34 @@
+{% assign facebook_href = site.data.worship.facebook_url %}
+{% assign instagram_href = site.data.worship.instagram_url %}
+{% assign youtube_href = site.data.worship.youtube_channel_url %}
+
+{% if facebook_href or instagram_href or youtube_href %}
+<div class="worship-social{% if include.class %} {{ include.class }}{% endif %}{% if include.style == 'labeled' %} worship-social--labeled{% endif %}">
+  {% if include.label %}
+  <p class="worship-social-label">{{ include.label }}</p>
+  {% endif %}
+  <div class="worship-social-icons">
+    {% if facebook_href %}
+      {% if include.style == 'labeled' %}
+      <a href="{{ facebook_href }}" class="btn btn-raised btn-facebook" target="_blank" rel="noopener noreferrer"><i class="zmdi zmdi-facebook"></i> Facebook</a>
+      {% else %}
+      <a href="{{ facebook_href }}" class="btn-circle btn-circle-raised btn-facebook" target="_blank" rel="noopener noreferrer" aria-label="Bread From Heaven Worship on Facebook"><i class="zmdi zmdi-facebook"></i></a>
+      {% endif %}
+    {% endif %}
+    {% if instagram_href %}
+      {% if include.style == 'labeled' %}
+      <a href="{{ instagram_href }}" class="btn btn-raised btn-instagram" target="_blank" rel="noopener noreferrer"><i class="zmdi zmdi-instagram"></i> Instagram</a>
+      {% else %}
+      <a href="{{ instagram_href }}" class="btn-circle btn-circle-raised btn-instagram" target="_blank" rel="noopener noreferrer" aria-label="Bread From Heaven Worship on Instagram"><i class="zmdi zmdi-instagram"></i></a>
+      {% endif %}
+    {% endif %}
+    {% if youtube_href %}
+      {% if include.style == 'labeled' %}
+      <a href="{{ youtube_href }}" class="btn btn-raised btn-youtube" target="_blank" rel="noopener noreferrer"><i class="zmdi zmdi-youtube-play"></i> YouTube</a>
+      {% else %}
+      <a href="{{ youtube_href }}" class="btn-circle btn-circle-raised btn-youtube" target="_blank" rel="noopener noreferrer" aria-label="Bread From Heaven Worship on YouTube"><i class="zmdi zmdi-youtube-play"></i></a>
+      {% endif %}
+    {% endif %}
+  </div>
+</div>
+{% endif %}

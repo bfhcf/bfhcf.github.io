@@ -21,6 +21,8 @@
         {% if album.cover_status %}
         <p class="small text-muted mt-2 mb-0">{{ album.cover_status }}</p>
         {% endif %}
+
+        {% include worship-social-links.html label="Follow" style="labeled" class="mt-4" %}
       </div>
       <div class="col-lg-8">
         <p class="worship-kicker color-primary">{{ album.album_type }}</p>
@@ -36,7 +38,16 @@
           <span><strong>Master:</strong> {{ album.master }}</span>
         </div>
 
-        {% include worship-streaming-links.html spotify_url=album.spotify_url apple_music_url=album.apple_music_url youtube_music_url=album.youtube_music_url class="mt-4" %}
+        {% if album.youtube_playlist_url %}
+        <p class="mt-4 mb-3">
+          <a class="btn btn-raised btn-youtube" href="{{ album.youtube_playlist_url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play"></i> Watch official music videos</a>
+        </p>
+        {% endif %}
+
+        <div class="worship-panel-links mt-3">
+          <p class="worship-panel-label">Stream</p>
+          {% include worship-streaming-links.html spotify_url=album.spotify_url apple_music_url=album.apple_music_url youtube_music_url=album.youtube_music_url hide_youtube_channel=true %}
+        </div>
       </div>
     </div>
 
@@ -46,7 +57,7 @@
           <p class="worship-kicker color-primary">Listen</p>
           <h2>Songs</h2>
         </div>
-        <p class="mb-0 text-muted">Stream above, or jump to a song for its lyric video, chord sheet, lyrics, and credits.</p>
+        <p class="mb-0 text-muted">Stream above, or jump to a song for its music video, chord sheet, lyrics, and credits.</p>
       </div>
       <div class="worship-track-grid">
         {% assign album_songs = site.songs | where: "album", album.title | sort: "track_number" %}
@@ -55,7 +66,7 @@
           <a href="#{{ listen_slug }}" class="worship-track-link">
             <span>{{ song.track_number }}</span>
             <strong>{{ song.title }}</strong>
-            {% if song.youtube_url %}
+            {% if song.music_video_url or song.lyric_video_url %}
             <i class="zmdi zmdi-youtube-play"></i>
             {% else %}
             <i class="zmdi zmdi-time"></i>
@@ -94,13 +105,16 @@
             <span><strong>Tempo:</strong> {{ song.tempo }} BPM</span>
           </div>
 
-          {% if song.youtube_url or song.chord_sheet_url %}
+          {% if song.music_video_url or song.lyric_video_url or song.chord_sheet_url %}
           <div class="worship-song-actions">
-            {% if song.youtube_url %}
-            <a class="btn btn-raised btn-youtube btn-sm" href="{{ song.youtube_url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play"></i> Watch lyric video</a>
+            {% if song.music_video_url %}
+            <a class="btn btn-raised btn-youtube" href="{{ song.music_video_url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play"></i> Watch music video</a>
+            {% endif %}
+            {% if song.lyric_video_url %}
+            <a class="btn btn-raised btn-default btn-sm" href="{{ song.lyric_video_url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play"></i> Lyric video</a>
             {% endif %}
             {% if song.chord_sheet_url %}
-            <a class="btn btn-raised btn-primary btn-sm" href="{{ song.chord_sheet_url }}" target="_blank" rel="noopener noreferrer"><i class="zmdi zmdi-file-text"></i> Download chord sheet (PDF)</a>
+            <a class="btn btn-raised btn-primary btn-sm" href="{{ song.chord_sheet_url }}" target="_blank" rel="noopener noreferrer"><i class="zmdi zmdi-file-text"></i> Chord sheet (PDF)</a>
             {% endif %}
           </div>
           {% endif %}

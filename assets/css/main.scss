@@ -104,13 +104,13 @@ body, html {
 }
 
 .worship-hero {
-    padding: 120px 0 90px;
+    padding: 110px 0 70px;
     background: #263238;
     overflow: hidden;
     position: relative;
 
     &:before {
-        background: linear-gradient(120deg, rgba(0, 0, 0, .42), rgba(0, 0, 0, .28));
+        background: linear-gradient(180deg, rgba(0, 0, 0, .35) 0%, rgba(0, 0, 0, .55) 100%);
         content: "";
         inset: 0;
         position: absolute;
@@ -127,6 +127,30 @@ body, html {
         font-size: 44px;
         margin-bottom: 18px;
     }
+}
+
+.worship-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 22px 0 0;
+
+    .btn {
+        margin: 0;
+    }
+}
+
+.worship-panel-links {
+    margin-top: 8px;
+}
+
+.worship-panel-label {
+    color: #666;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .worship-hero-bg-img {
@@ -248,11 +272,6 @@ body, html {
     gap: 10px;
 }
 
-.worship-streaming--hero {
-    justify-content: flex-end;
-    margin-bottom: 4px;
-}
-
 .worship-stream-badge {
     display: inline-flex;
     line-height: 0;
@@ -288,6 +307,45 @@ body, html {
 .worship-stream-badge--youtube:hover .worship-stream-badge-yt {
     background: #e6002e;
     color: #fff;
+}
+
+.worship-social {
+    margin-top: 8px;
+}
+
+.worship-social-label {
+    color: #666;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.worship-social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .btn,
+    .btn-circle {
+        margin: 0;
+    }
+}
+
+.btn-instagram,
+.btn-circle.btn-instagram {
+    background-color: #e1306c !important;
+    color: #fff !important;
+
+    &:hover,
+    &:focus {
+        background-color: #c13584 !important;
+        color: #fff !important;
+    }
+}
+
+.btn-circle.btn-instagram i,
+.btn.btn-instagram i {
+    color: #fff !important;
 }
 
 .worship-album-facts,

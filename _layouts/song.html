@@ -33,13 +33,16 @@ layout: default
         <span><strong>Tempo:</strong> {{ page.tempo }} BPM</span>
       </div>
 
-      {% if page.youtube_url or page.chord_sheet_url %}
+      {% if page.music_video_url or page.lyric_video_url or page.chord_sheet_url %}
       <div class="worship-song-actions mb-4">
-        {% if page.youtube_url %}
-        <a class="btn btn-raised btn-youtube btn-sm" href="{{ page.youtube_url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play"></i> Watch lyric video</a>
+        {% if page.music_video_url %}
+        <a class="btn btn-raised btn-youtube" href="{{ page.music_video_url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play"></i> Watch music video</a>
+        {% endif %}
+        {% if page.lyric_video_url %}
+        <a class="btn btn-raised btn-default btn-sm" href="{{ page.lyric_video_url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play"></i> Lyric video</a>
         {% endif %}
         {% if page.chord_sheet_url %}
-        <a class="btn btn-raised btn-primary btn-sm" href="{{ page.chord_sheet_url }}" target="_blank" rel="noopener noreferrer"><i class="zmdi zmdi-file-text"></i> Download chord sheet (PDF)</a>
+        <a class="btn btn-raised btn-primary btn-sm" href="{{ page.chord_sheet_url }}" target="_blank" rel="noopener noreferrer"><i class="zmdi zmdi-file-text"></i> Chord sheet (PDF)</a>
         {% endif %}
       </div>
       {% endif %}
